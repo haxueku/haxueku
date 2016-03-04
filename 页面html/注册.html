@@ -9,9 +9,9 @@
 </head>
 <body>
 	<!--header-->
-	<div style="width:100%;height:126px;min-width:1420px;border-bottom:1px solid #777;background:#fff;box-shadow: #555 0px 0px 6px">
+	<div id="header">
 		<div style="width:1000px;">
-			<div class="left logo"></div>
+			<a href="#"><div class="left logo"></div></a>
 			<div class="left top_line"></div>
 			<div class="left top_title">注册</div>
 			<div class="right top_r">
@@ -50,7 +50,7 @@
 						</div>
 						<form id="add_form" action="" method="post" enctype="multipart/form-data">
 						<input type="hidden" id="role" name="role" value="1">
-						<div class="form_list" style="margin-top:30px;">
+						<div class="form_list" style="margin-top:-5px;">
 							<div class="l_list ph_li">
 								<div class="left f_left">
 									<div class="right"><i></i><span>手机号：</span></div>
@@ -132,7 +132,7 @@
 								</div>
 							</div>
 							<div style="margin-left:185px;font-size:15px;">
-								<input type="checkbox" name="" value="" checked="checked" /> 我已阅读并同意 <a href="javascript:;" class="clause" style="color:#119cd0;">《哈学库使用条款》</a>
+								<input type="checkbox" id="is_clause" name="clause[]" value="1" /> 我已阅读并同意 <a href="javascript:;" class="clause" style="color:#119cd0;">《哈学库使用条款》</a>
 							</div>
 							<div>
 								<div class="left btn_sub">

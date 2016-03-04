@@ -38,7 +38,8 @@ noticeadd.prototype.init = function(){
 			buttons:[{
 				text:"同意",
 				click:function(){
-					dialog = this;
+					dialog = this;		
+					$('#is_clause').prop("checked","checked");
 					$('#clause_content').dialog("destroy");
 				}
 			}],
