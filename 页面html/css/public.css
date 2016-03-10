@@ -197,8 +197,10 @@ table {
 	background:#FF9118 url(../images/list_check.png) 25px 9px no-repeat;
 	color:#fff;
 }
+.e_li{
+	margin-left:20px;
+}
 .er,.thr{display:none;}
-.er li{padding-left:20px;}
 .er ol { padding-left:15px;  border-top:none;}
 .er a{color: #3f3f3f;text-decoration: none;}
 .er .no {display:none;}
