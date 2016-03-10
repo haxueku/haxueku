@@ -1,0 +1,43 @@
+
+#main_fram{width:80%;height:50%;min-height:500px;min-width:500px;}
+.maindiv{margin:0 auto;width:360px;height:271px;background:#fff;padding-left:-38px;}
+.userlogin{background:#1194F3;color:#fff;height:32px;width:363px;font-size:15px;line-height:25pt;letter-spacing:1px;text-indent: 10px;}
+.main-center{
+	width: 500px;
+	height: 500px;
+	margin: 30px auto;
+	padding-top: 12px;
+}
+.userform{width:363px;height:32px;margin-left:0px}
+.main1{width:500px;height:500px;border:0px solid #CCCCCC;border-left:0px;}
+.f_right{width:340px;height:50px;line-height:50px;margin-left:100px}
+.f_right input{border:1px solid #B3B3B3;height:20px;width:300px;padding:10px;font-size:16px;}
+.btn_log{width:235px;margin-left:65px;height:35px;text-align:center;line-height:35px;background:#1194F3;cursor:pointer;font-size:15px;color:#fff;border-radius:5px;margin-top:20px;}
+.l_list{width:235px;height:35px;padding:-5px 0px;margin:4px}
+.qq_button,.weixin_button,.weibo_button{background-image:url(../images/other.gif);background-repeat: no-repeat;cursor:hand;float:left;}
+.qq_button{width:30px;height:35px;border-right-width:0px;background-position: left;margin-left:12px;}
+.weixin_button{width:30px;height:35px;border-right-width:0px;background-position: center;margin-left:12px;}
+.weibo_button{width:33px;height:35px;border-right-width:0px;background-position: right;margin-left:12px;}
+#username{border:1px solid #B3B3B3;line-height:13px;height:13px;width:200px;padding:15px;margin-left:60px;font-size:10px;}
+#password{border:1px solid #B3B3B3;line-height:13px;height:13px;width:200px;padding:15px;margin-left:60px;font-size:10px;}
+
+.btn_conf{width:130px;margin:0 auto;text-align:center;line-height:30px;background:#F90;cursor:pointer;font-size:16px;color:#fff;border-radius:5px;margin-top:25px;}
+.student,.teacher{background-image:url(../images/third.gif);background-repeat: no-repeat;cursor:hand;float:left}
+.student{width:120px;height:140px;border-right-width:0px;background-position: left;}
+.teacher{width:120px;height:140px;border-right-width:0px;background-position: right;margin-left:60px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
