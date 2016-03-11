@@ -31,16 +31,20 @@
                             </div>
 						</div>
 						<form id="login_form" action="" method="post">
-						<div class="form_list" style="margin-top:10px;">
+						<div class="form_list" style="margin-top:30px;">
+                        <div class="busybox">
+									<span>系统繁忙,请稍候再试</span>
+									<div class="error_img"></div>
+								</div>
 							<div class="l_list ph_li">	
 								<input name="username" id="username" type="text" placeholder="请输入用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入用户名'"/>				  
 						  </div>
 							<div class="l_list">
 								<input name="password" id="password" type="password" placeholder="请输入密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入密码'"/>							
 							</div>
-							<div style="font-size:12px;display:inline;">
-								<div id="div1" style="margin-left:65px;float:left"><input type="checkbox" id="is_clause" name="clause[]" value="1" /> 下次自动登录</div>
-                                <div id="div2" style="margin-left:235px;float:inherit;text-decoration:underline"><a href="">忘记密码?</a></div>
+							<div style="font-size:15px;display:inline;line-height:30px">
+								<div id="div1" style="margin-left:80px;float:left"><input type="checkbox" id="is_clause" name="clause[]" value="1" /> 下次自动登录</div>
+                                <div id="div2" style="margin-left:290px;float:inherit;text-decoration:underline"><a href="">忘记密码?</a></div>
 							</div>
                             
 							<div>
@@ -49,8 +53,8 @@
 								</div>
 							</div>	
 						</form>
-                        <div style="font-size:13px;display:inline;">
-                        	<div style="margin-left:65px;float:left;font-size:15px;line-height:30pt;letter-spacing:2px;">其他登录方式：</div>
+                        <div style="font-size:15px;display:inline;">
+                        	<div style="margin-left:80px;float:left;font-size:15px;line-height:36pt;letter-spacing:2px;">其他登录方式：</div>
                         	<div class="other" style="float:inherit">
                         		<a href=""><div class="qq_button"></div></a>
 								<a href=""><div class="weixin_button"></div></a>
