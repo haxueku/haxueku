@@ -1,15 +1,23 @@
 $(function(){
     $(".ce > li > a").click(function(){
-		 $(this).children('i').addClass('ce_jian').removeClass('ce_jia').parents().siblings().find(".ce_jian").addClass('ce_jia').removeClass('ce_jian');
-	     $(this).addClass("xz").parents().siblings().find("a").removeClass("xz");
-		 $(this).parents().siblings().find(".er").hide();
-		 $(this).siblings(".er").toggle();
-		 $(this).parents().siblings().find(".er > li > .thr").hide().parents().siblings().find(".thr_nr").hide();
+		if($(this).is('.xz')){
+            $(this).removeClass("xz").children('i').addClass('ce_jia').removeClass('ce_jian');
+        }else{
+			$(this).children('i').addClass('ce_jian').removeClass('ce_jia').parents().siblings().find(".ce_jian").addClass('ce_jia').removeClass('ce_jian');
+			$(this).addClass("xz").parents().siblings().find("a").removeClass("xz");
+		}
+		$(this).parents().siblings().find(".er").hide();
+		$(this).siblings(".er").toggle();
+		$(this).parents().siblings().find(".er > li > .thr").hide().parents().siblings().find(".thr_nr").hide();
 	})
-	
     $(".er > li > a").click(function(){
-		$(this).children('i').addClass('ce_jian').removeClass('ce_jia').siblings('i').addClass('ce_jia').removeClass('ce_jian');
-        $(this).addClass("sen_x").parents().siblings().find("a").removeClass("sen_x");
+		if($(this).is('.sen_x')){
+            $(this).removeClass("sen_x").children('i').addClass('ce_jia').removeClass('ce_jian');
+        }else{
+			$(this).children('i').addClass('ce_jian').removeClass('ce_jia').parents(".e_li").siblings().find(".ce_jian").addClass('ce_jia').removeClass('ce_jian');
+			$(this).addClass("sen_x").parents().siblings().find("a").removeClass("sen_x");
+		}
+        
         $(this).parents().siblings().find(".thr").hide();	
 	    $(this).siblings(".thr").toggle();	
 	})

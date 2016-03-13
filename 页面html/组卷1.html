@@ -51,7 +51,7 @@
 		</div>
 	</div>
 	<!--main-->
-	<div id="main"style="margin-top:2px;min-height:500px;">
+	<div style="margin-top:2px;min-height:500px;">
 		<div style="background:#DBF0FF;border-bottom:4px solid #0190F2;">
 			<div style="width:1000px;height:68px;">
 				<div style="float:left;line-height:68px;color:#4c4c4c;font-size:24px;">高中<span class="c_blue">语文</span> <span style="color:#666666;font-size:18px;"> [切换科目]</span></div>
@@ -64,45 +64,16 @@
 				<div class="ks_top_title">
 					<div class="type" id="quickstyles">
 						<ul>
-							<li><a href="#" class="yl-on" data-rol="default">默认样式</a></li>
-							<li><a href="#" data-rol="standard">标准样式</a></li>
-							<li><a href="#" data-rol="test">测试样式</a></li>
+							<li><a href="#" class="yl-on" data-rol="standard">标准样式</a></li>
 							<li><a href="#" data-rol="exposed">作业样式</a></li>
 						</ul>
 					</div>
 					<div class="topcy" id="ecTools">
 						<ul>
-							<li><a class="goon" href="javascript:void(0)" id="filterReturn">继续选题</a></li>
-							<li onmouseover="this.className='on'" onmouseout="this.className='out'" class="out"><a href="javascript:void(0)"><span class="toolsHelper">组卷工具</span></a>
-							<div class="navp">
-								<table border="0" cellpadding="0" cellspacing="0">
-								<tbody>
-								<tr style="width:20%">
-									<td width="60">
-										<a id="filterSetting" class="chongzhi" href="javascript:void(0)">重置试卷</a>
-									</td>
-									<td width="60">
-										<a id="paperanalyze" class="analysis" href="javascript:void(0)">试卷分析</a>
-									</td>
-									<td width="60">
-										<a id="papersave" class="save setting" href="javascript:void(0)">保存试卷</a>
-									</td>
-									<td width="60">
-										<a id="paperrecycle" class="return jsq" href="javascript:void(0)">试题回收</a>
-									</td>
-									<td width="60">
-										<a id="paperslide" class="play " href="javascript:void(0)">幻灯播放</a>
-									</td>
-									<td width="60">
-										<a id="help" class="help" href="javascript:void(0)">使用帮助</a>
-									</td>
-								</tr>
-								</tbody>
-								</table>
-							</div>
-							</li>
-							<li><a id="paperdownload" class="ending" href="javascript:void(0)">生成试卷</a></li>
-							<li><a id="answercar" class="answer" href="javascript:void(0)">生成答题卡</a></li>
+							<li><a class="goon" href="javascript:;" id="filterReturn">继续选题</a></li>
+							<li><a class="goon_1" href="javascript:;" id="filterReturn">发送学生</a></li>
+							<li><a id="paperdownload" class="goon_1" href="javascript:;">生成试卷</a></li>
+							<li><a id="answercar" class="goon_1" href="javascript:;">生成答题卡</a></li>
 						</ul>
 					</div>
 				</div>
@@ -140,104 +111,24 @@
 										</div>
 										<div id="pui_main">
 											<div id="pui_head">
-												<div id="pui_marktag" title="保密标记">
-													绝密★启用前
+												<div class="partm">
+													<div class="editpart"></div>
 												</div>
 												<div id="pui_title">
 													<div id="pui_maintitle" title="试卷主标题">
-														xxx学校2015-2016学年度3月同步练习
-													</div>
-													<div id="pui_subtitle" title="试卷副标题">
-														语文试卷
+														xxx学校2015-2016学年度3月同步练习语文试卷
 													</div>
 												</div>
 												<div id="pui_testinfo" title="试卷信息栏">
 													考试范围：xxx；考试时间：100分钟；命题人：xxx
-												</div>
-												<div style="display: none;" id="pui_studentinput" title="考生信息填写栏">
-													学校:___________姓名：___________班级：___________考号：___________
-												</div>
-												<div id="pui_score" title="试卷誊分栏">
-													<table id="pui_scoretable" align="center" border="1" cellpadding="0" cellspacing="0">
-													<tbody>
-													<tr>
-														<td>
-															题号
-														</td>
-														<td>
-															一
-														</td>
-														<td>
-															二
-														</td>
-														<td>
-															三
-														</td>
-														<td>
-															四
-														</td>
-														<td>
-															五
-														</td>
-														<td>
-															六
-														</td>
-														<td>
-															七
-														</td>
-														<td>
-															八
-														</td>
-														<td>
-															九
-														</td>
-														<td>
-															总分
-														</td>
-													</tr>
-													<tr>
-														<td>
-															得分
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-														<td>
-															&nbsp;
-														</td>
-													</tr>
-													</tbody>
-													</table>
 												</div>
 												<div id="pui_notice" title="考生注意事项栏">
 													<div id="pui_noticetip">
 														注意事项：
 													</div>
 													<div id="pui_noticetext">
+														1.答题前请填写好自己的班级、姓名、考号等信息<br />
+														2.请将答案正确填写在答题卡上
 													</div>
 												</div>
 											</div>
@@ -245,7 +136,7 @@
 												<div class="paperpart" id="paperpart1">
 													<div class="parthead" id="parthead1" style="display:;">
 														<div class="partmenu">
-															<a class="addquestype">添加新题型</a><a class="editpart">修改</a><a class="moveuppart">上移</a><a class="movednpart">下移</a>
+															<div class="editpart"></div>
 														</div>
 														<div class="partheadbox" id="partheadbox1">
 															<div class="partname" id="partname1">
@@ -257,10 +148,11 @@
 														</div>
 													</div>
 													<div class="partbody">
-														<div style="border: 1px solid rgb(255, 255, 255);" class="questype" id="questype1_1">
+														<div class="questype" id="questype1_1">
 															<div class="questypehead" id="questypehead1_1" style="border: 1px solid rgb(255, 255, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 0, 0);">
-																<div style="display: none;" class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a style="display: none;" class="moveup">上移</a><a style="display: none;" class="movedn">下移</a>
+																<div class="questypemenu">
+																	<div class="check_class">换一组</div>
+																	<div class="editpart"></div>
 																</div>
 																<div class="questypeheadbox" id="questypeheadbox1_1">
 																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -301,8 +193,8 @@
 																</div>
 															</div>
 															<div class="questypebody">
-																<div style="border: 1px solid rgb(255, 255, 255);" class="quesbox" id="quesbox1579176" data-score="">
-																	<div style="display: none;" class="quesopmenu">
+																<div class="quesbox" id="quesbox1579176" data-score="">
+																	<div class="quesopmenu">
 																		<a class="detail">详细</a><a class="movetp">移动</a><a class="replace">替换</a><a class="del">删除</a><a style="display: none;" class="moveup">上移</a><a class="movedn">下移</a>
 																	</div>
 																	<div class="quesdiv" id="quesdiv1579176">
@@ -350,8 +242,8 @@
 																		<br>
 																	</div>
 																</div>
-																<div style="border: 1px solid rgb(255, 255, 255);" class="quesbox" id="quesbox1579175" data-score="">
-																	<div style="display: none;" class="quesopmenu">
+																<div class="quesbox" id="quesbox1579175" data-score="">
+																	<div class="quesopmenu">
 																		<a class="detail">详细</a><a class="movetp">移动</a><a class="replace">替换</a><a class="del">删除</a><a class="moveup">上移</a><a class="movedn">下移</a>
 																	</div>
 																	<div class="quesdiv" id="quesdiv1579175">
@@ -384,8 +276,8 @@
 																		<br>
 																	</div>
 																</div>
-																<div style="border: 1px solid rgb(255, 255, 255);" class="quesbox" id="quesbox1579174" data-score="">
-																	<div style="display: none;" class="quesopmenu">
+																<div class="quesbox" id="quesbox1579174" data-score="">
+																	<div class="quesopmenu">
 																		<a class="detail">详细</a><a class="movetp">移动</a><a class="replace">替换</a><a class="del">删除</a><a class="moveup">上移</a><a class="movedn">下移</a>
 																	</div>
 																	<div class="quesdiv" id="quesdiv1579174">
@@ -424,8 +316,8 @@
 																		<br>
 																	</div>
 																</div>
-																<div style="border: 1px solid rgb(255, 255, 255);" class="quesbox" id="quesbox1579161" data-score="">
-																	<div style="display: none;" class="quesopmenu">
+																<div class="quesbox" id="quesbox1579161" data-score="">
+																	<div class="quesopmenu">
 																		<a class="detail">详细</a><a class="movetp">移动</a><a class="replace">替换</a><a class="del">删除</a><a class="moveup">上移</a><a class="movedn">下移</a>
 																	</div>
 																	<div class="quesdiv" id="quesdiv1579161">
@@ -458,8 +350,8 @@
 																		<br>
 																	</div>
 																</div>
-																<div style="border: 1px solid rgb(255, 255, 255);" class="quesbox" id="quesbox1579159" data-score="">
-																	<div style="display: none;" class="quesopmenu">
+																<div class="quesbox" id="quesbox1579159" data-score="">
+																	<div class="quesopmenu">
 																		<a class="detail">详细</a><a class="movetp">移动</a><a class="replace">替换</a><a class="del">删除</a><a class="moveup">上移</a><a style="display: none;" class="movedn">下移</a>
 																	</div>
 																	<div class="quesdiv" id="quesdiv1579159">
@@ -499,7 +391,7 @@
 												<div class="paperpart" id="paperpart2">
 													<div class="parthead" id="parthead2" style="display:;">
 														<div class="partmenu">
-															<a class="addquestype">添加新题型</a><a class="editpart">修改</a><a class="moveuppart">上移</a><a class="movednpart">下移</a>
+															<div class="editpart"></div>
 														</div>
 														<div class="partheadbox" id="partheadbox2">
 															<div class="partname" id="partname2">
@@ -511,194 +403,11 @@
 														</div>
 													</div>
 													<div class="partbody">
-														<div style="border: 1px solid rgb(255, 255, 255);" class="questype" id="questype2_1">
-															<div class="questypehead" id="questypehead2_1" style="border: 1px solid rgb(255, 255, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 0, 0);">
-																<div style="display: none;" class="questypemenu">
-																	<a style="display: none;" class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a style="display: none;" class="moveup">上移</a><a class="movedn">下移</a>
-																</div>
-																<div class="questypeheadbox" id="questypeheadbox2_1">
-																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																	<tbody>
-																	<tr>
-																		<td width="1">
-																			<div class="questypescore" id="questypescore2_1" style="width:120px;display:;">
-																				<table title="评分栏" style="border: 1px solid rgb(102, 102, 102);" border="1" bordercolor="#666666" cellpadding="0" cellspacing="0">
-																				<tbody>
-																				<tr>
-																					<td style="border: 1px solid rgb(102, 102, 102);" align="center" height="20" width="55">
-																						&nbsp;评卷人&nbsp;
-																					</td>
-																					<td style="border: 1px solid rgb(102, 102, 102);" align="center" width="55">
-																						&nbsp;得&nbsp;&nbsp;分&nbsp;
-																					</td>
-																				</tr>
-																				<tr>
-																					<td style="border: 1px solid rgb(102, 102, 102);" align="center" height="30">
-																						&nbsp;
-																					</td>
-																					<td style="border: 1px solid rgb(102, 102, 102);">
-																						&nbsp;
-																					</td>
-																				</tr>
-																				</tbody>
-																				</table>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="questypetitle">
-																				<span class="questypeindex"><b>二、</b></span><span class="questypename" id="questypename2_1">名句默写</span><span class="questypenote" id="questypenote2_1">（题型注释）</span>
-																			</div>
-																		</td>
-																	</tr>
-																	</tbody>
-																	</table>
-																</div>
-															</div>
-															<div class="questypebody">
-															</div>
-														</div>
-														<div class="questype" id="questype2_2">
-															<div class="questypehead" id="questypehead2_2" style="display:;">
-																<div class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
-																</div>
-																<div class="questypeheadbox" id="questypeheadbox2_2">
-																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																	<tbody>
-																	<tr>
-																		<td width="1">
-																			<div class="questypescore" id="questypescore2_2" style="width:120px;display:;">
-																				<table title="评分栏" style="border:1px solid #666;" border="1" bordercolor="#666666" cellpadding="0" cellspacing="0">
-																				<tbody>
-																				<tr>
-																					<td align="center" height="20" width="55">
-																						&nbsp;评卷人&nbsp;
-																					</td>
-																					<td align="center" width="55">
-																						&nbsp;得&nbsp;&nbsp;分&nbsp;
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center" height="30">
-																						&nbsp;
-																					</td>
-																					<td>
-																						&nbsp;
-																					</td>
-																				</tr>
-																				</tbody>
-																				</table>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="questypetitle">
-																				<span class="questypeindex"><b>三、</b></span><span class="questypename" id="questypename2_2">现代文阅读</span><span class="questypenote" id="questypenote2_2">（题型注释）</span>
-																			</div>
-																		</td>
-																	</tr>
-																	</tbody>
-																	</table>
-																</div>
-															</div>
-															<div class="questypebody">
-															</div>
-														</div>
-														<div class="questype" id="questype2_3">
-															<div class="questypehead" id="questypehead2_3" style="display:;">
-																<div class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
-																</div>
-																<div class="questypeheadbox" id="questypeheadbox2_3">
-																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																	<tbody>
-																	<tr>
-																		<td width="1">
-																			<div class="questypescore" id="questypescore2_3" style="width:120px;display:;">
-																				<table title="评分栏" style="border:1px solid #666;" border="1" bordercolor="#666666" cellpadding="0" cellspacing="0">
-																				<tbody>
-																				<tr>
-																					<td align="center" height="20" width="55">
-																						&nbsp;评卷人&nbsp;
-																					</td>
-																					<td align="center" width="55">
-																						&nbsp;得&nbsp;&nbsp;分&nbsp;
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center" height="30">
-																						&nbsp;
-																					</td>
-																					<td>
-																						&nbsp;
-																					</td>
-																				</tr>
-																				</tbody>
-																				</table>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="questypetitle">
-																				<span class="questypeindex"><b>四、</b></span><span class="questypename" id="questypename2_3">文言文阅读</span><span class="questypenote" id="questypenote2_3">（题型注释）</span>
-																			</div>
-																		</td>
-																	</tr>
-																	</tbody>
-																	</table>
-																</div>
-															</div>
-															<div class="questypebody">
-															</div>
-														</div>
-														<div class="questype" id="questype2_4">
-															<div class="questypehead" id="questypehead2_4" style="display:;">
-																<div class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
-																</div>
-																<div class="questypeheadbox" id="questypeheadbox2_4">
-																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																	<tbody>
-																	<tr>
-																		<td width="1">
-																			<div class="questypescore" id="questypescore2_4" style="width:120px;display:;">
-																				<table title="评分栏" style="border:1px solid #666;" border="1" bordercolor="#666666" cellpadding="0" cellspacing="0">
-																				<tbody>
-																				<tr>
-																					<td align="center" height="20" width="55">
-																						&nbsp;评卷人&nbsp;
-																					</td>
-																					<td align="center" width="55">
-																						&nbsp;得&nbsp;&nbsp;分&nbsp;
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center" height="30">
-																						&nbsp;
-																					</td>
-																					<td>
-																						&nbsp;
-																					</td>
-																				</tr>
-																				</tbody>
-																				</table>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="questypetitle">
-																				<span class="questypeindex"><b>五、</b></span><span class="questypename" id="questypename2_4">诗词鉴赏</span><span class="questypenote" id="questypenote2_4">（题型注释）</span>
-																			</div>
-																		</td>
-																	</tr>
-																	</tbody>
-																	</table>
-																</div>
-															</div>
-															<div class="questypebody">
-															</div>
-														</div>
-														<div style="border: 1px solid rgb(255, 255, 255);" class="questype" id="questype2_5">
+														<div class="questype" id="questype2_0">
 															<div class="questypehead" id="questypehead2_5" style="border: 1px solid rgb(255, 255, 255); background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 0, 0);">
-																<div style="display: none;" class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
+																<div class="questypemenu">
+																	<div class="check_class">换一组</div>
+																	<div class="editpart"></div>
 																</div>
 																<div class="questypeheadbox" id="questypeheadbox2_5">
 																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -730,7 +439,7 @@
 																		</td>
 																		<td>
 																			<div class="questypetitle">
-																				<span class="questypeindex"><b>六、</b></span><span class="questypename" id="questypename2_5">写作题</span><span class="questypenote" id="questypenote2_5">（本题共1道小题,第1题0分,共0分）</span>
+																				<span class="questypeindex"><b>一、</b></span><span class="questypename" id="questypename2_5">写作题</span><span class="questypenote" id="questypenote2_5">（本题共1道小题,第1题0分,共0分）</span>
 																			</div>
 																		</td>
 																	</tr>
@@ -739,8 +448,8 @@
 																</div>
 															</div>
 															<div class="questypebody">
-																<div style="border: 1px solid rgb(255, 255, 255);" class="quesbox" id="quesbox1579226" data-score="">
-																	<div style="display: none;" class="quesopmenu">
+																<div class="quesbox" id="quesbox1579226" data-score="">
+																	<div class="quesopmenu">
 																		<a class="score">设置分值</a><a class="detail">详细</a><a class="movetp">移动</a><a class="replace">替换</a><a style="display: none;" class="del">删除</a><a style="display: none;" class="moveup">上移</a><a class="movedn">下移</a>
 																	</div>
 																	<div class="quesdiv" id="quesdiv1579226">
@@ -748,7 +457,7 @@
 																		<tbody>
 																		<tr>
 																			<td valign="top">
-																				<span class="quesindex"><b>6．</b></span><span class="tips"></span>
+																				<span class="quesindex"><b>1．</b></span><span class="tips"></span>
 																			</td>
 																			<td>
 																				<p style="font-size:10.5pt; line-height:150%; margin:0pt; orphans:0; text-indent:21pt; widows:0">
@@ -772,56 +481,11 @@
 																</div>
 															</div>
 														</div>
-														<div class="questype" id="questype2_6">
-															<div class="questypehead" id="questypehead2_6" style="display:;">
-																<div class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
-																</div>
-																<div class="questypeheadbox" id="questypeheadbox2_6">
-																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																	<tbody>
-																	<tr>
-																		<td width="1">
-																			<div class="questypescore" id="questypescore2_6" style="width:120px;display:;">
-																				<table title="评分栏" style="border:1px solid #666;" border="1" bordercolor="#666666" cellpadding="0" cellspacing="0">
-																				<tbody>
-																				<tr>
-																					<td align="center" height="20" width="55">
-																						&nbsp;评卷人&nbsp;
-																					</td>
-																					<td align="center" width="55">
-																						&nbsp;得&nbsp;&nbsp;分&nbsp;
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center" height="30">
-																						&nbsp;
-																					</td>
-																					<td>
-																						&nbsp;
-																					</td>
-																				</tr>
-																				</tbody>
-																				</table>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="questypetitle">
-																				<span class="questypeindex"><b>七、</b></span><span class="questypename" id="questypename2_6">文字运用</span><span class="questypenote" id="questypenote2_6">（题型注释）</span>
-																			</div>
-																		</td>
-																	</tr>
-																	</tbody>
-																	</table>
-																</div>
-															</div>
-															<div class="questypebody">
-															</div>
-														</div>
+														
 														<div class="questype" id="questype2_7">
 															<div class="questypehead" id="questypehead2_7" style="display:;">
 																<div class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
+																	<div class="editpart"></div>
 																</div>
 																<div class="questypeheadbox" id="questypeheadbox2_7">
 																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -898,52 +562,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="questype" id="questype2_8">
-															<div class="questypehead" id="questypehead2_8" style="display:;">
-																<div class="questypemenu">
-																	<a class="empty">清空</a><a class="del">删除</a><a class="edit">修改</a><a class="moveup">上移</a><a class="movedn">下移</a>
-																</div>
-																<div class="questypeheadbox" id="questypeheadbox2_8">
-																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																	<tbody>
-																	<tr>
-																		<td width="1">
-																			<div class="questypescore" id="questypescore2_8" style="width:120px;display:;">
-																				<table title="评分栏" style="border:1px solid #666;" border="1" bordercolor="#666666" cellpadding="0" cellspacing="0">
-																				<tbody>
-																				<tr>
-																					<td align="center" height="20" width="55">
-																						&nbsp;评卷人&nbsp;
-																					</td>
-																					<td align="center" width="55">
-																						&nbsp;得&nbsp;&nbsp;分&nbsp;
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center" height="30">
-																						&nbsp;
-																					</td>
-																					<td>
-																						&nbsp;
-																					</td>
-																				</tr>
-																				</tbody>
-																				</table>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="questypetitle">
-																				<span class="questypeindex"><b>九、</b></span><span class="questypename" id="questypename2_8">现代文文本阅读</span><span class="questypenote" id="questypenote2_8">（本题共0道小题,,共0分）</span>
-																			</div>
-																		</td>
-																	</tr>
-																	</tbody>
-																	</table>
-																</div>
-															</div>
-															<div class="questypebody">
-															</div>
-														</div>
+														
 													</div>
 												</div>
 											</div>
@@ -975,6 +594,7 @@
 			<div class="hr_10">
 			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
 	<!--footer-->
 	<div id="footer">
