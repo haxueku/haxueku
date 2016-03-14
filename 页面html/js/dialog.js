@@ -22,178 +22,48 @@ dia_log.prototype.init = function(){
 	
 };
 dia_log.prototype.check = function(){
-	$("#mbcreateQues").click(function(){
-		$("#is_login").dialog({
-			title:"登录",
-			width:"400",
+	$("#paperdownload").click(function(){
+		$("#sj_div").dialog({
+			title:"生成试卷",
+			width:"760",
 			height:"auto",
 			modal:true,
 			create: function(){
 			},
+			buttons:[{
+				text:"生成word试卷",
+				click:function(){
+					dialog = this;		
+					$('#sj_div').dialog("destroy");
+				}
+			},{
+				text:"取消",
+				click:function(){
+					$("#sj_div").dialog("destroy");
+				}
+			}],
+			show:function(){
+				$(":button").slice(0,1).css("background","#fff");
+			},
 			beforeClose: function() {
-				$('#is_login').dialog("destroy");
+				$('#sj_div').dialog("destroy");
 			}
 		});
 	});
-	$("#mbanswerSheet").click(function(){
-		$("#datika").dialog({
-			title:"下载答题卡",
-			width:"580",
+	$("#answercar").click(function(){
+		$("#dtk_div").dialog({
+			title:"生成答题卡",
+			width:"600",
 			height:"auto",
 			modal:true,
 			create: function(){
 			},
 			beforeClose: function() {
-				$('#datika').dialog("destroy");
-			}
-		});
-	});
-	$("#mbdownQues").click(function(){
-		$("#down_sj").dialog({
-			title:"下载试卷",
-			width:"430",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#down_sj').dialog("destroy");
-			}
-		});
-	});
-	$("#down_next").click(function(){
-		$('#down_sj').dialog("destroy");
-		$("#down_sj2").dialog({
-			title:"下载",
-			width:"640",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#down_sj2').dialog("destroy");
-			}
-		});
-	});
-	$("#mbsaveQues").click(function(){
-		$("#save_sj").dialog({
-			title:"保存试卷",
-			width:"430",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#save_sj').dialog("destroy");
+				$('#dtk_div').dialog("destroy");
 			}
 		});
 	});
 	
-	$("#save_butt").click(function(){
-		$('#save_sj').dialog("destroy");
-		$("#is_save").dialog({
-			title:"提示",
-			width:"400",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#is_save').dialog("destroy");
-			}
-		});
-	});
-	$("#mbcreateQues").click(function(){
-		$("#hint").dialog({
-			title:"提示",
-			width:"400",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#hint').dialog("destroy");
-			}
-		});
-	});
-	$(".icon3").click(function(){
-		$("#sc_sj").dialog({
-			title:"收藏试卷",
-			width:"540",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#sc_sj').dialog("destroy");
-			}
-		});
-	});
-	$("#bind_phone").click(function(){
-		$("#phone_dialog").dialog({
-			title:"提示",
-			width:"450",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#phone_dialog').dialog("destroy");
-			}
-		});
-	});
-	$("#check_photo").click(function(){
-		$("#head_photo").dialog({
-			title:"选择头像",
-			width:"630",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#head_photo').dialog("destroy");
-			}
-		});
-	});
-	$(".mbquesBtn1").click(function(){
-		$("#modify1").dialog({
-			title:"试卷设置",
-			width:"400",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#modify1').dialog("destroy");
-			}
-		});
-	});
-	$(".mbquesBtn5").click(function(){
-		$("#modify5").dialog({
-			title:"试卷设置",
-			width:"400",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#modify5').dialog("destroy");
-			}
-		});
-	});
-	$(".mbquesBtn4").click(function(){
-		$("#modify4").dialog({
-			title:"试卷设置",
-			width:"400",
-			height:"auto",
-			modal:true,
-			create: function(){
-			},
-			beforeClose: function() {
-				$('#modify4').dialog("destroy");
-			}
-		});
-	});
 };
 $(function(){
 	new dia_log();

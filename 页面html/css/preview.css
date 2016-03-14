@@ -2,7 +2,6 @@
 .lt, .left { float: left; }
 .rt, .right { float: right; }
 .hr_10 { clear: both; height: 10px; overflow: hidden; font-size: 1px; line-height: 1px; }
-body, button, input, select, textarea { font-family: "宋体"; color: rgb(0, 0, 0); font-size: 12px; }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 address, cite, dfn, em, var { font-style: normal; }
 .ft14 { font-size: 14px; }
@@ -99,9 +98,9 @@ a { color: rgb(0, 0, 0); text-decoration: none; }
 	margin-top: -8px;
 }
 .mbprintTxt {
-	width: 490px;
+	width: 520px;
 	float: left;
-	padding: 15px;
+	padding: 10px;
 }
 .mbprintTxt .title {
 	width: 490px;
@@ -174,7 +173,7 @@ a { color: rgb(0, 0, 0); text-decoration: none; }
 
 .mbanswerSheetTxt li .A4 {
 	width: 148px;
-background: url("../images/bank.png") no-repeat 0px -255px;
+background: url("../images/bank.png") no-repeat 0px 0px;
 }
 .mbanswerSheetTxt li .A4, .mbanswerSheetTxt li .A3, .mbanswerSheetTxt li .B4 {
 	padding-top: 148px;
@@ -184,11 +183,11 @@ background: url("../images/bank.png") no-repeat 0px -255px;
 	padding: 148px 12px 0px 12px;
 	border-left: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
-	background: url("../images/bank.png") no-repeat  -153px -255px;
+	background: url("../images/bank.png") no-repeat  -150px 0px;
 }
 .mbanswerSheetTxt li .A3 {
 	margin: 0px;
-	background: url("../images/bank.png") no-repeat   -320px -255px;
+	background: url("../images/bank.png") no-repeat   -320px 0px;
 }
 .mbanswerSheetTxt li .A3 input, .mbanswerSheetTxt li .A4 input {
 	margin-left: 45px;
