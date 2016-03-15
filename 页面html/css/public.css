@@ -331,20 +331,48 @@ table {
 	margin-top:-12px;
 	float:left;
 }
-.kedu1{
+.kedu_1{
 	margin-left:23px;
 }
-.kedu2{
+.kedu_2{
 	margin-left:195px;
 }
-.kedu3{
+.kedu_3{
 	margin-left:367px;
 }
-.kedu4{
+.kedu_4{
 	margin-left:539px;
 }
-.kedu5{
+.kedu_5{
 	margin-left:711px;
+}
+.tags_line{
+	width:860px;
+	line-height:40px;
+	float:left;
+}
+.tags{
+	margin:8px 6px;
+	height:23px;
+	line-height:23px;
+	padding:0px 6px;
+	cursor: pointer;
+	float:left;
+}
+.tags_check{
+	margin:8px;
+	height:23px;
+	line-height:23px;
+	padding:0px 6px;
+	background:#FF9118;
+	cursor: pointer;
+	float:left;
+	color:#fff;
+}
+.more_tags{
+	width:48px;
+	float:right;
+	line-height:40px;
 }
 
 #footer{height:69px;width:100%;min-width:1000px; text-align:center;overflow:hidden;clear:both;background:#4D4D4D;}
