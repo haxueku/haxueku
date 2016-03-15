@@ -358,6 +358,11 @@ table {
 	padding:0px 6px;
 	cursor: pointer;
 	float:left;
+	border-radius:3px;
+}
+.tags:hover{
+	background:#FF9118;
+	color:#fff;
 }
 .tags_check{
 	margin:8px;
@@ -368,11 +373,56 @@ table {
 	cursor: pointer;
 	float:left;
 	color:#fff;
+	border-radius:3px;
 }
 .more_tags{
 	width:48px;
 	float:right;
 	line-height:40px;
+	cursor: pointer;
+}
+.tag2{
+	margin:8px 12px;
+	height:20px;
+	line-height:20px;
+	padding:2px 6px;
+	cursor: pointer;
+	float:left;
+	font-size:14px;
+	background:#F5F5F5;
+}
+.tag2 .tag2_ch{
+	width:13px;
+	height:13px;
+	float:right;
+	margin:-8px -10px;
+	background:url(../images/tag2.png) no-repeat;
+	display:none;
+}
+.tag2:hover{
+	background:#FF9118;
+	color:#fff;
+}
+.tag2:hover .tag2_ch{
+	display:block;
+}
+.tag2_check{
+	margin:8px 12px;
+	height:20px;
+	line-height:20px;
+	padding:2px 6px;
+	cursor: pointer;
+	float:left;
+	font-size:14px;
+	background:#FF9118;
+	color:#fff;
+}
+.tag2_check .tag2_ch{
+	width:13px;
+	height:13px;
+	float:right;
+	margin:-8px -10px;
+	background:url(../images/tag2.png) no-repeat;
 }
 
 #footer{height:69px;width:100%;min-width:1000px; text-align:center;overflow:hidden;clear:both;background:#4D4D4D;}
