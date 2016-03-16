@@ -329,22 +329,40 @@ table {
 	width:20px;
 	height:33px;
 	margin-top:-12px;
+}
+
+.kd_1{
+	margin-left:3px;
+	width:60px;
+	height:30px;
 	float:left;
+	cursor: pointer;
 }
-.kedu_1{
-	margin-left:23px;
+.kd_2{
+	margin-left:112px;
+	width:60px;
+	height:30px;
+	float:left;
+	cursor: pointer;
+	margin-left:
 }
-.kedu_2{
-	margin-left:195px;
+.kd_3{
+	width:60px;
+	height:30px;
+	float:left;
+	cursor: pointer;
 }
-.kedu_3{
-	margin-left:367px;
+.kd_4{
+	width:60px;
+	height:30px;
+	float:left;
+	cursor: pointer;
 }
-.kedu_4{
-	margin-left:539px;
-}
-.kedu_5{
-	margin-left:711px;
+.kd_5{
+	width:60px;
+	height:30px;
+	float:left;
+	cursor: pointer;
 }
 .tags_line{
 	width:860px;
