@@ -5,7 +5,6 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 .li_border{border:1px solid #CCCCCC}
 .left_list{width:180px;overflow:hidden;float:left;display:inline;border:1px solid #D9D9D9;margin-left:0px}
 .left_lists{border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;width: 180px;max-height:450px;overflow:auto;} 
-.left_list h3{background:#0190F2;text-align:center;width:180px;height:40px;line-height:40px;font-size:16px;color:#fff;}
 .left_list .zsd_ul{padding:0;margin:0;list-style:none;}
 .left_list .zsd_ul li{line-height:30px;overflow:hidden;clear:both;border-bottom:1px solid #CCCCCC}
 .left_list a:hover{color:#fff;}
@@ -197,48 +196,15 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	margin-left:12px;
 	height:35px;
 	line-height:35px;
+
 	zoom:1;
 	width:900px;
 	margin-bottom:10px;
 	}
 .selec_div a:hover{ background: #ff9118; color: #fff; text-decoration: none; }
-.all{	
-	width:40px;
-	margin:0px 13px;
-	line-height:25px;
-	height:25px;
-	background-color:#ff9118;
-	float:left;
-	cursor:pointer;
-	text-align:center;
-	margin-top:8px;
-	
-}
-.all1{	
-	width:40px;
-	margin:0px -9px;
-	line-height:25px;
-	height:25px;
-	color:#FFF;
-	background-color:#ff9118;
-	float:left;
-	margin-right:0px;
-	cursor:pointer;
-	text-align:center;
-	margin-top:5px;
-}
-.all2{	
-	width:40px;
-	margin:0px 8px;
-	line-height:25px;
-	height:25px;
-	color:#FFF;
-	background-color:#FF9118;
-	float:left;
-	cursor:pointer;
-	text-align:center;
-	margin-top:8px;
-}
+
+
+
 nav_value{
 	width:800px;
 	height:35px;
@@ -265,17 +231,29 @@ nav_value{
 	 border:1px #000 solid;
 	 overflow:hidden;
 }
-.grade{
-	width:30px;
-	margin:0px 11px;
-	line-height:25px;
-	height:25px;
+.all{	
+	width:40px;
+	margin:0px 13px;
+	line-height:23px;
+	height:23px;
 	float:left;
-	font-ize:12px;
+	font-size:15px;
 	cursor:pointer;
 	text-align:center;
-	margin-top:5px;}
-	
+	margin-top:10px;
+}
+.all{background-color:#ff9118;color:#fff;}
+.all:hover{background-color:#ff9118;color:#fff;}
+.grade{
+	width:35px;
+	margin:0px 5px;
+	line-height:23px;
+	height:23px;
+	float:left;
+	cursor:pointer;
+	text-align:center;
+	margin-top:4px;}
+
 
 .filtrate_box a {
 	font-size: 12px;
@@ -291,7 +269,7 @@ nav_value{
 }
 .filtrate_box .head:after, .filtrate_box .list:after,.filtrate_box:after { content: "."; height: 0; display: block; clear: both; visibility: hidden; }
 .filtrate_box .head { background: #f2f2f2; padding: 0 10px 0 8px; zoom: 1; _height: 20px; }
-.filtrate_box .list { line-height: 20px; padding:0 3px 5px; zoom: 1; position: relative; float:left;width:980px}
+.filtrate_box .list {line-height:18px; padding:0px 3px 5px; zoom: 1;position: relative; float:left;width:980px}
 .filtrate_box .list a { padding: 0 2px; display: inline-block; }
 .filtrate_box .list dt { float: left; text-align:right; padding: 10px 14px 0 0; border-top: solid 1px #f0e4e4; }
 .filtrate_box .list dt b { display: inline-block; width: 75px; padding-right: 2px; }
@@ -301,13 +279,15 @@ nav_value{
 .filtrate_box .list dd a { margin-right: 14px; }
 .filtrate_box .list .height {
 	overflow: hidden;
-	height: 18px;
+	height: 26px;
+	line-height:26px;
 	margin-bottom: 4px;
 	padding-bottom: 0;
 }
 .filtrate_box .list .year_height {
 	overflow: hidden;
-	height: 16px;
+	height: 18px;
+	line-height:18px;
 	margin-bottom: 4px;
 	padding-bottom: 0;
 }
@@ -326,9 +306,11 @@ nav_value{
 	overflow: hidden;
 	white-space:nowrap;
 	margin-right: 16px;
-	height: 26px;
+	height: 23px;
+	line-height:23px;
+	text-align:center;
 	float: left;
-	margin-bottom: 6px;
+	margin-bottom: 4px;
 }
 
 .filtrate_box .list .year_opt span a {
@@ -338,14 +320,14 @@ nav_value{
 .button {
 	position: absolute;
 	right: 5px;
-	top: 10px;
-	background: url(../images/top.png) no-repeat 50px 0px;
+	top:12px;
+	background: url(../images/top.png) no-repeat 50px 1px;
 	width: 50px;
 	height: 18px;
 	text-align: left;
 	cursor: pointer;
 	margin-right: -1px;
-	_padding-top: 2px;
+	_padding-top: 4px;
 	_height: 16px;
 	padding-left:20px;
 	font-size:15px;
@@ -353,7 +335,7 @@ nav_value{
 }
 
 .btn_b {
-	background:url(../images/top_up.png) no-repeat 50px 0px;
+	background:url(../images/top_up.jpg) no-repeat 50px -1px;
 }
 
 .filtrate_box .list .year_opt .hover {
@@ -370,7 +352,10 @@ nav_value{
 .filtrate_box .area_list .area_t { border-top: 0; padding-top: 5px; }
 .filtrate_box .area_list .all { display: inline-block; }
 .filtrate_box .list a:hover { background: #ff9118; color: #fff; text-decoration: none; }
-.filtrate_box .area_list a:hover{ background: #ff9118; color: #fff; text-decoration: none; }
+.filtrate_box .area_list .area_span:hover{ background: #ff9118; color: #fff; text-decoration: none; }
+.filtrate_box .area_list a:hover{ color: #fff;}
+.filtrate_box .area_list  .area_bottom:hover{ background: #ff9118; color: #fff; text-decoration: none; }
+.grade:hover{ background: #ff9118; color: #fff; text-decoration: none; }
 .filtrate_box .area_list .on a { color: #fff; }
 .filtrate_box .area_list dd { float: left; width: 782px; border-top: solid 1px #f0e4e4; padding: 10px 0 4px; position: relative; }
 .filtrate_box .area_list dd a { margin-right: 14px; }
@@ -401,10 +386,11 @@ nav_value{
 	display:inline;
 	overflow: hidden;
 	white-space: nowrap;
-	margin-right: 16px;
-	height: 26px;
+	margin-right: 12px;
+	height: 23px;
 	float: left;
 	margin-bottom: 6px;
+	text-align:center;
 }
 
 .filtrate_box .area_list .area_opt span a {
@@ -414,7 +400,7 @@ nav_value{
 	position: absolute;
 	right: 40px;
 	top: 10px;
-	background: url(../images/top.png) no-repeat 50px 0px;
+	background: url(../images/top.png) no-repeat 50px 2px;
 	width: 50px;
 	height: 18px;
 	text-align: left;
@@ -427,7 +413,7 @@ nav_value{
 	color:#000;
 }
 .btn_b {
-	background:url(../images/top_up.png) no-repeat 50px 0px;
+	background:url(../images/top_up.jpg) no-repeat 50px -2px;
 }
 
 .filtrate_box .area_list .area_opt .hover {
