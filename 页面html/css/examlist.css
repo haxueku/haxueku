@@ -3,11 +3,15 @@
 body{background:#fff;font-family:Microsoft yahei;}
 body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft yahei;}
 .li_border{border:1px solid #CCCCCC}
-.left_list{width:150px;overflow:hidden;float:left;display:inline;border:1px solid #D9D9D9;margin-left:65px}
-.left_lists{border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;width: 150px;max-height:450px;overflow:auto;} 
-.left_list h3{background:#0190F2;text-align:center;width:150px;height:40px;line-height:40px;font-size:16px;color:#fff;}
+.left_list{width:180px;overflow:hidden;float:left;display:inline;border:1px solid #D9D9D9;margin-left:0px}
+.left_lists{border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;width: 180px;max-height:450px;overflow:auto;} 
+.left_list h3{background:#0190F2;text-align:center;width:180px;height:40px;line-height:40px;font-size:16px;color:#fff;}
 .left_list .zsd_ul{padding:0;margin:0;list-style:none;}
 .left_list .zsd_ul li{line-height:30px;overflow:hidden;clear:both;border-bottom:1px solid #CCCCCC}
+.left_list a:hover{color:#fff;}
+.left_list .exam_li:hover{background:#0190F2;width:180px;height:30px;}
+.left_list .month_exam a{color:#fff}
+.left_list .month_exam{color:#fff;background:#0190F2;width:180px;height:30px;}
 .left_lists span{display:block;margin:0 auto;line-height:34px;text-align:center;font-size:16px;color:#000}
 .nav_bold{
 	width:50px;
@@ -34,6 +38,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	}
 .nav_2:hover{
 	background:#FF9118;
+	color:#FFF;
 }
 .nav_stay{
 	width:45px;
@@ -104,7 +109,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	text-indent:15px;
 	}
 .exam_link span{color:#000;}
-.exam_link a:hover{text-decoration:underline;color:#000}
+.exam_link a:hover{color:#000}
 .exam_mag{
 	height:30px;
 	line-height:30px
@@ -175,10 +180,10 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	cursor:pointer;
 }
 
-.load_img{background-image:url(../images/load.jpg);background-repeat: no-repeat;cursor:hand;float:leftcursor:hand;float:left;width:68px;height:25px;margin-top:5px;}
-.nav_3:hover .load_img{background-image:url(../images/load1.jpg);background-repeat: no-repeat;cursor:hand;float:leftcursor:hand;float:left;width:68px;height:25px;margin-top:5px;}
-.exam_img{background-image:url(../images/exam.jpg);background-repeat: no-repeat;cursor:hand;float:leftcursor:hand;float:left;width:68px;height:25px;margin-top:5px;}
-.nav_3:hover .exam_img{background-image:url(../images/exam1.jpg);background-repeat: no-repeat;cursor:hand;float:leftcursor:hand;float:left;width:68px;height:25px;margin-top:5px;}
+.load_img{background-image:url(../images/load.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px; margin-right:10px}
+.nav_3:hover .load_img{background-image:url(../images/load1.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
+.exam_img{background-image:url(../images/exam.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
+.nav_3:hover .exam_img{background-image:url(../images/exam1.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
 
 .select{
 	border:1px solid #CCCCCC;
@@ -196,9 +201,10 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	width:900px;
 	margin-bottom:10px;
 	}
+.selec_div a:hover{ background: #ff9118; color: #fff; text-decoration: none; }
 .all{	
 	width:40px;
-	margin:0px 9px;
+	margin:0px 13px;
 	line-height:25px;
 	height:25px;
 	background-color:#ff9118;
@@ -261,7 +267,7 @@ nav_value{
 }
 .grade{
 	width:30px;
-	margin:0px 10px;
+	margin:0px 11px;
 	line-height:25px;
 	height:25px;
 	float:left;
@@ -275,22 +281,17 @@ nav_value{
 	font-size: 12px;
 	color:#000;
 	text-decoration: none;
+	font-size:15px;
 }
 
 
 .filtrate_box {
-	padding: 1px;
-	font-family: Arial;
-	color: #555;
-	zoom: 1;
-	margin-bottom: 0px;
-	width: 933px;
-	margin-top: 5px;
-	margin-left: 239px;
+	
+	width:980px;border-radius:5px;margin-top:10px;padding:10px;
 }
 .filtrate_box .head:after, .filtrate_box .list:after,.filtrate_box:after { content: "."; height: 0; display: block; clear: both; visibility: hidden; }
 .filtrate_box .head { background: #f2f2f2; padding: 0 10px 0 8px; zoom: 1; _height: 20px; }
-.filtrate_box .list { line-height: 18px; padding:0 3px 5px; zoom: 1; position: relative; float:left;}
+.filtrate_box .list { line-height: 20px; padding:0 3px 5px; zoom: 1; position: relative; float:left;width:980px}
 .filtrate_box .list a { padding: 0 2px; display: inline-block; }
 .filtrate_box .list dt { float: left; text-align:right; padding: 10px 14px 0 0; border-top: solid 1px #f0e4e4; }
 .filtrate_box .list dt b { display: inline-block; width: 75px; padding-right: 2px; }
@@ -320,12 +321,12 @@ nav_value{
 }
 
 .filtrate_box .list .year_opt span {
-	width: 50px;
+	width: 55px;
 	display:inline;
 	overflow: hidden;
 	white-space:nowrap;
 	margin-right: 16px;
-	height: 18px;
+	height: 26px;
 	float: left;
 	margin-bottom: 6px;
 }
@@ -334,7 +335,7 @@ nav_value{
 	margin-right: 0;
 }
 
-.filtrate_box .list .year_opt .button {
+.button {
 	position: absolute;
 	right: 5px;
 	top: 10px;
@@ -347,11 +348,11 @@ nav_value{
 	_padding-top: 2px;
 	_height: 16px;
 	padding-left:20px;
-	font-size:12px;
+	font-size:15px;
 	color:#000;
 }
 
-.filtrate_box .list .year_opt .btn_b {
+.btn_b {
 	background:url(../images/top_up.png) no-repeat 50px 0px;
 }
 
@@ -362,13 +363,14 @@ nav_value{
 	background-position: 0 -20px;
 }
 .filtrate_box .all_sort { height: 21px; }
-.filtrate_box .area_list { line-height: 18px; padding:0 20px 10px; zoom: 1; position: relative; float:left;}
+.filtrate_box .area_list { line-height: 20px; padding:0 20px 10px; zoom: 1; position: relative; float:left;}
 .filtrate_box .area_list a { padding: 0 2px; display: inline-block; }
 .filtrate_box .area_list dt { float:left; text-align:left; padding: 10px 14px 0 0; border-top: solid 1px #f0e4e4; }
 .filtrate_box .area_list dt b { display: inline-block; width: 75px; padding-right: 2px; }
 .filtrate_box .area_list .area_t { border-top: 0; padding-top: 5px; }
 .filtrate_box .area_list .all { display: inline-block; }
-
+.filtrate_box .list a:hover { background: #ff9118; color: #fff; text-decoration: none; }
+.filtrate_box .area_list a:hover{ background: #ff9118; color: #fff; text-decoration: none; }
 .filtrate_box .area_list .on a { color: #fff; }
 .filtrate_box .area_list dd { float: left; width: 782px; border-top: solid 1px #f0e4e4; padding: 10px 0 4px; position: relative; }
 .filtrate_box .area_list dd a { margin-right: 14px; }
@@ -395,12 +397,12 @@ nav_value{
 }
 
 .filtrate_box .area_list .area_opt span {
-	width: 40px;
+	width: 50px;
 	display:inline;
 	overflow: hidden;
 	white-space: nowrap;
 	margin-right: 16px;
-	height: 18px;
+	height: 26px;
 	float: left;
 	margin-bottom: 6px;
 }
@@ -408,10 +410,9 @@ nav_value{
 .filtrate_box .area_list .area_opt span a {
 	margin-right: 0;
 }
-
-.filtrate_box .area_list .area_opt .area_button {
+ .area_button {
 	position: absolute;
-	right: 7px;
+	right: 40px;
 	top: 10px;
 	background: url(../images/top.png) no-repeat 50px 0px;
 	width: 50px;
@@ -422,10 +423,10 @@ nav_value{
 	_padding-top: 2px;
 	_height: 16px;
 	padding-left:20px;
-	font-size:12px;
+	font-size:15px;
 	color:#000;
 }
-.filtrate_box .area_list .area_opt .btn_b {
+.btn_b {
 	background:url(../images/top_up.png) no-repeat 50px 0px;
 }
 
