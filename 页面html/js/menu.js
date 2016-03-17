@@ -39,6 +39,12 @@ $(function(){
 		$('.j_c_list').hide();
 		$('.zsd_list').show();
   });
+    $("div[id^='kd_']").click(function(){
+		var id = (this.id.toString().match(/\d+/ig)||[])[0];
+		$("#kd").val(id);
+		$(".kedu_"+id).show().parents().siblings("div[id^='kd_']").children().hide();
+		
+	});	
 });
 
   

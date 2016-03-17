@@ -53,6 +53,7 @@ table {
 	line-height:16px;
 	margin:12px 0px;
 	padding:0px 5px;
+	cursor: pointer;
 }
 .collect{
 	background:url(../images/xing.png) 10px no-repeat;
@@ -64,6 +65,7 @@ table {
 	margin:12px 0px;
 	padding:0px 10px;
 	padding-left:30px;
+	cursor: pointer;
 }
 .top_right{
 	border-left:1px solid #FFF;
@@ -261,6 +263,7 @@ table {
 	color: #FFFFFF;
 	background: #FFA91B;
 	border-radius: 2px;
+	cursor: pointer;
 }
 .f_tips{
 	padding-bottom: 50px;
@@ -347,18 +350,21 @@ table {
 	margin-left:
 }
 .kd_3{
+	margin-left:112px;
 	width:60px;
 	height:30px;
 	float:left;
 	cursor: pointer;
 }
 .kd_4{
+	margin-left:112px;
 	width:60px;
 	height:30px;
 	float:left;
 	cursor: pointer;
 }
 .kd_5{
+	margin-left:112px;
 	width:60px;
 	height:30px;
 	float:left;
@@ -442,7 +448,59 @@ table {
 	margin:-8px -10px;
 	background:url(../images/tag2.png) no-repeat;
 }
-
+.alert{
+	font-size:16px;
+	padding:20px;
+	padding-left:60px;
+	box-shadow:0px 1px 15px #888;
+	background:#fff url(../images/warning.png) 20px 15px no-repeat;
+	width:180px;
+	height:20px;
+	line-height:20px;
+	left:40%;
+	top:60%;
+}
+.zan{
+	margin:6px 10px;
+	padding-left:28px;
+	background:url(../images/zan.png) 0px 5px no-repeat;
+	float:left;
+	line-height:34px;
+}
+.hot{
+	margin:6px 10px;
+	padding-left:25px;
+	float:left;
+	line-height:34px;
+	background:url(../images/hot.png) 0px 8px  no-repeat;
+}
+.down_btn{
+	float:left;
+	margin:7px 10px;
+	border-radius:3px;
+	padding:5px 12px;
+	padding-left:40px;
+	border-radius:3px;
+	border:1px solid #1194F3;
+	background:url(../images/download.png) no-repeat 10px center;
+}
+.sc_btn{
+	float:left;
+	margin:7px 10px;
+	border-radius:3px;
+	padding:5px 12px;
+	padding-left:40px;
+	border:1px solid #1194F3;
+	background:url(../images/collect.png) no-repeat 10px center;
+}
+.jr_btn{
+	float:left;
+	padding:13px 15px;
+	margin:-1px;
+	background:#FF9118;
+	color:#fff;
+	font-size:16px;
+}
 #footer{height:69px;width:100%;min-width:1000px; text-align:center;overflow:hidden;clear:both;background:#4D4D4D;}
 .footer{overflow:hidden;margin:20px auto;overflow:hidden;line-height:20px;color:#fff;width:900px;}
 .footer .left{text-align:right;width:600px;}

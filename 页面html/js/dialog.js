@@ -38,13 +38,13 @@ dia_log.prototype.check = function(){
 				}
 			},{
 				text:"取消",
+				show:function(){
+					$(":button").slice(2,3).css({"background":"#fff","color":"#000","border":"1px solid #e5e5e5"});
+				},
 				click:function(){
 					$("#sj_div").dialog("destroy");
 				}
 			}],
-			show:function(){
-				$(":button").slice(0,1).css("background","#fff");
-			},
 			beforeClose: function() {
 				$('#sj_div').dialog("destroy");
 			}
@@ -58,6 +58,21 @@ dia_log.prototype.check = function(){
 			modal:true,
 			create: function(){
 			},
+			buttons:[{
+				text:"生成word试卷",
+				click:function(){
+					dialog = this;		
+					$('#dtk_div').dialog("destroy");
+				}
+			},{
+				text:"取消",
+				show:function(){
+					$(":button").slice(2,3).css({"background":"#fff","color":"#000","border":"1px solid #e5e5e5"});
+				},
+				click:function(){
+					$("#dtk_div").dialog("destroy");
+				}
+			}],
 			beforeClose: function() {
 				$('#dtk_div').dialog("destroy");
 			}
