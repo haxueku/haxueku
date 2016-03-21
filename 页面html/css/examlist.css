@@ -8,8 +8,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 .left_list .zsd_ul{padding:0;margin:0;list-style:none;}
 .left_list .zsd_ul li{line-height:34px;overflow:hidden;clear:both;border-bottom:1px solid #CCCCCC}
 .left_list a:hover{color:#fff;}
-.left_list .exam_li:hover{background:#0190F2;width:180px;height:34px;}
-.left_list .month_exam a{color:#fff}
+.left_list .exam_li:hover{background:#0190F2;width:180px;height:34px;color:#fff;}
 .left_list .month_exam{color:#fff;background:#0190F2;width:180px;height:34px;}
 .left_lists span{display:block;margin:0 auto;line-height:34px;text-align:center;font-size:16px;color:#000}
 .nav_bold{
@@ -53,7 +52,18 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	background:#FF9118;
 	}
 .nav_tag1{
-	width:40px;
+	width:50px;
+	margin:0px 60px;
+	line-height:25px;
+	height:25px;
+	font-size:20px;
+	color:#CCC;
+	float:right;
+	cursor:pointer;
+	text-align:center;
+	}
+.nav_tag1{
+	width:auto;
 	margin:0px 0px;
 	line-height:25px;
 	height:25px;
@@ -63,21 +73,22 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	cursor:pointer;
 	text-align:center;
 	}
+.nav_tag1:hover,.nav_tag2:hover{color:#0190f2}
 .nav_tag2{
-	width:40px;
-	margin:-25px 60px;
+	width:auto;
+	margin:0px 5px;
 	line-height:25px;
 	height:25px;
 	font-size:20px;
 	color:#CCC;
-	float:left;
+	float:right;
 	cursor:pointer;
 	text-align:center;
 
 	}
 .nav_num{
-	width:40px;
-	margin:-25px 30px;
+	width:auto;
+	margin:0px 5px;
 	line-height:25px;
 	height:25px;
 	font-size:15px;
@@ -100,7 +111,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	float:left;
 	cursor:pointer;
 	}
-.nav_3:hover{background:#CCC}
+.nav_3:hover{background:#F5F5F5}
 .exam_link{
 	height:30px;
 	line-height:30px
@@ -118,7 +129,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 .exam_mag span{color:#999}
 .page_num{}
 .page_num span{color:#999}
-.page_up{
+.page_up span{
 	border:1px solid #D9D9D9;
 	width:75px;
 	margin:0px 25px;
@@ -130,7 +141,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	margin-top:8px;
 	cursor:pointer;
 	}
-.page_list{
+.page_list span{
 	border:1px solid #D9D9D9;
 	width:35px;
 	margin:0px 10px;
@@ -142,8 +153,8 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	margin-top:8px;
 	cursor:pointer;
 	}
-.page_list:hover{background:#1194F3}
-.page_list1{
+.page_list span:hover{background:#1194F3;color:#fff}
+.page_list1 span{
 	border:1px solid #D9D9D9;
 	width:35px;
 	margin:0px 10px;
@@ -154,7 +165,8 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	text-align:center;
 	margin-top:8px;
 	cursor:pointer;
-	background:#1194F3
+	background:#1194F3;
+	color:#FFF
 	}
 .page_point{
 	width:25px;
@@ -166,7 +178,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	text-align:center;
 	margin-top:8px;
 }
-.page_down{
+.page_down span{
 	border:1px solid #D9D9D9;
 	width:75px;
 	margin:0px 15px;
@@ -178,11 +190,11 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	margin-top:8px;
 	cursor:pointer;
 }
-
-.load_img{background-image:url(../images/load.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px; margin-right:10px}
-.nav_3:hover .load_img{background-image:url(../images/load1.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
-.exam_img{background-image:url(../images/exam.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
-.nav_3:hover .exam_img{background-image:url(../images/exam1.jpg);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
+.page_down span:hover,.page_up span:hover{background:#1194F3;color:#fff}
+.load_img{background-image:url(../images/load.png);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px; margin-right:10px}
+.nav_3 .load_img:hover{background-image:url(../images/load1.png);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
+.exam_img{background-image:url(../images/exam.png);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
+.nav_3 .exam_img:hover{background-image:url(../images/exam1.png);background-repeat: no-repeat;cursor:hand;cursor:hand;float:right;width:68px;height:25px;margin-top:5px;margin-right:10px}
 
 .select{
 	border:1px solid #CCCCCC;
@@ -232,50 +244,23 @@ nav_value{
 	 overflow:hidden;
 }
 
-.z_index {
-	min-height: 10px;  float: left;width: 980px; height: auto;border:1px solid  #D9D9D9;border-radius:5px;margin-top:10px;padding:10px; margin:5px auto;
-}
-.nav_open {
-	padding-right: 0px; padding-left: 0px;min-height: 10px;  float: left;  width: 980px; padding-top: 2px; height: auto;color:#000;
-}
+#brandList{width:980px;margin:5px auto;}
+#brandList a{text-decoration:none;color:#000}
+#brandList ul li{width:55px;float:left;list-style-type:none;line-height:30px;text-align:center;}
+#brandList ul li span{width:55px;float:left;list-style-type:none;line-height:25px;text-align:center;}
+#brandList ul li span:hover{background:#F93;color:#fff}
 
-.nav_open_tit {
-	padding-left: 20px; float: left;margin-right: 6px;
-}
+#brandList #showMore{clear:both;padding:1px;width:70px;margin:0px auto;margin-right:5px;}
+#brandList #showMore span{display:block;height:30px;line-height:30px;text-align:center;margin-top:-30px;color:#000;}
+.hide{background:url(../images/top.png) no-repeat 95% 50%;}
+.show{background:url(../images/top_up.jpg) no-repeat 95% 50%;}
+#brandList #Morearea{clear:both;padding:5px;width:70px;margin:0px auto;margin-right:0px;margin-top:-40px}
+#brandList #Morearea span{display:block;height:30px;line-height:30px;text-align:center;margin-top:-38px;color:#000}
+.all{width:55px;line-height:30px;float:left;margin-top:0px;margin-left:-10px;text-align:center;background:#F93}
+.all span{width:55px;float:left;list-style-type:none;line-height:25px;text-align:center;color:#fff}
+.all span:hover{background:#F93;color:#fff}
 
-.nav_open_tit a {
-	display:inline; 
-}
-.nav_open_tit1 {
-	padding-right: 10px;font-weight: bold;
-}
-.nav_open_tit2 {
-	padding-right: 5px;margin-top: 5px; padding-left: 5px; padding-bottom: 0px; color: #fff; line-height: 20px; padding-top: 0px; height: 30px;background:#FF9118;
-	width:40px;text-decoration: none;
-}
-.nav_open_tit2:hover {
-	COLOR: #fff; text-decoration: none;background:#FF9118;
-}
-
-.nav_open_con {
-	float: left;width: 784px;
-}
-.nav_open_con a {
-	padding-right: 6px; display: block;padding-left: 6px; float: left; padding-bottom: 0px; word-break: keep-all; line-height: 20px; margin-top: 2px; white-space: nowrap; height: 20px; text-align: left;text-decoration: none;color:#000;
-}
-.nav_open_con .zz{padding-right: 6px; display: block;padding-left: 6px; float: left; padding-bottom: 0px; word-break: keep-all; line-height: 20px; margin-top: 2px; white-space: nowrap; height: 20px; text-align: left;text-decoration: none;color:#fff;background:#FF9118;}
-
-.nav_open_con a:hover{color: #fff;text-decoration: none;background:#FF9118;}
-.more {
-	padding-right: 36px; padding-left: 36px; BACKGROUND:url(../images/top.png) no-repeat 65px 5px; FLOAT: right; padding-bottom: 0px;margin-TOP: -23px;color:#000;
-}
-.zhankai {
-	padding-right: 36px; padding-left: 36px; background:url(../images/top.png) no-repeat 65px 5px; float: right; padding-bottom: 0px;margin-top: -23px;color:#000
-	
-}
-.shouqi {
-	padding-right: 36px; padding-left: 36px;  background:url(../images/top_up.jpg) no-repeat 65px 2px; float: right;padding-bottom: 0px; padding-top: 0px;margin-top: -45px;color:#000
-}
-
-
+.yga{width:60px;line-height:30px;float:left;margin-top:0px;margin-left:5px;text-align:center}
+.selectList{width:1000px;font-size:15px;border:1px solid #CCCCCC;margin:10px auto;}
+.ygaList{width:750px;line-height:30px;float:left;margin-left:5px;margin-top:0px}
 	
