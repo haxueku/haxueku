@@ -7,9 +7,9 @@
     <link href="css/exam_info.css" rel="stylesheet" type="text/css" />
 </head>
 	
-<body>
+<body  onload="init()">
 <!--header-->
-    <div id="header"style="box-shadow:0px 1px 6px #555;">
+    <div id="header" style="box-shadow:0px 1px 6px #555;" >
 		<div id="top">
 			<div style="width:1000px;height:40px;">
 				<div class="fl"><a href="" class="c_blue">valiant</a> 欢迎回来哦!</div>
@@ -49,7 +49,7 @@
 		</div>
 	</div>
 <!--main-->
-	<div id="main"style="margin-top:2px;min-height:1000px;">
+	<div id="main" style="margin-top:2px;min-height:1000px;">
 		<div style="background:#DBF0FF;border-bottom:4px solid #0190F2;">
 			<div style="width:1000px;height:68px;">
 				<div style="float:left;line-height:68px;color:#4c4c4c;font-size:24px;">高中<span class="c_blue">物理</span></div>
@@ -59,9 +59,9 @@
         
         <div style="width:1050px;margin-top:10px;">
         
-        	    <div id="right" class="right" style="width:225px;height:auto;overflow:hidden;float:right;margin-left:0px;margin-top:100px">
+        	    <div class="right" style="width:225px;float:right;">
         		<!--right-->
-                <div id="rightList" class="rightList">
+                <div  class="rightList" id="rightList">
                 <div class="rightLeft">
                 <div  class="myexam" style="margin:5px auto"><span>我<br/>的<br /></span></div>
                  <div class="box">《</div>
@@ -86,9 +86,25 @@
                 </div>
                 
      </div>
+        </div> 
+         <div class="right" style="width:225px;float:right;">
      
               <div class="scroll" id="scroll" style="display:none" >  </div>  
-     </div>
+              </div>
+    
+     
+<script type="text/javascript">
+	window.onscroll = function() {
+		var div = document.getElementById("rightList");
+		div.style.top =document.body.clientHeight+document.body.scrollTop-61;
+	}
+	window.onresize = window.onscroll;
+	function init() {
+		var df = document.body.height;
+		document.body.appendChild(df);
+		window.onscroll();
+	}
+</script>
      
 
         
@@ -107,9 +123,11 @@
 					</div>
                    </div>
                     
-                    <div id="select_part" class="select_part" >
-                    	<div class="part_back"><</div>
-                    	<ul>  	
+                    <div class="sp" style="width:810px;margin-top:10px;border:1px solid #D4D5D5;float:left;background:#FFF;">
+                   <div id="select_part" class="select_part" >
+                    	<div onclick="upMove(this);return false" class="part_back"><</div>
+                        <div class="ul-list" style="float:left;overflow: hidden;position: relative;width: 600px;height:45px">
+                    	<ul class="ul-list-content" style="left:0;top:0">  	
                             <li class="part"><a href="#op-1">单选题</a></li>
                             <li class="part"><a href="#op-2" >文言文阅读</a></li>
                             <li class="part"><a href="#op-3">诗歌鉴赏</a></li>
@@ -118,15 +136,23 @@
                             <li class="part"><a href="">语言表达</a></li>
                             <li class="part"><a href="">作文</a></li>
                             <li class="part"><a href="">古诗默写</a></li> 
-                                           
+                            <li class="part"><a href="">选择题</a></li>
+                            <li class="part"><a href="">语言表达</a></li>
+                            <li class="part"><a href="">作文</a></li>
+                            <li class="part"><a href="">古诗默写</a></li> 
                         </ul> 
-                       
+                        </div> 
+                        
+                        <div onclick="downMove(this);return false" class="part_back1">></div>
                         <div class="all_part"><a href="">全部加入我的试卷</a></div>
-                         <div class="part_back1" >></div>
                     </div>
+                    </div>
+                    
+                    
+          
                     </div>
   
-                 
+             
                     
                     
                  
@@ -634,7 +660,7 @@ function cleardata(){
 		}
 	})
 	</script>
-<!--滑动悬浮在顶部-->    
+<!--滑动悬浮在顶部 -->    
  <script type="text/javascript">
   window.onload=function(){
    function adsorption(){
@@ -651,9 +677,12 @@ function cleardata(){
    }
    adsorption();
   }
- </script>
+ </script> 
  
-<!--右边浮框-->
+ 
+ 
+ 
+<!--右边浮框
 <script language="javascript">
 
 	var name = "#rightList";
@@ -665,7 +694,7 @@ function cleardata(){
 				$(name).animate({top:offset},{duration:500,queue:false});
 			});
 		}); 
-	 </script>
+	 </script>-->
 
 <!--点赞-->
 <script type="text/javascript">
@@ -723,6 +752,20 @@ $(function () {
 	});
 });
 </script>
+
+ <script type="text/javascript">
+function upMove(obj){	
+    $(obj).next().find("ul").width($(obj).next().find("ul li").size()*250);
+	var dom = $(obj).next();	
+	dom.animate({scrollLeft:250+dom.scrollLeft()},500) ;
+}
+function downMove(obj){
+	$(obj).prev().find("ul").width($(obj).prev().find("ul li").size()*250);
+	var dom = $(obj).prev();	
+	dom.animate({scrollLeft:-193+dom.scrollLeft()},500) ; 
+}
+
+</script>  
     
 </body>
 </html>

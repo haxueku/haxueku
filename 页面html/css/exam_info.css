@@ -5,11 +5,10 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 #pui_title{text-align:center;border-bottom:1px dashed #D4D5D5;height:65px;line-height:65px;}
 #pui_maintitle{font-size:25px;font-weight:bold;}
 .b_z{text-align:center;height:50px;line-height:50px;font-size:15px;font-weight:600}
-#select_part{border:1px solid #D4D5D5;width:810px;height:45px;float:left;background:#FFF;margin-top:10px;}
-#select_part .part_back{line-height:40px;width:auto;float:left;display:inline;margin-left:10px;font-size:18px;font-weight:600;cursor:pointer;margin-right:0px}
-#select_part .part_back1{line-height:40px;width:auto;float:left;display:inline;margin-left:10px;font-size:18px;font-weight:600;cursor:pointer;margin-right:0px}
-#select_part .part_1 a{line-height:40px;width:auto;float:left;display:inline;margin-left:10px;font-size:16px;font-weight:600;color:#000}
-#select_part .part a{line-height:40px;width:auto;float:left;display:inline;margin-left:18px;font-size:16px;font-weight:600;color:#000}
+#select_part{height: 45px;}
+#select_part .part_back{line-height:40px;width:15px;height:45px;float:left;display:inline;margin-left:10px;font-size:18px;font-weight:600;cursor:pointer;margin-right:0px}
+#select_part .part_back1{line-height:40px;width:15px;height:45px;float:left;display:inline;margin-left:10px;font-size:18px;font-weight:600;cursor:pointer;margin-right:0px}
+#select_part ul li a{height:45px;line-height:40px;width:auto;float:left;display:inline;margin-left:18px;font-size:16px;font-weight:600;color:#000;	padding: 1px 1px 0;}
 #select_part .all_part a{line-height:40px;height:45px;width:150px;float:right;display:inline;font-size:16px;font-weight:600;background:#FF9118;text-align:center;color:#fff}
 #select_part .part a:hover,#select_part .part_1 a:hover{text-decoration:underline;color:#FF9118}
 .ont_part{width:810px;height:auto;float:left;margin-top:10px;background:#FFF;border:1px solid #D4D5D5}
@@ -27,15 +26,15 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	border:1px solid #1194F3;
 	background:url(../images/collect_1.png) no-repeat 10px center;}
 
-.rightList{width:210px;height:255px;overflow:hidden;float:right;display:inline;border:1px solid #D9D9D9;margin-left:0px;top:100px;position:absolute;}
-.rightLeft{width:45px;height:255px;overflow:hidden;float:left;display:inline;background:#0190F2;margin-left:0px}
+.rightList{position:absolute;width:210px;height:255px;overflow:hidden;float:right;display:inline;border:1px solid #D9D9D9;margin-top:100px;}
+.rightLeft{width:45px;height:255px;overflow:hidden;float:left;display:inline;background:#0190F2;margin-left:0px;}
 .myexam{width:25px;height:45px;}
 .myexam span{font-size:20px;color:#FFF;line-height:25px;}
 .box{background:#0190F2; width:50px; height:50px; margin:0px -2px; -webkit-border-radius:25px;-moz-border-radius:25px; -o-border-radius:25px; border-radius:25px;position:absolute;cursor:pointer;font-size:20px;text-align:center;line-height:50px;color:#fff; }
 .box:hover{background:#0190F2; width:58px; height:58px; margin:0px -6px; -webkit-border-radius:29px;-moz-border-radius:29px; -o-border-radius:29px; border-radius:29px;position:absolute;cursor:pointer;font-size:25px;text-align:center;line-height:58px;color:#fff; }
 .exam_num{width:45px;height:25px;text-align:center}
 .exam_num{font-size:15px;color:#FFF;line-height:45px;}
-.rightRight{width:165px;height:255px;background:url(../images/juan_pe.png);float:right}
+.rightRight{width:165px;height:255px;background:url(../images/juan_pe.png);float:right;}
 .clearlist{text-align:center;margin-top:5px;}
 .clearlist span{line-height:30px;color:#09F;font-size:15px;cursor:pointer;}
 .ul_list ul li{margin-left:5px;line-height:30px}
@@ -89,6 +88,12 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 
 .fixed{ position: fixed; width: 100%; top:-10px;}
 .fixed .title_info{ display: none; }
+
+
+
+
+
+
 
 
 
