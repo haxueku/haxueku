@@ -59,56 +59,6 @@
         
         <div style="width:1050px;margin-top:10px;">
         
-        	    <div class="right" style="width:225px;float:right;">
-        		<!--right-->
-                <div  class="rightList" id="rightList">
-                <div class="rightLeft">
-                <div  class="myexam" style="margin:5px auto"><span>我<br/>的<br /></span></div>
-                 <div class="box">《</div>
-                 <div class="myexam" style="margin:63px auto"><span>试<br/>卷<br /></span></div>
- 				<div class="exam_num"><span>10道</span></div>
-                </div>   
-                <div class="rightRight">
-                 <div class="clearlist" onclick="cleardata()"><span>清空</span></div>
-                <div class="ul_list" id="ul_list">
-               
-                <ul>
-                
-                <li><span >一、综合体(<font color="red">35</font>/65)</span></li>
-                <li><span>二、单选题(<font color="red">35</font>/55)</span></li>
-                <li><span>三、多选题(<font color="red">35</font>/55)</span></li>
-                <li><span>四、计算题(<font color="red">35</font>/55)</span></li>
-                <li><span>五、基础知识题(<font color="red">53</font>/53)</span></li>
-                </ul>
-                </div>
-                <div><div id="btn_exam">生成试卷</div>
-                </div>                	
-                </div>
-                
-     </div>
-        </div> 
-         <div class="right" style="width:225px;float:right;">
-     
-              <div class="scroll" id="scroll" style="display:none" >  </div>  
-              </div>
-    
-     
-<script type="text/javascript">
-	window.onscroll = function() {
-		var div = document.getElementById("rightList");
-		div.style.top =document.body.clientHeight+document.body.scrollTop-61;
-	}
-	window.onresize = window.onscroll;
-	function init() {
-		var df = document.body.height;
-		document.body.appendChild(df);
-		window.onscroll();
-	}
-</script>
-     
-
-        
-        
        			<!-- left_main-->
                 <div class="left_main">
                 <div id="header-wrap" class="header-wrap" style="width:810px;float:left">
@@ -166,6 +116,7 @@
                    <span>一、单选题</span>
                    </div>
                    <div class="big-test" style="width:810px;height:auto;float:left;">
+                    <a href="" class="error_check"></a>
                    <div style="width:770px;height:auto;float:left;margin-left:20px">  
                    <div class="content">
                    
@@ -224,6 +175,7 @@
                 
  				 <!-- 问题2-->
                 <div class="big-test" style="width:810px;height:auto;float:left;">
+                 <a href="" class="error_check"></a>
                    <div style="width:770px;height:auto;float:left;margin-left:20px">  
                    <div class="content">
                    
@@ -271,6 +223,7 @@
                 
                  <!-- 问题3--> 
                   <div class="big-test" style="width:810px;height:auto;float:left;">
+                   <a href="" class="error_check"></a>
                    <div style="width:770px;height:auto;float:left;margin-left:20px">  
                    <div class="content">
                    
@@ -331,6 +284,7 @@
                    <span>二、现代文阅读</span>	
                    </div>
                    <div class="big-test" style="width:810px;height:auto;float:left;">
+                    <a href="" class="error_check"></a>
                    <div style="width:770px;height:auto;float:left;margin-left:20px">
                    
                    <div class="que_title">
@@ -475,6 +429,7 @@
                    <span>三、诗歌鉴赏</span>	
                    </div>
                    <div class="big-test" style="width:810px;height:auto;float:left;">
+                    <a href="" class="error_check"></a>
                    <div style="width:770px;height:auto;float:left;margin-left:20px">
                    
                    <div class="que_title">
@@ -566,6 +521,7 @@
                    <span>四、概括题</span>	
                    </div>
                    <div class="big-test" style="width:810px;height:auto;float:left;">
+                    <a href="" class="error_check"></a>
                    <div style="width:770px;height:auto;float:left;margin-left:20px">
                    
                    <div class="que_title">
@@ -579,7 +535,7 @@
                      <!-- 解析按钮-->
                     
                     <div class="analys">本题解析</div>
-                    <div id ="hidde-div" class="hidde-div" style="display:block">
+                    <div id ="hidde-div" class="hidde-div">
                     <div class="poptip">
                     	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
                          可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。
@@ -608,6 +564,32 @@
         </div>   
     </div>
     
+    
+      <div class="scroll" id="scroll" style="display:none" >  </div> 
+      <div id="rightList" class="rightList">
+                <div class="rightLeft">
+                <div  class="myexam" style="margin:5px auto"><span>我<br/>的<br /></span></div>
+                 <div class="box">《</div>
+                 <div class="myexam" style="margin:63px auto"><span>试<br/>卷<br /></span></div>
+ 				<div class="exam_num"><span>10道</span></div>
+                </div>   
+                <div class="rightRight">
+                <div class="ul_list">
+                <ul>
+                <li class="clearlist"><span>清空</span></li>
+                <li><span >一、综合体(<font color="red">35</font>/65)</span></li>
+                <li><span>二、单选题(<font color="red">35</font>/55)</span></li>
+                <li><span>三、多选题(<font color="red">35</font>/55)</span></li>
+                <li><span>四、计算题(<font color="red">35</font>/55)</span></li>
+                <li><span>五、基础知识题(<font color="red">53</font>/53)</span></li>
+                </ul>
+                </div>
+                <div><div id="btn_exam">生成试卷</div>
+                </div>                	
+                </div>
+                
+     </div>
+    
     <!--footer-->
 	<div id="footer">
 		<div class="footer">
@@ -622,25 +604,19 @@
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/jquery-ui-1.11.2.custom/jquery-ui.js" type="text/javascript"></script>
 <!--本题解析展开收起-->
-    <script type="text/javascript">
-  $(document).ready(function(){	  
-  $('.hidde-div').hide(); 
-  $('.analys:first').addClass('active').next().show(); 
-  $('.analys').click(function(){
-	if( $(this).next().is(':hidden') ) { 
-	  $('.analys').removeClass('active').next().slideUp(); 
-	  $(this).toggleClass('active').next().slideDown(); 
-	}
-	else{
-		 $('.analys').removeClass('hidden').next().slideUp(); 
-		 $(this).toggleClass('active').slideDown(); 
-		
+ <script type="text/javascript">
+	$(".analys").click(function(){
+		if($(this).hasClass('cur')){
+			$(this).removeClass('cur').parents(".big-test").find(".hidde-div").slideUp();
+		}else{
+			$(this).addClass('cur').parents(".big-test").find(".hidde-div").slideDown();
 		}
-	return false; 
-  });  
-});
+	});
+	
+</script>
 <!--清空-->
-function cleardata(){
+    <script type="text/javascript">
+	function cleardata(){
 	document.getElementById("ul_list").innerHTML=""; 	
 }
 	

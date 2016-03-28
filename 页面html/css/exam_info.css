@@ -12,7 +12,9 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 #select_part .all_part a{line-height:40px;height:45px;width:150px;float:right;display:inline;font-size:16px;font-weight:600;background:#FF9118;text-align:center;color:#fff}
 #select_part .part a:hover,#select_part .part_1 a:hover{text-decoration:underline;color:#FF9118}
 .ont_part{width:810px;height:auto;float:left;margin-top:10px;background:#FFF;border:1px solid #D4D5D5}
-.big-test:hover{background:url(../images/error_check.png) no-repeat right top #FFF;border:1px solid #FF941F;margin-left:-1px;margin-top:-1px;margin-bottom:-1px}
+.big-test:hover{border:1px solid #FF941F;margin-left:-1px;margin-top:-1px;margin-bottom:-1px}
+.error_check{background:url(../images/error_check.png) no-repeat right top ;width:810px;height:45px;float:right;display:none;position:absolute;}
+.big-test:hover .error_check {display:block}
 .op_title{width:810px;height:40px;line-height:40px;float:left;border-bottom:1px solid #D4D5D5;}
 .op_title span{margin-left:20px;font-size:16px;font-weight:600}
 .quest_p{font-size:10.5pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0}
@@ -26,7 +28,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	border:1px solid #1194F3;
 	background:url(../images/collect_1.png) no-repeat 10px center;}
 
-.rightList{position:absolute;width:210px;height:255px;overflow:hidden;float:right;display:inline;border:1px solid #D9D9D9;margin-top:100px;}
+.rightList{width:210px;height:255px;overflow:hidden;float:right;display:inline;border:1px solid #D9D9D9;margin-left:0px;position: fixed;right: 12%;top: 30%}
 .rightLeft{width:45px;height:255px;overflow:hidden;float:left;display:inline;background:#0190F2;margin-left:0px;}
 .myexam{width:25px;height:45px;}
 .myexam span{font-size:20px;color:#FFF;line-height:25px;}
@@ -49,7 +51,8 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 		margin-left:0px;
 		bottom:80px;
 		cursor:pointer;
-		margin-top:700px
+		margin-top:800px;
+		right: 25%;
 		
 	}
 .back-top{background:url(../images/back-top.png);width:30px;height:65px;repeat:no repeat;cursor:pointer}
