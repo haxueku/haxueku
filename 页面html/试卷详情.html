@@ -688,31 +688,31 @@
 <!--»¬¶¯Ðü¸¡ÔÚ¶¥²¿ -->   
  <script type="text/javascript">
   window.onload=function(){
-   function adsorption(){
-    var headerWrap=document.getElementById('header-wrap');
+ function adsorption(){
+   var headerWrap=document.getElementById('header-wrap');
 	var oDiv = document.getElementById("rightList"),
 	H = 0,
 	Y = oDiv
 	while (Y) {H += Y.offsetTop; Y = Y.offsetParent}
-    var scrollTop= 0;
+  var scrollTop= 0;
     window.onscroll=function(){
      scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
 	 var s = document.body.scrollTop || document.documentElement.scrollTop
-			if(s>H) {
-				oDiv.style = "position:fixed;top:50px;margin-left:14px"
+			if(s>H-120) {
+				oDiv.style = "position:fixed;top:120px;margin-left:13px"
 			} else {
 				oDiv.style = ""
 			}
-     if(scrollTop>300){
+     if(scrollTop>432){
       headerWrap.className='fixed';
-	 //oDiv.className='fixed1';
-     }else{
-      headerWrap.className='header-wrap';
-	 // oDiv.className='rightList';
+
+    }else{
+     headerWrap.className='header-wrap';
+	
      }
     }
    }
-   adsorption();
+  adsorption();
   }
  </script>  
 

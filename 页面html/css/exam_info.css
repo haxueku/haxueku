@@ -90,8 +90,6 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 
 
 .fixed{ position: fixed; width: 100%; top:-10px;}
-.fixed1{ position: fixed; width: 100%; top:10px;}
-.fixed1 .rightRight{display:block;}
 .fixed .title_info{ display: none; }
 
 
