@@ -13,7 +13,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 #select_part .part a:hover,#select_part .part_1 a:hover{text-decoration:underline;color:#FF9118}
 .ont_part{width:810px;height:auto;float:left;margin-top:10px;background:#FFF;border:1px solid #D4D5D5}
 .big-test:hover{border:1px solid #FF941F;margin-left:-1px;margin-top:-1px;margin-bottom:-1px}
-.error_check{background:url(../images/error_check.png) no-repeat right top ;width:45px;height:45px;display:none;position:absolute;float:right;right:28.62%}
+.error_check{background:url(../images/error_check.png) no-repeat right top ;width:45px;height:45px;display:none;position:absolute;float:right;margin-left:765px}
 .big-test:hover .error_check {display:block}
 .op_title{width:810px;height:40px;line-height:40px;float:left;border-bottom:1px solid #D4D5D5;}
 .op_title span{margin-left:20px;font-size:16px;font-weight:600}
