@@ -69,9 +69,9 @@
  				<div class="exam_num"><span>10道</span></div>
                 </div>   
                 <div class="rightRight">
-                <div class="ul_list">
+               <div class="clearlist" onclick="cleardata()"><span>清空</span></div>
+                <div id="ul_list" class="ul_list">
                 <ul>
-                <li class="clearlist"><span>清空</span></li>
                 <li><span >一、综合体(<font color="red">35</font>/65)</span></li>
                 <li><span>二、单选题(<font color="red">35</font>/55)</span></li>
                 <li><span>三、多选题(<font color="red">35</font>/55)</span></li>
@@ -90,7 +90,7 @@
         
         
        			<!-- left_main-->
-                <div class="left_main"  style="">
+                <div class="left_main">
                 <div id="header-wrap" class="header-wrap" style="width:810px;float:left">
                  <div class="title_info">
                 	<div id="pui_title">
@@ -594,32 +594,6 @@
         </div>   
     </div>
     
-    
-     <!-- <div class="scroll" id="scroll" style="display:none" >  </div> 
-      <div id="rightList" class="rightList">
-                <div class="rightLeft">
-                <div  class="myexam" style="margin:5px auto"><span>我<br/>的<br /></span></div>
-                 <div class="box">《</div>
-                 <div class="myexam" style="margin:63px auto"><span>试<br/>卷<br /></span></div>
- 				<div class="exam_num"><span>10道</span></div>
-                </div>   
-                <div class="rightRight">
-                <div class="ul_list">
-                <ul>
-                <li class="clearlist"><span>清空</span></li>
-                <li><span >一、综合体(<font color="red">35</font>/65)</span></li>
-                <li><span>二、单选题(<font color="red">35</font>/55)</span></li>
-                <li><span>三、多选题(<font color="red">35</font>/55)</span></li>
-                <li><span>四、计算题(<font color="red">35</font>/55)</span></li>
-                <li><span>五、基础知识题(<font color="red">53</font>/53)</span></li>
-                </ul>
-                </div>
-                <div><div id="btn_exam">生成试卷</div>
-                </div>                	
-                </div>
-                
-     </div>-->
-    
     <!--footer-->
 	<div id="footer">
 		<div class="footer">
@@ -646,11 +620,11 @@
 	
 </script>
 <!--清空-->
-    <script type="text/javascript">
-	function cleardata(){
+ <script type="text/javascript">
+
+function cleardata(){
 	document.getElementById("ul_list").innerHTML=""; 	
 }
-	
 </script>
 <!--返回顶部-->
 	<script type="text/javascript">
