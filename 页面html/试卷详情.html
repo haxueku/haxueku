@@ -108,9 +108,9 @@
                     	<div onclick="upMove(this);return false" class="part_back"><</div>
                         <div class="ul-list" style="float:left;overflow: hidden;position: relative;width: 600px;height:45px">
                     	<ul class="ul-list-content" style="left:0;top:0">  	
-                            <li class="part"><a href="#op-1">单选题</a></li>
-                            <li class="part"><a href="#op-2" >文言文阅读</a></li>
-                            <li class="part"><a href="#op-3">诗歌鉴赏</a></li>
+                            <li class="part"><a href="javascript:void(0)" onclick="test('op-1')">单选题</a></li>
+                            <li class="part"><a href="javascript:void(0)" onclick="test('op-2')">文言文阅读</a></li>
+                            <li class="part"><a href="javascript:void(0)" onclick="test('op-3')">诗歌鉴赏</a></li>
                             <li class="part"><a href="">默写</a></li>
                             <li class="part"><a href="">选择题</a></li>
                             <li class="part"><a href="">语言表达</a></li>
@@ -130,15 +130,9 @@
                     
                     
           
-                    </div>
-  
+                    </div>              
              
-                    
-                    
-                 
-                   
-                   <a name="op-1"></a>
-                   <div class="ont_part" >
+                   <div class="ont_part"  id="op-1" >
                    
                   <!-- 大题目-->
               	
@@ -305,12 +299,12 @@
                 </div>
      
        <!--第二部分-->
-       <a name="op-2"></a>
+    
        
-       <div class="ont_part">
+       <div class="ont_part" id="op-2">
                    
                    <!-- 大题目-->
-                   <div class="op_title" name="ot_2">
+                   <div class="op_title" >
                    <span>二、现代文阅读</span>	
                    </div>
                    <div class="big-test" style="width:810px;height:auto;float:left;">
@@ -451,8 +445,8 @@
                 </div>
                    
         <!-- 第三部分-->
-        <a name="op-3"></a>
-       <div class="ont_part">
+  
+       <div class="ont_part" id="op-3">
                    
                    <!-- 大题目-->
                    <div class="op_title">
@@ -543,9 +537,9 @@
                 </div>
                  </div>
    
-                <div class="ont_part">
+                <div class="ont_part" id="op-4">
                 
-                  <a name="op-4"></a>   
+         
                    <!-- 大题目-->
                    <div class="op_title">
                    <span>四、概括题</span>	
@@ -583,14 +577,8 @@
                         <div class="down_btn">下载</div>   
                      </div>  
                 </div>
-                </div>
-					
-                    
-                       <!--试卷AB面按钮-->
-                     <div class="btnAB">
-                     <div class="btna">试卷A面</div>
-                     <div class="btnb">试卷B面</div>
-                     </div>
+                </div>         
+                <div class="space"></div>
         </div>   
     </div>
     
@@ -750,17 +738,41 @@ $(function () {
 
  <script type="text/javascript">
 function upMove(obj){	
-    $(obj).next().find("ul").width($(obj).next().find("ul li").size()*250);
-	var dom = $(obj).next();	
-	dom.animate({scrollLeft:250+dom.scrollLeft()},500) ;
+    $(obj).next().find("ul").width($(obj).next().find("ul li").size()*176);
+	var dom = $(obj).next();
+	dom.animate({scrollLeft:176+dom.scrollLeft()},500) ;
+	if(dom.scrollLeft()>0){
+	 dom.next().find("part_back1")
+  }
+  if(dom.scrollLeft()<352){
+	 dom.prev().find("part_back")
+  }	
 }
 function downMove(obj){
-	$(obj).prev().find("ul").width($(obj).prev().find("ul li").size()*250);
+	$(obj).prev().find("ul").width($(obj).prev().find("ul li").size()*176);
 	var dom = $(obj).prev();	
-	dom.animate({scrollLeft:-193+dom.scrollLeft()},500) ; 
+	dom.animate({scrollLeft:-176+dom.scrollLeft()},500) ; 
+	  if(dom.scrollLeft()>-176){
+	  dom.prev().find('part_back')
+	}
+  if(dom.scrollLeft()>=(dom.find("li").size()*176)-704){
+	  dom.next().find("part_back1")
+	}
 }
-
-</script>  
+//判断是否需要滚动
+$(function(){
+  for(i=0; i<=$(".ul-list").size(); i++){
+	  if($(".ul-list").eq(i).find("li").size()>8){
+		  $(".ul-list").eq(i).next().find("part_back1")
+	  }
+  }
+})
+</script><!--跳转到指定页面--> 
+<script type="text/javascript">
+function test(name){
+window.location.href="#"+name;
+}
+</script> 
     
 </body>
 </html>
