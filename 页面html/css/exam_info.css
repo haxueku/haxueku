@@ -32,7 +32,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 .rightLeft{width:45px;height:255px;overflow:hidden;float:left;display:inline;background:#0190F2;margin-left:0px;}
 .myexam{width:25px;height:45px;}
 .myexam span{font-size:20px;color:#FFF;line-height:25px;}
-.box{background:#0190F2; width:50px; height:50px; margin:0px -2px; -webkit-border-radius:25px;-moz-border-radius:25px; -o-border-radius:25px; border-radius:25px;position:absolute;cursor:pointer;font-size:20px;text-align:center;line-height:50px;color:#fff;behavior:url(ie-css3.htc);}
+.box{background:#0190F2; width:50px; height:50px; margin:0px -2px; -webkit-border-radius:25px;-moz-border-radius:25px; -o-border-radius:25px; border-radius:25px;position:absolute;cursor:pointer;font-size:20px;text-align:center;line-height:50px;color:#fff;behavior:url(..\css\ie-css3.htc);z-index:2}
 .box:hover{background:#0190F2; width:58px; height:58px; margin:0px -6px; -webkit-border-radius:29px;-moz-border-radius:29px; -o-border-radius:29px; border-radius:29px;position:absolute;cursor:pointer;font-size:25px;text-align:center;line-height:58px;color:#fff; }
 .exam_num{width:45px;height:25px;text-align:center}
 .exam_num{font-size:15px;color:#FFF;line-height:45px;}

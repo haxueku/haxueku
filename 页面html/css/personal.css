@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+.na1{
+	border-bottom:2px solid #CCCCCC;
+	height:45px;
+	width:700px;
+	margin-top:15px;
+	margin-left:23px;
+}
+.na_n{
+	border:2px solid #D2D2D2;
+	margin-left:10px;
+	line-height:43px;
+	padding:0px 20px;
+	cursor:pointer;
+}
+.na_n:hover{
+	border-top:2px solid #0190F2;
+	border-bottom:2px solid #fff;
+	color:#0190F2;
+}
+.na_n_check{
+	border:2px solid #D2D2D2;
+	border-top:2px solid #0190F2;
+	border-bottom:2px solid #fff;
+	margin-left:20px;
+	line-height:43px;
+	padding:0px 20px;
+	color:#0190F2;
+}
+.Rmain{margin-top:10px;float:left;width:720px;}
+.rleft{width:100px;height:45px;line-height:45px;float:left}
+.rright{float:left;margin-top:10px}
+.del{width:30px;line-height:20px;text-align:center;height:20px;color:#fff;background:#F90;float:left;margin-left:10px;margin-top:20px;cursor:pointer;}
+.grade{width:80px;height:35px;line-height:35px;background:#06F;text-align:center;float:left;cursor:pointer;}
+.grade1{width:80px;height:35px;line-height:35px;background:#F90;text-align:center;float:left;cursor:pointer;}
+.hide{float:left;margin-top:15px;display:inline}
+.hideinput{width:200px;height:50px;float:left}
+.hideinput input{width:200px;height:35px;float:left;margin-top:12px;}
+.gradelist{width:300px;height:45px;float:left}
+.save_btn{width:100px;height:35px;line-height:35px;color:#FFF;background:#F93;text-align:center;cursor:pointer;margin-bottom:20px;margin-left:100px;border-radius:3px;}
+.tk_left{width:190px;overflow:hidden;float:left;display:inline;background:#F5F5F5;border:0px solid #D9D9D9;} 
+.tk_left h3{background:#58BBFF;text-align:center;width:190px;height:50px;line-height:50px;font-size:16px;color:#fff;}
+.dt-a{height:50px;width:190px;line-height:50px;background:#58BBFF;margin-left:-20px}
+.dlA dd{height:30px;width:190px;line-height:30px;}
+.dlA dd a{height:30px;width:190px;line-height:30px;text-align:center;color:#000;margin-left:50px}
+.dlA dd a:hover{color:#0190F2;}
+.dlA dd .pw:visited{color:#0190F2;}
+.rankSB-cate .expA DL DD {
+  display: block; float: none; width: 155px
+}
+.rankSB-cate .expA .dlA-hide DD {
+  display: none
+}
+.rankSB-cate .dlA .btn {
+  background: url(../images/rank.png) no-repeat;
+  height:50px;width:190px;line-height:50px;
+}
+.rankSB-cate .dlA .btn {
+  background-position: -253px -50px;
+  display: inline-block;
+  padding-left: 0px;
+  font-weight: normal;
+  float: left;
+  margin-left:20px
+}
+.rankSB-cate .dlA .btn-hide {
+  background-position: -253px -65px
+}
+.prleft{background:url(../images/phone.png) no-repeat;width:95px;height:95px;float:left}
+.prleft1{background:url(../images/email.png) no-repeat;width:95px;height:95px;float:left}
+.prright{float:left;margin-top:10px;border:1px sosolid #000;width:450px;height:90px;margin-left:20px;}
+.ulList{width:420px;height:25px;line-height:25px;float:left;}
+.pwbtn{width:100px;height:35px;line-height:35px;background:#F90;color:#fff;border-radius:3px;float:right;margin-top:25px;text-align:center;cursor:pointer;margin-right:25px}
+.uprleft{width:380px;heght:60px;float:left;border:1px solid #F63;background:#F93;border-radius:3px;}
+.weight{float:left;width:25px;height:35px;background:#F60;margin-left:10px;line-height:35px;text-align:center;margin-top:3px;color:#fff}
+.weight1{float:left;width:25px;height:35px;background:#F60;margin-left:10px;line-height:35px;text-align:center;margin-top:3px;color:#fff}
+.commite_btn{width:150px;height:35px;line-height:35px;color:#FFF;background:#FF9C00;text-align:center;cursor:pointer;margin-bottom:20px;margin-left:100px;border-radius:3px;font-size:16px;border:1px solid #FF9C00}
+.jfrleft{float:left;margin-left:-5px}
+.e{width: 700px;border-top: solid #DADADA 1px;border-left: 1px solid #DADADA;display: table;margin-top: 0px;}
+.e ul li{float: left;}
+.titname,.titz,.titd,.titx{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;background:#F5F5F5;font-weight:bold}
+.name,.z,.d{color: #999;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;}
+.x{color:#E30000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;}
+.name,.titname{width:210px;}
+.x,.titx{width: 90px;}
+.z,.titz{width: 90px;}
+.d,.titd{width: 305px;}
+.mxrleft{height:40px;line-height:40px;margin-left:15px;float:left;font-size:15px;margin-top:-15px}
+.xuxian{BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px;width:700px;margin-left:-5px}
+.shijian,.syjf,.jfmx{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;}
+.fz{color:#E30000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;}
+.titshijian,.titsyjf,.titfz,.titjfmx{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;font-weight:bold}
+.shijian,.titshijian{width:210px;}
+.syjf,.titsyjf{width: 90px;}
+.fz,.titfz{width: 90px;}
+.jfmx,.titjfmx{width: 305px;}
+.bhrleft{width:510px;heght:50px;line-height:50px;float:left;border:1px solid #FFD7A1;background:#FFF0D5;border-radius:3px;}
+.bhrleft p{width:470px;heght:50px;line-height:50px;float:left;margin-left:5px}
+.yz{margin-left:15px;width:135px;height:45px;background:url(../images/yz.gif);margin-top:-2px;cursor:pointer}
+.quxiao_btn{width:150px;height:35px;line-height:35px;color:#000;background:#F5F5F5;text-align:center;cursor:pointer;margin-bottom:20px;margin-left:10px;border-radius:3px;font-size:16px;border:1px solid #C8C8C8;}
+.pho{background:url(../images/pho.gif) no-repeat center;width:25px;height:52px;float:left;margin-left:10px}
+.youxiang{background:url(../images/youxiang.gif) no-repeat center;width:30px;height:52px;float:left;margin-left:5px}
+.titriqi,.titlsh,.titje,.titzffs,.titzt{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;font-weight:bold;background:#F5F5F5}
+.riqi,.lsh,.je,.zffs,.zt{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;}
+.riqi,.titriqi{width:180px;}
+.lsh,.titlsh{width: 200px;}
+.je,.titje{width: 70px;}
+.zffs,.titzffs{width: 100px;}
+.zt,.titzt{width: 145px;}
+
+.titid,.titspmc,.titje,.titxdsj,.titcz{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;font-weight:bold;background:#F5F5F5}
+.tid,.spmc,.je,.xdsj,.cz{color: #000;font-size: 13px;text-align: center;border-right: 1px solid #DADADA;border-bottom: 1px solid #DADADA;height: 40px;line-height: 40px;}
+.tid,.titid{width:175px;}
+.spmc,.titspmc{width: 210px;}
+.je,.titje{width: 70px;}
+.xdsj,.titxdsj{width: 150px;}
+.cz,.titcz{width: 90px;}
+.allbtn{width:70px;height:30px;line-height:30px;color:#FFF;background:#FF9118;float:left;text-align:center;cursor:pointer}
+.zfbtn{display:inherit;margin-left:10px;width:70px;height:30px;line-height:30px;color:#000;background:#F5F5F5;float:left;text-align:center;cursor:pointer}
+.zfbtn:hover{color:#FFF;background:#FF9118;}
+.ddrleft{height:40px;line-height:40px;margin-left:-5px;float:left;font-size:12px;}
+
+.zyrleft{width:700px;height:40px;line-height:40px;margin-left:-5px;float:left;font-size:15px;}
+.update{display:inherit;float:right;width:120px;height:30px;line-height:30px;border:1px solid #C7C7C7;background:#F5F5F5;border-radius:3px;text-align:center;cursor:pointer}
+.shang{width:700px;height:40px;background:#FFF}
+.xia{width:700px;height:40px;background:#F5F5F5}
+.biaoqian,.shuju{font-size: 12px;height: 40px;line-height: 40px;}
+.biaoqian span{margin-left:15px}
+.biaoqian{width:100px;}
+.shuju{width:598px}
+.zhuyee{width: 700px;border: 1px solid #DADADA;display: table;margin-top:-10px;}
+.zhuyee ul li{float: left;}
+.youcz{display:inherit;float:right;margin-right:20px;}
+.zytrleft{width:700px;height:160px;line-height:160px;margin-left:-5px;float:left;font-size:15px;margin-top:-15px;margin-bottom:15px}
+
+ 
