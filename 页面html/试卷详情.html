@@ -661,9 +661,10 @@ function cleardata(){
      scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
 	 var s = document.body.scrollTop || document.documentElement.scrollTop
 			if(s>H-120) {
-				oDiv.style = "position:fixed;top:120px;margin-left:13px"
+				oDiv.style.cssText= "position:fixed;top:120px;margin-left:13px"
 			} else {
-				oDiv.style = ""
+				oDiv.style.cssText = ""
+				
 			}
      if(scrollTop>432){
       headerWrap.className='fixed';
@@ -741,23 +742,12 @@ function upMove(obj){
     $(obj).next().find("ul").width($(obj).next().find("ul li").size()*176);
 	var dom = $(obj).next();
 	dom.animate({scrollLeft:176+dom.scrollLeft()},500) ;
-	if(dom.scrollLeft()>0){
-	 dom.next().find("part_back1")
-  }
-  if(dom.scrollLeft()<352){
-	 dom.prev().find("part_back")
-  }	
+	
 }
 function downMove(obj){
 	$(obj).prev().find("ul").width($(obj).prev().find("ul li").size()*176);
 	var dom = $(obj).prev();	
-	dom.animate({scrollLeft:-176+dom.scrollLeft()},500) ; 
-	  if(dom.scrollLeft()>-176){
-	  dom.prev().find('part_back')
-	}
-  if(dom.scrollLeft()>=(dom.find("li").size()*176)-704){
-	  dom.next().find("part_back1")
-	}
+	dom.animate({scrollLeft:-176+dom.scrollLeft()},500) ;
 }
 //判断是否需要滚动
 $(function(){
