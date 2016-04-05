@@ -4,12 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>组卷（教材选题）</title>
 	<link href="css/public.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
-	<script src="js/menu.js" type="text/javascript"></script>
+	<link href="css/xf.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/xf.js"></script>
 </head>
-<body>
+<body style="background:#efefef">
 	<!--header-->
-	<div id="header"style="box-shadow:0px 1px 6px #555;">
+	<div id="header">
 		<div id="top">
 			<div style="width:1000px;height:40px;">
 				<div class="fl"><a href="" class="c_blue">valiant</a> 欢迎回来哦!</div>
@@ -26,7 +27,13 @@
 			<div class="fl top_line" style="margin-left:100px;">
 				<div class="search">
 					<div class="fl sea_left cp">
-						题库
+						<em><a href="#">题库</a></em>
+						<ul>
+							<li><a href="#">题库2</a></li>
+							<li><a href="#">题库2</a></li>
+							<li><a href="#">题库2</a></li>
+							<li><a href="#">题库2</a></li>
+						</ul>
 					</div>
 					<div class="fl"> 
 						<input type="text">	
@@ -37,28 +44,282 @@
 				</div>
 			</div>
 		</div>
-		<div style="background:#26A7FF;width:100%;height:48px;">
-			<div style="width:1000px;">
-				<div class="nav_l">首页</div>
-				<div class="nav_l">题库</div>
-				<div class="nav_check">组卷</div>
-				<div class="nav_l">试卷</div>
-				<div class="nav_l">测评</div>
-				<div class="nav_l">咨询</div>
+		<div class="xf_topnavbox">
+			<div class='xf_topnavinner'>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li class='xf_topnavtk'>
+						<a href="#">题库</a>
+						<div class="xf_tikml">
+							<dl>
+								<dt><高中></dt>
+								<dd><a href="#">语文</a></dd>
+								<dd><a href="#">数学</a></dd>
+								<dd><a href="#">英语</a></dd>
+								<dd><a href="#">化学</a></dd>
+								<dd><a href="#">物理</a></dd>
+								<dd><a href="#">生物</a></dd>
+								<dd><a href="#">历史</a></dd>
+								<dd><a href="#">政治</a></dd>
+								<dd><a href="#">地理</a></dd>
+							</dl>
+							<dl>
+								<dt><初中></dt>
+								<dd><a href="#">语文</a></dd>
+								<dd><a href="#">数学</a></dd>
+								<dd><a href="#">英语</a></dd>
+								<dd><a href="#">化学</a></dd>
+								<dd><a href="#">物理</a></dd>
+								<dd><a href="#">生物</a></dd>
+								<dd><a href="#">历史</a></dd>
+								<dd><a href="#">政治</a></dd>
+								<dd><a href="#">地理</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><a href="#">组卷</a></li>
+					<li><a href="#">试卷</a></li>
+					<li class='cur'><a href="#">测评</a></li>
+					<li><a href="#">咨询</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	<!--main-->
-	<div id="main"style="margin-top:2px;min-height:500px;">
-		<div style="background:#DBF0FF;border-bottom:4px solid #0190F2;">
-			<div style="width:1000px;height:68px;">
-				<div style="float:left;line-height:68px;color:#4c4c4c;font-size:24px;">高中<span class="c_blue">语文</span> <span style="color:#666666;font-size:18px;"> [切换科目]</span></div>
-				<div style="float:right;color:#fff;font-size:20px;background:#0190F2;padding:10px 20px;margin-top:22px;border-top-left-radius:5px;border-top-right-radius:5px;">在线组卷</div>
+
+		<div class="xf_qiehuankmbox">
+			<div class="xf_qiehuankminner">
+				<div class="xf_dqkm">高中
+					<span class="c_blue xf_dqkmlx">语文</span> 
+					<a href="JavaScript:;"> [切换科目]</a>
+				</div>
+				<!-- 选择科目 -->
+				<div class="xf_xuanzekmbox">
+					<div>
+						<em>&lt;高中&gt;</em>
+						<a href="#">语文</a>
+						<a href="#" class="cur">数学</a>
+						<a href="#">英语</a>
+						<a href="#">化学</a>
+						<a href="#">生物</a>
+						<a href="#">历史</a>
+						<a href="#">政治</a>
+						<a href="#">地理</a>
+					</div>
+					<div>
+						<em>&lt;高中&gt;</em>
+						<a href="#">语文</a>
+						<a href="#">数学</a>
+						<a href="#">英语</a>
+						<a href="#">化学</a>
+						<a href="#">生物</a>
+						<a href="#">历史</a>
+						<a href="#">政治</a>
+						<a href="#">地理</a>
+					</div>
+				</div>
+				<!-- 选择科目end -->
+				<div class='xf_zaixuanzj'>在线组卷</div>
+				
 			</div>
 		</div>
-		<div style="border:1px solid #D9D9D9;width:1000px;border-radius:5px;">
+
 			
+		<!-- 真题训练 -->
+		<div class="xf_zhentixlbox">
+			<div class="xf_zhentxlbt">
+				<h3>2015年高考全国新课标卷Ⅰ  语文真题</h3>
+				<p>年份：2015   类型：高考真题    年级：高三时间：150分钟   总分：150分</p>
+			</div>
+			<div class="xf_datibox">
+				<div class="xf_datiinner xf_topxuanfu">
+					<div class="xf_zhuyisx">注意事项：· 本卷共有 7大题 10小题    · 答题时间为 150分钟    · 总分 150 分，90 分及格    · 本卷含有非选择题，非选择题· 请参考答案及解析自行评分 </div>
+					<div class="xf_dajuanlx">
+						<i class='xf_kszjt'><</i>
+						<ul>
+							<li><a href="#">现代文阅读</a></li>
+							<li><a href="#">文言文阅读</a></li>
+							<li><a href="#">诗歌鉴赏</a></li>
+							<li><a href="#">默写</a></li>
+							<li><a href="#">选择题</a></li>
+							<li><a href="#">语言表达</a></li>
+							<li><a href="#">作文</a></li>
+							<li><a href="#">古诗默写</a></li>
+							<li><a href="#">语言表达</a></li>
+							<li><a href="#">古诗默</a></li>
+						</ul>
+						<i class='xf_ksrjt'>></i>
+					</div>
+				</div>
+				<div class="xf_datilx">
+					<em>一、现代文阅读(每小题3分，共9分）</em>
+					<div>
+						<h3>阅读下面的文字，完成8—9题</h3>
+						<p>宋代的农业、手工业，商业在唐代的基础上又有了新的发展，特别是商品经济出现了空前的繁荣。在此情景下，宋代的货币流通和信用进入迅速发展时期，开创了古代金融的新篇章。宋代在信用形式和信用工具方面都呈现出新的特点。信用形式有借贷、质、押、典、赊买赊卖等多种形式，借贷分为政府借贷和私人借贷。政府借贷主要表现为赈贷的形式，在紧急情况下通过贷给百姓粮食或种子的方式，帮助他们度过困境。私人借贷多为高利贷，它可以解决社会分化和“钱荒”带来的平民百姓资金严重不足的问题，满足特殊支付和燃眉之急的需要，质、押是借贷担保的形式,由质库、解库、普惠库、长生库等机构经营。质属于动产担保，它必须转移动产的有，抵押物，不动产担保，通常将抵押物的契约交付债权人即可。债务人违约时，债权人可用变卖价款优先受偿。典作为不动产转移的一种形式是在宋代形成和发展起来的。其特点是典权人支付典价后，在典期内就占有了出典人典产的使用权和收益支配权，出典人也不必向典权人支付利息。宋代的商业贸易非常发达，但存在着通货紧缩现象，故赊买赊卖行为也很普遍，几乎生产、流通、消费领域的所有物品都能进行赊买赊卖。从实际效果看，它解决了军需、加强了流通，更重要的一点，它对束缚生产流通扩大和发展的高利贷构成了冲击。</p>
+						<p>随着社会经济的发展，宋代商业贸易的发展对货币发展的要求越来越高，但是社会中货币供给和流通状况不尽理想，表现为货币流通区域的割据性、货币供给数量的有限性、货币币材的复杂性以及大量流通的铜铁钱细碎和不便携带的特性，其结果是抑制了经济发展。为了解决这类问题，在高度发达的造纸和印刷技术保障下，通过民间自发力量的作用或官府的强制推行，宋代社会陆续涌现出诸如茶引、盐引、香药引、矾引、便钱、交子、钱引、见钱公据、关子和会子等大量新型纸质信用工具。茶引、盐引、矾引、香药引等信用工具</p>
+						<p>榷专卖品领域能够共利发展，既有利于商人从政府专营的禁榷物品中分得一份利益，又有利于政府实现补给军需、增加收入的目标。便钱、见钱公据和早期的交子、关子、会子等信用工具要求相关人员先交纳现钱作为取得的条件，然后再根据需要持这些代表入纳现钱价值的信用票据到指定的地区和入纳地兑取现钱。这类信用工具携带方便且具有汇票性质，可以保障大宗交易、跨地区交易货款的顺利清结。早期的交子、关子、会子后来在信用票据基础上逐步发展为纸币，它们的行用，弥补了货币不足，节省了货币流通需求量，使商品经济得到了扩张。可见，宋代新型信用工具的大量行用，是社会经济发展史中最具标志性意义的新生事物，它缓解或解决了交换过程中的诸多不便与矛盾，从而在很大程度上促进了经济发展。</p>
+						<p>（摘编自王芳《宋代信用的特点与影响》）</p>
+					</div>
+				</div>
+			</div>
+			<div class="xf_xuanzetibox">
+				<ul>
+					<li>
+						<em><i>8.</i>下列关于原文内容的表述，不正确的一项是（ <span>A</span> )</em>
+						<p class='active'><span>A</span>．宋代的信用进入迅速发展时期，借贷、质、押、典、赊买赊卖等信用形式的产生是宋代金融的一个新特点。</p>
+						<p><span>B</span>．宋代的政府借贷基本上是赈济性借贷，主要目的是帮助百姓度过困境，因此与私人借贷相比，政府借贷的利率要低得多。</p>
+						<p><span>C</span>．在宋代，债务人可以用不动产的契约或动产作为担保，向债权人借贷。在债务人不偿还债务时，债权人可用变卖价款优先受偿。</p>
+						<p><span>D</span>．赊买赊卖的信用形式在一定程度上解决了宋代通货紧缩带来的资金不足的问题，缓解了生产、流通、消费领域中的诸多矛盾。</p>
+					</li>
+					<li class='xf_morex'>
+						<em><i>9.</i>下列关于原文内容的表述，不正确的一项是（ <span></span> )</em>
+						<p><span>A</span>．宋代的信用进入迅速发展时期，借贷、质、押、典、赊买赊卖等信用形式的产生是宋代金融的一个新特点。</p>
+						<p><span>B</span>．宋代的政府借贷基本上是赈济性借贷，主要目的是帮助百姓度过困境，因此与私人借贷相比，政府借贷的利率要低得多。</p>
+						<p><span>C</span>．在宋代，债务人可以用不动产的契约或动产作为担保，向债权人借贷。在债务人不偿还债务时，债权人可用变卖价款优先受偿。</p>
+						<p><span>D</span>．赊买赊卖的信用形式在一定程度上解决了宋代通货紧缩带来的资金不足的问题，缓解了生产、流通、消费领域中的诸多矛盾。</p>
+					</li>
+					<li>
+						<em><i>10.</i>下列关于原文内容的表述，不正确的一项是（ <span></span> )</em>
+						<p><span>A</span>．宋代的信用进入迅速发展时期，借贷、质、押、典、赊买赊卖等信用形式的产生是宋代金融的一个新特点。</p>
+						<p><span>B</span>．宋代的政府借贷基本上是赈济性借贷，主要目的是帮助百姓度过困境，因此与私人借贷相比，政府借贷的利率要低得多。</p>
+						<p><span>C</span>．在宋代，债务人可以用不动产的契约或动产作为担保，向债权人借贷。在债务人不偿还债务时，债权人可用变卖价款优先受偿。</p>
+						<p><span>D</span>．赊买赊卖的信用形式在一定程度上解决了宋代通货紧缩带来的资金不足的问题，缓解了生产、流通、消费领域中的诸多矛盾。</p>
+					</li>
+				</ul>
+			</div>
+			<div class="xf_datibox">
+				<div class="xf_datiinner xf_teshudtinner">
+					<div class="xf_datilx">
+						<em>二、文言文阅读(每小题3分，共12分）</em>
+						<div>
+							<h3>阅读下面的文言文，完成4～7题</h3>
+							<p>孙傅，字伯野，海州人。<u>登进士第</u>，为礼部员外郎。时蔡俻为尚书，傅为言天下事，劝其亟有所更，不然必败。俻不能用。迁至中书舍人。<i>4</i><span>宣和末高丽入贡使者所过调夫治舟骚然烦费傅言索民力以妨农功而于中国无丝毫之益宰相谓其所论同苏轼奏贬蕲州安置给事中许翰以为傅论议虽偶与轼合，</span>意亦亡他，以职论事而责之过矣，翰亦罢去。靖康元年，召为给事中，进兵部尚书，上章乞复祖宗法度，钦宗问之，傅曰：“祖宗法惠民，熙，丰法惠国，崇、观法惠奸。”时谓名言。</p>
+							<p>十一月，拜尚书右丞，俄改同枢密院，金人围都城，傅日夜亲当矢石。金兵分四翼噪而前，兵败退，堕于护龙河，填尸皆满，城门紧闭。是日，金人遂登城。二年正月，钦宗诣金帅营，以傅辅太子留守，仍兼少傅。帝兼旬不返，傅屡贻书请之。及废立檄至，傅大恸曰：<i>7</i><span>“吾唯知吾君可帝中国尔，苟立异姓，吾当死之。</span>”金人来索太上、帝后、诸王、妃主，傅留太子不遣。密谋匿之民间，别求状类宦者二人杀之，并斩十数死囚，持首送之，给金人曰：“宦者欲窃太子出，都人争斗杀之，误伤太子。因帅兵讨定，斩其为乱者以献。苟不已，则以死继之。”越五日，无肯承其事者。傅曰：“吾为太子傅，当同生死。<i>7</i><span>金人虽不吾索，吾当与之俱行，求见二酋面责之，庶或万一可济。”</span>遂从太子出。金守门者曰：“所欲得太子，留守何预？”傅曰：“我宋之大臣，且太子傅也，当死从。”是夕，宿门下；明日，金人召之去。明年二月，死于朝廷。绍兴中，赠开府仪同三司，谥曰忠定。</p>
+							<p>（节选自《宋史•孙傅传》）</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="xf_xuanzetibox">
+				<ul>
+					<li>
+						<em><i>11.</i>下列对文中画线部分的断句，正确的一项是 ( <span></span> )</em>
+						<p><span>A</span>．宣和末 / 高丽入贡 / 使者所过 / 调夫治舟 / 骚然烦费 / 傅言 / 索民力以妨农功 / 而于中国无丝毫之益 / 宰相谓其所论同苏轼 / 奏贬蕲州安置 /</p>
+						<p><span>B</span>．宣和末 / 高丽入贡 / 使者所过 / 调夫治舟 / 骚然烦费 / 傅言 / 索民力以妨农功 / 而于中国无丝毫之益 / 宰相谓其所论 / 同苏轼奏 / 贬蕲州安置 /</p>
+						<p><span>C</span>．宣和末 / 高丽入贡使者 / 所过调夫治舟 / 骚然烦费 / 傅言 / 索民力以妨农功 / 而于中国无丝毫之益 / 宰相谓其所论 / 同苏轼奏 / 贬蕲州安置 /</p>
+						<p><span>D</span>．宣和末 / 高丽入贡使者 / 所过调夫治舟 / 骚然烦费 / 傅言 / 索民力以妨农功 / 而于中国无丝毫之益 / 宰相谓其所论同苏轼 / 奏贬蕲州安置 /</p>
+					</li>
+					<li>
+						<em><i>12.</i>下列对文中框选词语的相关内容的解说，不正确的一项是 ( <span>D</span> )</em>
+						<p><span>A</span>．登进士第，又可称为进士及第，指科举时代经考试合格后录取成为进士。</p>
+						<p><span>B</span>．兵部是古代“六部”之一，掌管全国武官选用和兵籍、军械、军令等事宜。</p>
+						<p><span>C</span>．庙号是皇帝死后，在太庙立室奉祀时特起的名号，如高祖、太宗、钦宗。</p>
+						<p><span>D</span>．太子指封建时代君主儿子中被确定继承君位的人，有时也可指其他儿子。</p>
+					</li>
+					<li>
+						<em><i>13.</i>下列对原文有关内容的概括和分析，不正确的一项是 ( <span></span> )</em>
+						<p><span>A</span>．孙傅入仕以后，积极向上建言。他担任礼部员外郎，对尚书蔡俻纵论天下大事，劝戒蔡迅速有所变更，否则必将失败，可惜他的建议没有被采纳。</p>
+						<p><span>B</span>．孙傅上奏，请求恢复祖宗法度。他任兵部尚书后，从效用角度高度评价祖宗法度和熙、丰年间的法度，批评崇观年间的法度，受到时人赞许。</p>
+						<p><span>C</span>．孙傅不畏金人，努力保全太子。金人掳走钦宗后又索求太子，他密谋藏匿太子，杀二宦者将首级送至金营，欺骗金儿说，这就是误伤太子之人。</p>
+						<p><span>D</span>．孙傅舍生取义，死后谥为忠定。太子被迫至金营，你得前往，却受到守门者劝阻，他表示携为太子傅，应誓死跟从太子；后被金人召去，死于北延。</p>
+					</li>
+					<li>
+						<em><i>14.</i>把文中画横线的句子翻译成现代汉语。</em>
+						<div>
+							<p>（1）吾唯知吾君可帝中国尔，苟立异姓，吾当死之。</p>
+							<p><input type="text" placeholder="点击输入" /><a href="#">+上传图片</a></p>
+							<p>（1）吾唯知吾君可帝中国尔，苟立异姓，吾当死之。</p>
+							<p><input type="text" value="此题为已经上传图片之后的样式" /><a href="#" class='xf_ylimg'>+预览图片</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 真题训练end -->
+	<div class="xf_fanhuidb"><a href="#"></a></div>
+	<!-- 提交试卷浮窗 -->
+	<div class="xf_shijuanfuc">
+		<div class="xf_shengyutime">
+			<p><i></i><u></u></p>
+			<em>02:00:00</em>
+		</div>
+		<div class="xf_datika">
+			<em>答题卡 <span><i>5</i>/24</span><u></u></em>
+			<ul>
+				<li>
+					<p><i>·</i>现代文阅读 <span>每题5分 共6题</span></p>
+					<div><i class='cur'>1</i><i class='cur'>2</i><i class='cur'>3</i><i class='cur'>4</i><i>5</i></div>
+				</li>
+				<li>
+					<p><i>·</i>现代文阅读 <span>每题5分 共6题</span></p>
+					<div><i class='cur'>1</i><i class='cur'>2</i><i class='cur'>3</i><i>4</i><i>5</i></div>
+				</li>
+				<li>
+					<p><i>·</i>现代文阅读 <span>每题5分 共6题</span></p>
+					<div><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div>
+				</li>
+			</ul>
+			<div class="xf_jiaojuana"><a href="JavaScript:;">我做完了，交卷</a></div>
 		</div>
 	</div>
+	<!-- 提交试卷浮窗end -->
+	<!-- 提示弹窗 -->
+	<div class="xf_tishijjpop xf_jiaojuanpop">
+		<p>
+			<img src="images/ico_tsjj.png" alt="" />
+			<span>您还有题目没有完成，确定要现在交卷吗？</span>
+		</p>
+		<div><a href="JavaScript:;">确认交卷</a><a href="JavaScript:;">检查一下</a></div>
+	</div>
+	<!-- 提示弹窗end -->
+	<!-- 全部完成提示弹窗 -->
+	<div class="xf_tishijjpop xf_wancjjpop">
+		<p>
+			<img src="images/ico_wcjj.png" alt="" />
+			<span>太棒了，题目全部都做完了哦，要不要再检查一下呢？</span>
+		</p>
+		<div><a href="JavaScript:;">检查一下</a><a href="JavaScript:;">确认交卷</a></div>
+	</div>
+	<!-- 全部完成提示弹窗end -->
+	<!-- 时间到提示 -->
+	<div class="xf_tishijjpop xf_timenonepop">
+		<p>
+			<img src="images/ico_timenone.png" alt="" />
+			<span>考试时间已经到了哦，下次要继续加油哈！</span>
+		</p>
+		<div><a href="JavaScript:;">我的主页</a><a href="JavaScript:;">重新做题</a></div>
+	</div>
+	<!-- 时间到提示end -->
+	<!-- footer -->
+	<div id="footer">
+		<div class="footer">
+			<div><a href="">关于我们</a> 丨 <a href="">隐私保护政策</a>  丨  <a href="">服务条款</a> 丨 <a href="">联系我们</a> </div>  
+			<div><span style="font-size:12px;">COPYRIGHT 2015  哈学库  版权所有   www.haxueku.com</span></div>
+		</div>
+	</div>
+	<!-- footer end -->
+
+	<script>
+		$(window).scroll(function() {
+			var xf_scroll = $(window).scrollTop();
+			if(xf_scroll>420){
+				$(".xf_topxuanfu").addClass('cur');
+			}else{
+				$(".xf_topxuanfu").removeClass('cur');
+			}
+		});
+		var time = 10; //设置倒计时
+		var i =0;
+		the_timeout = setInterval(function(){
+			i++;
+			if(i<time||i==time){
+				$(".xf_shengyutime p i").css("left",(time+i)/time*100-100+"%")
+				$(".xf_shengyutime p u").css("width",(time-i)/time*100+"%")
+			}else{
+				$(".xf_timenonepop").show();
+				clearTimeout(the_timeout);
+			}
+		},1000)
+	</script>
 </body>
 </html>

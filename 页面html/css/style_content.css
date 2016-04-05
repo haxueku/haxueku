@@ -988,7 +988,6 @@
 
 
 #pui_body div.questypemenu{
-	display:none;
 	cursor:pointer;
 	position:absolute;
 	right:0;
@@ -1015,6 +1014,10 @@
 	margin-right:300px;                                                                                                                     
 	padding-left:20px;
 }
+#pui_body div.questypemenu .check_class:hover{
+	color:#018dec;
+	text-decoration: underline;
+}
 #pui_body div.questypemenu a
 {
 	display:inline-block;
@@ -1036,7 +1039,7 @@ div.quesbox{
 	position:relative;
 }
 div.quesbox:hover{
-	border:1px solid #069;
+	border:1px solid #1194f3;
 }
 div.quesbox:hover div.quesopmenu{
 	display:block;
@@ -1048,26 +1051,24 @@ div.quesopmenu{
 	display:none;
 	cursor:pointer;
 	position:absolute;
-	z-index:999;
+	z-index:91;
 	top:0;
 	right:0;
 	color:#fff;
-	padding:3px 2px 4px 2px;
 	background:#1887E3;
-	border-left:1px solid #069;
-	border-bottom:1px solid #069;
+	border-left:1px solid #1194f3;
+	border-bottom:1px solid #1194f3;
 }
 
 div.quesopmenu a
 {
 	display:inline-block;
-	height:22px;
-	line-height:22px;
-	font-size:16px;
+	padding: 0 10px 0 22px;
+	line-height: 32px;
+	text-align: center;
+	font-size:12px;
 	color: #fff; 
 	text-decoration:none;
-	margin-left: 2px;
-	padding: 0px 10px 0px 24px;
 	font-family: "Microsoft YaHei";
 	background-color: #1887e3;
 
@@ -1110,8 +1111,31 @@ div.quesopmenu a.movetp
 {
 	background:url(../images/icon-rem.png)  no-repeat;
 }
+.quesopmenu a.ico_zjgn1{
+	background: url(../images/ico_zjtb2.png) no-repeat 5% center;
+}
+.quesopmenu a.ico_zjgn2{
+	background: url(../images/ico_zjtb1.png) no-repeat 5% center;
+}
+.quesopmenu a.ico_zjgn3{
+	background: url(../images/ico_zjtb3.png) no-repeat 5% center;
+}
+.quesopmenu a.ico_zjgn4{
+	background: url(../images/ico_zjtb4.png) no-repeat 5% center;
+}
+.quesopmenu a.ico_zjgn5{
+	background: url(../images/ico_zjtb5.png) no-repeat 5% center;
+}
+.quesopmenu a.ico_zjgn6{
+	background: url(../images/ico_zjtb6.png) no-repeat 5% center;
+}
+.quesopmenu a.ico_zjgn7{
+	background: url(../images/ico_zjtb7.png) no-repeat 5% center;
+}
 
-
+.quesopmenu a:hover{
+	background-color: #0266af;
+}
 /*paperlist.aspx��ʽ*/
 
 div#papernav
