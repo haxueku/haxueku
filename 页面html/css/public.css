@@ -42,6 +42,51 @@ table {
 	height:40px;
 	line-height:40px;
 }
+.top_b{
+	background:url(../images/ico_xjt.png) no-repeat;
+	background-position: 0 center;
+	width:90px;
+	height:40px;
+	padding-left:15px;
+}
+.top_c{
+	background:url(../images/top_b.png) no-repeat;
+	background-position: center center;
+	height:7px;
+	width:104px;
+	margin-top:3px;
+}
+
+.r_bg{
+	background:url(../images/r_bg.png) no-repeat;
+	background-position:center center;
+	width:16px;
+	height:35px;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+}
+.top_a:hover .top_gr{
+	display:block;
+}
+.top_gr{
+	position: absolute;
+	width:104px;
+	display:none;
+}
+.top_nav{
+	border:1px solid #D9D9D9;
+	border-top:2px solid #0190F2;
+	background:#fff;
+}
+.top_user_li{
+	padding:0px 5px;
+	border-bottom:1px dashed #D9D9D9;
+	margin-bottom:-1px;
+	cursor: pointer;
+	height:35px;
+	line-height:35px;
+}
 .logo{width:256px;height:90px;background:url(../images/logo.png) no-repeat;background-size:90% 90%;margin-top:20px;}
 .site_home{
 	border-right:1px solid #CCC;

@@ -280,3 +280,25 @@
 .yuanjian:hover{
 	background:url(../images/yuanjuan2.png) 0px center no-repeat;
 }
+.style_ty{
+	width:105px;
+	height:38px;
+	border:1px solid #0190F2;
+	background:#fff;
+	line-height:38px;
+	text-align:center;
+	cursor: pointer;
+	color:#0190F2;
+}
+.style_ty:hover{
+	background:#0190F2;
+	color:#fff;
+}
+.style_ty_check{
+	width:107px;
+	height:40px;
+	background:#0190F2;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+}
