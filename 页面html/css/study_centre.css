@@ -157,6 +157,12 @@
 	width:800px;
 	border:1px solid #E7E7E7;
 }
+.table_a a:hover{
+	color:#0190F2;
+	text-decoration:underline;
+}
+
+
 .table_bg{
 	background:#F5F5F5;
 }
@@ -193,6 +199,9 @@
 	border-top:1px solid #E7E7E7;
 	border-right:1px solid #E7E7E7;
 }
+.zsd a{
+	color:#0190F2;
+}
 .xh{
 	width:53px;
 	float:left;
@@ -200,6 +209,14 @@
 	border-right:1px solid #E7E7E7;
 }
 .xm{
+	width:175px;
+	float:left;
+	border-top:1px solid #E7E7E7;
+	border-right:1px solid #E7E7E7;
+}
+.xm_1{
+	height:80px;
+	line-height:80px;
 	width:175px;
 	float:left;
 	border-top:1px solid #E7E7E7;
@@ -227,6 +244,40 @@
 	width:139px;	
 	float:left;
 	border-top:1px solid #E7E7E7;
+	cursor: pointer;
+}
+.table_a .lan_bg{
+	height:25px;
+	width:75px;
+	line-height:25px;
+	margin-top:4px;
+	margin-right:5px;
+	color:#0190F2;
+	background:#DBF0FF;	
+	border:1px solid #BADCF4;
+}
+.table_a .log{
+	position: absolute;
+	margin-left:-170px;
+	margin-top:-140px;
+	display:none;
+}
+.xq_log{
+	background:#0190F2;
+	width:240px;
+	color:#fff;
+	padding:10px;
+	line-height:20px;
+	height:84px;
+}
+.lan_bg:hover .log{
+	display: block;
+}
+.table_a .log_down{
+	background:url('../images/ico_xjt.png') 200px no-repeat;	
+	width:260px;
+	height:13px;
+	margin-top:-4px;
 }
 .round1{
 	background:url(../images/round1.png) no-repeat;
@@ -279,4 +330,26 @@
 }
 .yuanjian:hover{
 	background:url(../images/yuanjuan2.png) 0px center no-repeat;
+}
+.style_ty{
+	width:105px;
+	height:38px;
+	border:1px solid #0190F2;
+	background:#fff;
+	line-height:38px;
+	text-align:center;
+	cursor: pointer;
+	color:#0190F2;
+}
+.style_ty:hover{
+	background:#0190F2;
+	color:#fff;
+}
+.style_ty_check{
+	width:107px;
+	height:40px;
+	background:#0190F2;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
 }

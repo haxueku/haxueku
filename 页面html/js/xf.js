@@ -137,7 +137,7 @@ $(function(){
 	$(".xf_tishijjpop div a").click(function(){
 		$(".xf_tishijjpop").hide();
 	});
-	$(".xf_jiucuo,.ico_zjgn7").click(function(){
+	$(".xf_jiucuo,.ico_zjgn7,.error_check").click(function(){
 		$(".xf_jiecuobox").show();
 	});
 	$(".xf_jiecuobox div a").click(function(){
