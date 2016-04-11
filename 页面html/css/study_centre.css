@@ -353,3 +353,13 @@
 	text-align:center;
 	color:#fff;
 }
+.dian_red{
+	background:url(../images/r_bg.png) no-repeat;
+	position: absolute;
+	margin-top:-45px;
+	margin-left:95px;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	color:#fff;
+}
