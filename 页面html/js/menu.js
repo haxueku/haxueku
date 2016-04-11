@@ -30,19 +30,27 @@ $(function(){
 		$('.zsd').addClass("na_n").removeClass("na_n_check");
 		$('.j_c_list').show();
 		$('.zsd_list').hide();
-  });
-  $(".zsd").click(function(){
+    });
+    $(".zsd").click(function(){
 		$('.zsd').addClass("na_n_check").removeClass("na_n");
 		$('.j_c').addClass("na_n").removeClass("na_n_check");
 		$('.j_c_list').hide();
 		$('.zsd_list').show();
-  });
+    });
     $("div[id^='kd_']").click(function(){
 		var id = (this.id.toString().match(/\d+/ig)||[])[0];
 		$("#kd").val(id);
 		$(".kedu_"+id).show().parents().siblings("div[id^='kd_']").children().hide();
 		
 	});	
+	//下拉菜单
+	$(".sel_down").click(function(){
+		$(this).siblings(".sel_list").show();
+	});
+	$(".sel_list > div").click(function(){
+		$(this).parent().hide().siblings(".sel_list").removeClass('chc');
+		$(".select_div").html($(this).html());
+	});
 });
 
   

@@ -42,6 +42,55 @@ table {
 	height:40px;
 	line-height:40px;
 }
+.top_b{
+	background:url(../images/ico_xjt.png) no-repeat;
+	background-position: 0 center;
+	width:90px;
+	height:40px;
+	padding-left:15px;
+}
+.top_c{
+	background:url(../images/top_b.png) no-repeat;
+	background-position: center center;
+	height:7px;
+	width:104px;
+	margin-top:3px;
+}
+
+.r_bg{
+	background:url(../images/r_bg.png) no-repeat;
+	background-position:center center;
+	width:16px;
+	height:35px;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+}
+
+.top_a{
+	cursor: pointer;
+}
+.top_a:hover .top_gr{
+	display: block;
+}
+.top_gr{
+	position: absolute;
+	width:104px;
+	display:none;
+}
+.top_nav{
+	border:1px solid #D9D9D9;
+	border-top:2px solid #0190F2;
+	background:#fff;
+}
+.top_user_li{
+	padding:0px 5px;
+	border-bottom:1px dashed #D9D9D9;
+	margin-bottom:-1px;
+	cursor: pointer;
+	height:35px;
+	line-height:35px;
+}
 .logo{width:256px;height:90px;background:url(../images/logo.png) no-repeat;background-size:90% 90%;margin-top:20px;}
 .site_home{
 	border-right:1px solid #CCC;
@@ -100,13 +149,6 @@ table {
 }
 .sea_left{
 	position: relative;
-	line-height:48px;
-	width: 96px;
-	height: 48px;
-	background-color: #f4f4f4;
-	text-align: center;
-	font-size: 14px;
-	color: #666666;
 }
 .sea_left em a{
 	font-style: normal;
@@ -363,7 +405,12 @@ table {
 	height:33px;
     top: -12px;
     cursor: pointer;
+    border:0;
+    outline: 0;
     margin: 0;
+}
+.kedu span:hover,.kedu.hover span{
+	background:url(../images/keducur.png) no-repeat;
 }
 .kd_1{
 	margin-left:3px;
@@ -451,10 +498,11 @@ table {
 	background: url(../images/ico_xjtcur.png) no-repeat right center;
 }
 .tag2{
-	margin:8px 12px;
-	height:20px;
+	margin:7px 10px;
+	height:24px;
 	line-height:20px;
-	padding:2px 6px;
+	padding:0px 6px;
+	line-height: 24px;
 	cursor: pointer;
 	float:left;
 	font-size:14px;
@@ -599,7 +647,6 @@ table {
 }
 .xf_teshuli{
 	position: relative;
-	overflow: hidden;
 	margin:5px 10px;border:1px solid #D9D9D9;border-radius:3px;
 }
 .xf_dqxuanzet{
@@ -662,7 +709,7 @@ table {
 	float: left;
 	text-align: left;
 }
-.xf_showsj p i{
+.xf_showsj em i{
 	display: block;
 	cursor: pointer;
 	text-align: center;
@@ -681,7 +728,12 @@ table {
 .xf_showsj p span{
 	color:#ff6969;
 }
-.xf_showsj p a{
+.xf_scsjbutton{
+	position: absolute;
+    bottom: 29px;
+    right: 31px;
+}
+.xf_scsjbutton a{
 	display: block;
 	color:#fff;
 	width: 132px;
@@ -693,6 +745,10 @@ table {
 	margin: 5px auto 0;
 	border-radius: 3px;
 }
+.xf_scsjbutton a.noneac{
+	background: #ccc;
+	color:#e6e6e6;
+}
 .xf_showsj p a:hover{
 	opacity: 0.8;
 }
@@ -701,18 +757,18 @@ table {
 }
 .xf_jiucuo{
 	position: absolute;
-	right: -15px;
-	top: -15px;
-	display: none;
-	width: 44px;
-	height: 24px;
-	padding-top: 20px;
-	color:#fff;
-	background: #ff9118;
-	border-radius: 50%;
-	text-indent: 4px;
-	font-size: 12px;
-	position: absolute;
+    right: 0px;
+    top: 0px;
+    display: none;
+    width: 34px;
+    height: 27px;
+    padding-top: 7px;
+    color: #fff;
+    background: #ff9118;
+    border-radius: 0 0 0 50px;
+    text-indent: 7px;
+    font-size: 12px;
+    position: absolute;
 }
 .xf_teshuli.hover {
 	border:1px solid #ff9118;
@@ -751,11 +807,15 @@ table {
 	color:#fff;
 }
 .xf_centerbox{
-	overflow: hidden;
 }
 .xf_xuanzekm{
 	display: inline-block;
 	cursor: pointer;
+}
+
+
+.xf_duoququyu{
+	width: 680px;
 }
 /*分页*/
 .page{
@@ -801,3 +861,32 @@ table {
 	text-align:center;
 	float:left;
 	}
+.new_select{
+	width:138px;
+	position: relative;
+}	
+.select_div{
+	border:1px solid #E0E0E0;
+	height:15px;
+	line-height:15px;
+	width:80px;
+	padding:10px;
+}
+.sel_down{
+	background:url(../images/xx_down.png) no-repeat center center;
+	border:1px solid #E0E0E0;
+	width:35px;
+	height:35px;
+	margin-left:-1px;
+	cursor: pointer;
+}	
+.sel_list{
+	background: #fff none repeat scroll 0 0;
+    border:1px solid #ccc;
+    display:none;
+    position: absolute;
+	margin-top:35px;
+	line-height:30px;
+	width:116px;
+	padding:0px 10px;
+}
