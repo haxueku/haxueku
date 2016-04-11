@@ -14,10 +14,41 @@ $(function(){
 				$(this).find("i").text("》");
 			}
 		});
-		$(".xf_showsj p i").click(function(){
+		$(".xf_showsj em i").click(function(){
 			$(".xf_qksjpop").show();
 		});
-		$(".tag2,.xf_paixulb .tags,.tags_line .tags").click(function(){
+		$(".ico_zjgn0").click(function(){
+			$(".xf_bjpoplx5").show();
+		});
+		
+		$(".ico_zjgn5").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');
+				$(this).parents(".quesbox").find(".xf_jiexibox").hide();
+			}else{
+				$(this).addClass('active');
+				$(this).parents(".quesbox").find(".xf_jiexibox").show();
+			}
+		});
+		$(".xf_qksjpop div a:eq(0)").click(function(){
+			$(".xf_showsj p").remove();
+			$(".xf_showsj .xf_scsjbutton a").addClass('noneac');
+		});
+		$(".tag2").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');
+			}else{
+				$(this).addClass('active');
+			}
+		});
+		$(".xf_datika ul li div i").click(function(){
+			if($(this).hasClass('cur')){
+				$(this).removeClass('cur');
+			}else{
+				$(this).addClass('cur');
+			}
+		});
+		$(".xf_paixulb .tags,.tags_line .tags").click(function(){
 			$(this).addClass('active').siblings().removeClass('active');
 		});
 		$(".xf_xuanzekm").click(function(){
@@ -130,6 +161,34 @@ $(function(){
 			$(this).addClass('cur').parents(".xf_teshuli").find(".xf_jiexida").slideDown(300);
 		}
 	});
+	$(".xf_xueshenglb ul li").click(function(){
+		if($(this).hasClass('active')){
+			$(".xf_quanbfs a").removeClass('active');
+			$(this).removeClass('active');
+		}else{
+			$(this).addClass('active');
+		}
+	});
+	$(".xf_quanbfs a").click(function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+			$(".xf_xueshenglb ul li").removeClass('active');
+		}else{
+			$(this).addClass('active');
+			$(".xf_xueshenglb ul li").addClass('active');
+		}
+	});
+	$(".xf_xffsxs").click(function(){
+		$(".xf_fasongxspop,.xf_popbg").show();
+	});
+	$(".xf_fasongbutton a,.xf_fasongxspop .xf_biaoti a").click(function(){
+		$(".xf_fasongxspop,.xf_popbg").hide();
+	});
+
+
+	$(".xf_tybutton a,.xf_bianjipop .xf_biaoti a").click(function(){
+		$(".xf_bianjipop,.xf_popbg").hide();
+	});
 
 	$(".xf_jiaojuana a").click(function(){
 		$(".xf_jiaojuanpop").show();
@@ -137,13 +196,20 @@ $(function(){
 	$(".xf_tishijjpop div a").click(function(){
 		$(".xf_tishijjpop").hide();
 	});
-	$(".xf_jiucuo,.ico_zjgn7,.error_check").click(function(){
-		$(".xf_jiecuobox").show();
+	$(".xf_jiucuo").click(function(){
+		$(this).siblings(".xf_jiecuobox").show();
+	});
+	$(".ico_zjgn7").click(function(){
+		$(this).parent().siblings(".xf_jiecuobox").show();
 	});
 	$(".xf_jiecuobox div a").click(function(){
 		$(".xf_jiecuobox").hide();
 	});
 	$(".param_tr td span").click(function(){
 		$(this).parents(".param_tr").remove();
+	});
+
+	$(".editpart").click(function(){
+		$('.xf_bjpoplx1').show();
 	});
 })

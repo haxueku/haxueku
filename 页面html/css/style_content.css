@@ -651,7 +651,7 @@
 
 #pui_root
 {
-	width:95%;
+	width:100%;
 	position:relative;
 }
 
@@ -717,6 +717,7 @@
 #pui_main
 {
 	margin-left:105px;
+	padding-right: 5px;
 	position:relative;
 	border:1px solid #fff;
 }
@@ -825,10 +826,9 @@
 #pui_body
 {
 	position:relative;
-	padding-bottom:50px;
-	margin-bottom:50px;
 }
-
+.partbody{
+}
 #pui_body div.paperpart
 {
 	position:relative;
@@ -1110,6 +1110,9 @@ div.quesopmenu a.quickmove
 div.quesopmenu a.movetp
 {
 	background:url(../images/icon-rem.png)  no-repeat;
+}
+.quesopmenu a.ico_zjgn0{
+	background: url(../images/ico_zjtb2.png) no-repeat 5% center;
 }
 .quesopmenu a.ico_zjgn1{
 	background: url(../images/ico_zjtb2.png) no-repeat 5% center;
