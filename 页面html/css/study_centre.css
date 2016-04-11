@@ -353,13 +353,14 @@
 	text-align:center;
 	color:#fff;
 }
-.dian_red{
-	background:url(../images/r_bg.png) no-repeat;
-	position: absolute;
-	margin-top:-45px;
-	margin-left:95px;
-	width:16px;
-	height:16px;
-	line-height:16px;
-	color:#fff;
+.icon_right{
+	background:url(../images/icon_right.png) 0px center no-repeat;
+	width:19px;
+	height:80px;
+}
+.icon_error{
+	background:url(../images/error.png) 15px center no-repeat;
+	padding-left:20px;
+	height:80px;
+	line-height:80px;
 }
