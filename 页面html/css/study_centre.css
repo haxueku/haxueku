@@ -102,6 +102,7 @@
 	border: 1px solid #d9d9d9;
 	border-radius:5px;
 	margin-top:20px;
+	position: relative;
 }
 .big-te:hover{
 	border:1px solid #FF941F;
@@ -352,6 +353,26 @@
 	line-height:40px;
 	text-align:center;
 	color:#fff;
+}
+.dian_red{
+	background:url(../images/r_bg.png) 0px center no-repeat;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	color:#fff;
+	margin-top:-45px;
+	margin-left:95px;
+}
+.my_da{
+	background:url(../images/cuowu.png) 0px center no-repeat;
+	padding-left:25px;
+	color:#fd0000;
+}
+.right_da{
+	background:url(../images/zhengque.png) 0px center no-repeat;
+	padding-left:25px;
+	color:#0190f2;
+	margin-left:10px;
 }
 .icon_right{
 	background:url(../images/icon_right.png) 0px center no-repeat;
