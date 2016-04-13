@@ -7,6 +7,7 @@
 	<link href="css/xf.css" rel="stylesheet" type="text/css" />
 	<link href="css/exam_info.css" rel="stylesheet" type="text/css" />
 	<link href="css/study_centre.css" rel="stylesheet" type="text/css">
+	<link href="js/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript" src="js/xf.js" ></script>
@@ -182,56 +183,56 @@
 									<div class="clear"></div>
 								</div>
 								<div>
-									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox" name=""></div>
+									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox"  name="list"></div>
 									<div class="xm" style="width:10%;">张三</div>
 									<div class="xm" style="width:30%;">昵称昵称</div>
 									<div class="xm" style="width:10%;">初一</div>
 									<div class="xm" style="width:10%;">语文</div>
 									<div class="xm" style="width:14%;">18965794733</div>
 									<div class="xm" style="width:20%;">
-										<div class="fl ml10"><a href="">编辑</a></div>
+										<div class="fl ml10"><a class="bjxs" href="javascript:;">编辑</a></div>
 										<div class="fl ml10"><a href="">删除</a></div> 
 										<div class="fl ml10"><a href="">发起测评</a></div>
 									</div>
 									<div class="clear"></div>
 								</div>
 								<div>
-									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox" name=""></div>
+									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox"  name="list"></div>
 									<div class="xm" style="width:10%;">张三</div>
 									<div class="xm" style="width:30%;">昵称昵称</div>
 									<div class="xm" style="width:10%;">初一</div>
 									<div class="xm" style="width:10%;">语文</div>
 									<div class="xm" style="width:14%;">18965794733</div>
 									<div class="xm" style="width:20%;">
-										<div class="fl ml10"><a href="">编辑</a></div>
+										<div class="fl ml10"><a class="bjxs" href="javascript:;">编辑</a></div>
 										<div class="fl ml10"><a href="">删除</a></div> 
 										<div class="fl ml10"><a href="">发起测评</a></div>
 									</div>
 									<div class="clear"></div>
 								</div>
 								<div>
-									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox" name=""></div>
+									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox" name="list"></div>
 									<div class="xm" style="width:10%;">张三</div>
 									<div class="xm" style="width:30%;">昵称昵称</div>
 									<div class="xm" style="width:10%;">初一</div>
 									<div class="xm" style="width:10%;">语文</div>
 									<div class="xm" style="width:14%;">18965794733</div>
 									<div class="xm" style="width:20%;">
-										<div class="fl ml10"><a href="">编辑</a></div>
+										<div class="fl ml10"><a class="bjxs" href="javascript:;">编辑</a></div>
 										<div class="fl ml10"><a href="">删除</a></div> 
 										<div class="fl ml10"><a href="">发起测评</a></div>
 									</div>
 									<div class="clear"></div>
 								</div>
 								<div>
-									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox" name=""></div>
+									<div class="xm" style="width:5%;padding:11px 0px;"><input type="checkbox" name="list"></div>
 									<div class="xm" style="width:10%;">张三</div>
 									<div class="xm" style="width:30%;">昵称昵称</div>
 									<div class="xm" style="width:10%;">初一</div>
 									<div class="xm" style="width:10%;">语文</div>
 									<div class="xm" style="width:14%;">18965794733</div>
 									<div class="xm" style="width:20%;">
-										<div class="fl ml10"><a href="">编辑</a></div>
+										<div class="fl ml10"><a class="bjxs" href="javascript:;">编辑</a></div>
 										<div class="fl ml10"><a href="">删除</a></div> 
 										<div class="fl ml10"><a href="">发起测评</a></div>
 									</div>
@@ -239,7 +240,7 @@
 								</div>
 							</div>
 							<div style="padding:10px;">
-								<div class="fl"><input type="checkbox" name="">全选</div>
+								<div class="fl" style="margin-left:17px;line-height:20px;"><input type="checkbox" onClick="selectAll('list')" name=""> 全选</div>
 								<div class="fr" style="background:#FF9C00;color:#fff;padding:6px 15px;margin-left:10px;">
 									批量发起测评
 								</div>
@@ -270,7 +271,43 @@
 			<div><span style="font-size:12px;">COPYRIGHT 2015  哈学库  版权所有   www.haxueku.com</span></div>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<div class="bjxs_div" style="display:none;">
+		<div class="xf_bianjinner xf_bianjixs">
+			<ul>
+				<li><span>邮编/手机号：</span><span>15585469751</span></li>
+				<li><span>姓名：</span><input type="text" value="张三三" /></li>
+				<li><span>昵称：</span><span>turfaf</span></li>
+				<li><span>学科：</span>
+					<div class="fl new_select">
+						<div class="select_div fl">
+							高中语文
+						</div>
+						<div class="sel_down fl"></div>
+						<div class="sel_list">
+							<div class="cp">全部</div>
+							<div class="cp">最近一周</div>
+							<div class="cp">最近一月</div>
+							<div class="cp">最近三月</div>
+						</div>
+					</div>
+				</li>
+				<li><span>年级：</span>
+					<div class="fl new_select">
+						<div class="select_div fl">
+							高中语文
+						</div>
+						<div class="sel_down fl"></div>
+						<div class="sel_list">
+							<div class="cp">全部</div>
+							<div class="cp">最近一周</div>
+							<div class="cp">最近一月</div>
+							<div class="cp">最近三月</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<!--本题解析展开收起-->
  <script type="text/javascript">
 	$(".analys").click(function(){
@@ -282,6 +319,31 @@
 	});
 	
 </script>
-	<script src="js/menu.js" type="text/javascript"></script>
+<script type="text/javascript">   
+ 
+    // 全选按钮选中标志  
+    var checkflag = "false";  
+    // 全选功能  
+    function selectAll(name){  
+        var field = document.getElementsByName(name);  
+        // 如果全选按钮状态是未选中  
+        if (checkflag == "false"){  
+            for (i = 0; i < field.length; i++){  
+                field[i].checked = true;  
+            }  
+            // 更改全选按钮选中标志  
+            checkflag = "true";  
+        }else{  
+            for (i = 0; i < field.length; i++){  
+                field[i].checked = false;   
+            }  
+            // 更改全选按钮选中标志  
+            checkflag = "false";  
+        }  
+    }  
+ 
+</script> 
+	<script src="js/jquery-ui-1.11.2.custom/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/dialog.js" type="text/javascript"></script>
 </body>
 </html>

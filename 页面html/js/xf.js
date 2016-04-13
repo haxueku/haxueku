@@ -184,8 +184,6 @@ $(function(){
 	$(".xf_fasongbutton a,.xf_fasongxspop .xf_biaoti a").click(function(){
 		$(".xf_fasongxspop,.xf_popbg").hide();
 	});
-
-
 	$(".xf_tybutton a,.xf_bianjipop .xf_biaoti a").click(function(){
 		$(".xf_bianjipop,.xf_popbg").hide();
 	});
@@ -196,7 +194,7 @@ $(function(){
 	$(".xf_tishijjpop div a").click(function(){
 		$(".xf_tishijjpop").hide();
 	});
-	$(".xf_jiucuo").click(function(){
+	$(".xf_jiucuo,.error_check").click(function(){
 		$(this).siblings(".xf_jiecuobox").show();
 	});
 	$(".ico_zjgn7").click(function(){

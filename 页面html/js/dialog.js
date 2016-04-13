@@ -32,6 +32,9 @@ dia_log.prototype.check = function(){
 			},
 			buttons:[{
 				text:"生成word试卷",
+				show:function(){
+					$(":button").slice(2,3).css({"background":"#fff","color":"#000","border":"1px solid #e5e5e5"});
+				},
 				click:function(){
 					dialog = this;		
 					$('#sj_div').dialog("destroy");
@@ -60,6 +63,9 @@ dia_log.prototype.check = function(){
 			},
 			buttons:[{
 				text:"生成word试卷",
+				show:function(){
+					$(":button").slice(2,3).css({"background":"#fff","color":"#000","border":"1px solid #e5e5e5"});
+				},
 				click:function(){
 					dialog = this;		
 					$('#dtk_div').dialog("destroy");
@@ -75,6 +81,37 @@ dia_log.prototype.check = function(){
 			}],
 			beforeClose: function() {
 				$('#dtk_div').dialog("destroy");
+			}
+		});
+	});
+	$(".bjxs").click(function(){
+		$(".bjxs_div").dialog({
+			title:"编辑学生",
+			width:"450",
+			height:"auto",
+			modal:true,
+			create: function(){
+			},
+			buttons:[{
+				text:"确定",
+				show:function(){
+					$(":button").slice(2,3).css({"background":"#fff","color":"#000","border":"1px solid #e5e5e5"});
+				},
+				click:function(){
+					dialog = this;		
+					$('.bjxs_div').dialog("destroy");
+				}
+			},{
+				text:"取消",
+				show:function(){
+					$(":button").slice(2,3).css({"background":"#fff","color":"#000","border":"1px solid #e5e5e5"});
+				},
+				click:function(){
+					$(".bjxs_div").dialog("destroy");
+				}
+			}],
+			beforeClose: function() {
+				$('.bjxs_div').dialog("destroy");
 			}
 		});
 	});
