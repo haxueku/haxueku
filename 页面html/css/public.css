@@ -249,6 +249,9 @@ table {
 .tk_left h3{background:#0190F2;text-align:center;width:213px;height:40px;line-height:40px;font-size:16px;color:#fff;}
 .tk_left .zsd_ul{padding:0;margin:0;list-style:none;}
 .tk_left .zsd_ul li{line-height:30px;overflow:hidden;clear:both;}
+.zsd_ul span:hover,.zsd_ul span.active{
+	color:#0190F2;
+}
 
 .tt_left span{display:block;float:left;line-height:34px;}
 .ce_jia{background:url(../images/jia.png) no-repeat;width:14px;height:14px;margin:10px;display:block;float:left;}
@@ -259,19 +262,29 @@ table {
 	margin:0px 10px;
 	background:url(../images/dian.png) 30px 15px no-repeat;
 	}
-.er_li:hover,.er_li.active{
+/* .er_li:hover,.er_li.active{
 	background:#FF9118;
 	background:#FF9118 url(../images/list_check.png) 25px 9px no-repeat;
 	color:#fff;
-}
-.er_li_check{
+} */
+/* .er_li_check{
 	margin:0px 10px;
 	padding-left:40px;
 	background:#FF9118 url(../images/list_check.png) 25px 9px no-repeat;
 	color:#fff;
-}
+} */
+.er_li:hover,.er_li.active{
+	color:#0190F2;
+} 
+.er_li_check{
+	color:#0190F2;
+} 
+
 .e_li{
 	margin-left:20px;
+}
+.e_li span:hover,.e_li span.active{
+	color:#0190F2;
 }
 .er,.thr{display:none;}
 .er ol { padding-left:15px;  border-top:none;}
