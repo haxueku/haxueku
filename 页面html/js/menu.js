@@ -2,6 +2,7 @@ $(function(){
     $(".ce > li > a").click(function(){
 		if($(this).is('.xz')){
             $(this).removeClass("xz").children('i').addClass('ce_jia').removeClass('ce_jian');
+			$(this).removeClass("xz").children('span').addClass('active')
         }else{
 			$(this).children('i').addClass('ce_jian').removeClass('ce_jia').parents().siblings().find(".ce_jian").addClass('ce_jia').removeClass('ce_jian');
 			$(this).addClass("xz").parents().siblings().find("a").removeClass("xz");
