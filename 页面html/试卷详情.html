@@ -1,22 +1,43 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>�Ծ�����</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>试卷详情</title>
 	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<link href="css/xf.css" rel="stylesheet" type="text/css" />
     <link href="css/exam_info.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/xf.js" ></script>
 </head>
-	
 <body >
-<!--header-->
-    <div id="header" style="box-shadow:0px 1px 6px #555;">
+    <!--header-->
+	<div id="header">
 		<div id="top">
 			<div style="width:1000px;height:40px;">
-				<div class="fl"><a href="" class="c_blue">valiant</a> ��ӭ����Ŷ!</div>
+				<div class="fl top_a">
+					<div>
+						<div class="fl c_blue mb10">valiant</div>
+						<div class="top_b fl">欢迎回来哦!</div>
+						<div class="clear"></div>
+					</div>				
+					<div class="top_gr">
+						<div class="top_c"></div>
+						<div class="top_nav">
+							<a href=""><div class="top_user_li" style="background:#fff;">
+								<div class="fl">消息</div>
+								<div class="fr r_bg" style="">3</div>
+								<div class="clear"></div>
+							</div></a>
+							<a href=""><div class="top_user_li" style="">个人中心</div></a>
+							<a href=""><div class="top_user_li" style="">退出登录</div></a>
+						</div>
+					</div>
+				</div>
 				<div class="fr">
-					<div class="fl font_b mr20"><a href="">��½ </a>|<a href=""> ע��</a></div>
-					<div class="fl font_b c_cheng site_home">��Ϊ��ҳ</div>
-					<div class="fl collect">�ղ�</div>
+					<div class="fl font_b mr20"><a href="">登陆 </a>|<a href=""> 注册</a></div>
+					<div class="fl font_b c_cheng site_home">设为首页</div>
+					<div class="fl collect">收藏</div>
 					<div class="fl top_right"><a href="" class="weibo"></a> <a href="" class="weixin"></a></div>
 				</div>
 			</div>
@@ -26,107 +47,111 @@
 			<div class="fl top_line" style="margin-left:100px;">
 				<div class="search">
 					<div class="fl sea_left cp">
-						���
+						<em><a href="#">题库</a></em>
+						<ul>
+							<li><a href="#">题库2</a></li>
+							<li><a href="#">题库2</a></li>
+							<li><a href="#">题库2</a></li>
+							<li><a href="#">题库2</a></li>
+						</ul>
 					</div>
 					<div class="fl"> 
-						<input type="text" valiue="ѡ����"placeholder="ѡ����" onfocus="this.placeholder=''" onblur="this.placeholder='ѡ����'">	
+						<input type="text">	
 					</div>
 					<div class="fl sea_right text_c f18 cp">
-						����
+						搜索
 					</div>
 				</div>
 			</div>
 		</div>
-		<div style="background:#26A7FF;width:100%;height:48px;">
-			<div style="width:1000px;">
-				<div class="nav_l">��ҳ</div>
-				<div class="nav_l">���</div>
-				<div class="nav_l">���</div>
-				<div class="nav_check">�Ծ�</div>
-				<div class="nav_l">����</div>
-				<div class="nav_l">��ѯ</div>
+		<div class="xf_topnavbox">
+			<div class='xf_topnavinner'>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li class='xf_topnavtk  cur'>
+						<a href="#">题库</a>
+						<div class="xf_tikml">
+							<dl>
+								<dt><高中></dt>
+								<dd><a href="#">语文</a></dd>
+								<dd><a href="#">数学</a></dd>
+								<dd><a href="#">英语</a></dd>
+								<dd><a href="#">化学</a></dd>
+								<dd><a href="#">物理</a></dd>
+								<dd><a href="#">生物</a></dd>
+								<dd><a href="#">历史</a></dd>
+								<dd><a href="#">政治</a></dd>
+								<dd><a href="#">地理</a></dd>
+							</dl>
+							<dl>
+								<dt><初中></dt>
+								<dd><a href="#">语文</a></dd>
+								<dd><a href="#">数学</a></dd>
+								<dd><a href="#">英语</a></dd>
+								<dd><a href="#">化学</a></dd>
+								<dd><a href="#">物理</a></dd>
+								<dd><a href="#">生物</a></dd>
+								<dd><a href="#">历史</a></dd>
+								<dd><a href="#">政治</a></dd>
+								<dd><a href="#">地理</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><a href="#">组卷</a></li>
+					<li><a href="#">试卷</a></li>
+					<li><a href="#">测评</a></li>
+					<li><a href="#">咨询</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-<!--main-->
 	<div id="main" style="margin-top:2px;min-height:1000px;">
 		<div style="background:#DBF0FF;border-bottom:4px solid #0190F2;">
 			<div style="width:1000px;height:68px;">
-				<div style="float:left;line-height:68px;color:#4c4c4c;font-size:24px;">����<span class="c_blue">����</span></div>
-				<div style="float:right;color:#fff;font-size:20px;background:#0190F2;padding:10px 20px;margin-top:22px;border-top-left-radius:5px;border-top-right-radius:5px;">��Ʒ���</div>
+				<div style="float:left;line-height:68px;color:#4c4c4c;font-size:24px;">高中<span class="c_blue">物理</span></div>
+				<div style="float:right;color:#fff;font-size:20px;background:#0190F2;padding:10px 20px;margin-top:22px;border-top-left-radius:5px;border-top-right-radius:5px;">精品组卷</div>
 			</div>
 		</div>
         
-        <div style="width:1050px;margin-top:10px;">
-        <!--right-->
-         <div id="right" class="right" style="width:225px;height:auto;float:right;margin-left:0px;margin-top:100px">
-        		
-                <div id="rightList" class="rightList">
-                <div class="rightLeft">
-                <div  class="myexam" style="margin:5px auto"><span>��<br/>��<br /></span></div>
-                 <div class="box">��</div>
-                 <div class="myexam" style="margin:63px auto"><span>��<br/>��<br /></span></div>
- 				<div class="exam_num"><span>10��</span></div>
-                </div>   
-                <div class="rightRight">
-               <div class="clearlist" onclick="cleardata()"><span>���</span></div>
-                <div id="ul_list" class="ul_list">
-                <ul>
-                <li><span >һ���ۺ���(<font color="red">35</font>/65)</span></li>
-                <li><span>������ѡ��(<font color="red">35</font>/55)</span></li>
-                <li><span>������ѡ��(<font color="red">35</font>/55)</span></li>
-                <li><span>�ġ�������(<font color="red">35</font>/55)</span></li>
-                <li><span>�塢����֪ʶ��(<font color="red">53</font>/53)</span></li>
-                </ul>
-                </div>
-                <div><div id="btn_exam">�����Ծ�</div>
-                </div>                	
-                </div>
-                
-     </div>
-     
-              <div class="scroll" id="scroll" style="display:none" >  </div>  
-     </div>
-        
-        
-       			<!-- left_main-->
-                <div class="left_main">
-                <div id="header-wrap" class="header-wrap" style="width:810px;float:left">
-                 <div class="title_info">
+		<div class="xf_centerbox">
+		<!-- left_main-->
+        <div class="left_main">
+            <div id="header-wrap" class="header-wrap" style="width:1000px;float:left">
+                <div class="title_info">
                 	<div id="pui_title">
 						
-							<h1>2015��߿�ȫ���¿α��I ��������</h1>
+							<h1>2015年高考全国新课标卷I 语文真题</h1>
 						
 				    </div>
-                    <div class="b_z" id="pui_testinfo" title="�Ծ���Ϣ��">
-							��ݣ�2015 &nbsp; ���ͣ��߿����� &nbsp; �꼶������ &nbsp; ʱ�䣺150���� &nbsp;�ܷ֣�150��
+                    <div class="b_z" id="pui_testinfo" title="试卷信息栏">
+							年份：2015 &nbsp; 类型：高考真题 &nbsp; 年级：高三 &nbsp; 时间：150分钟 &nbsp;总分：150分
 					</div>
-                   </div>
+                </div>
                     
-                    <div class="sp" style="width:810px;margin-top:10px;border:1px solid #D4D5D5;float:left;background:#FFF;">
+                <div class="sp" style="width:1000px;margin-top:10px;border:1px solid #D4D5D5;float:left;background:#FFF;">
                    <div id="select_part" class="select_part" >
                     	<div onclick="upMove(this);return false" class="part_back"><</div>
                         <div class="ul-list" style="float:left;overflow: hidden;position: relative;width: 600px;height:45px">
                     	<ul class="ul-list-content" style="left:0;top:0">  	
-                            <li class="part"><a href="javascript:void(0)" onclick="test('op-1')">��ѡ��</a></li>
-                            <li class="part"><a href="javascript:void(0)" onclick="test('op-2')">�������Ķ�</a></li>
-                            <li class="part"><a href="javascript:void(0)" onclick="test('op-3')">ʫ�����</a></li>
-                            <li class="part"><a href="">Ĭд</a></li>
-                            <li class="part"><a href="">ѡ����</a></li>
-                            <li class="part"><a href="">���Ա���</a></li>
-                            <li class="part"><a href="">����</a></li>
-                            <li class="part"><a href="">��ʫĬд</a></li> 
-                            <li class="part"><a href="">ѡ����</a></li>
-                            <li class="part"><a href="">���Ա���</a></li>
-                            <li class="part"><a href="">����</a></li>
-                            <li class="part"><a href="">��ʫĬд</a></li> 
+                            <li class="part"><a href="javascript:void(0)" onclick="test('op-1')">单选题</a></li>
+                            <li class="part"><a href="javascript:void(0)" onclick="test('op-2')">文言文阅读</a></li>
+                            <li class="part"><a href="javascript:void(0)" onclick="test('op-3')">诗歌鉴赏</a></li>
+                            <li class="part"><a href="">默写</a></li>
+                            <li class="part"><a href="">选择题</a></li>
+                            <li class="part"><a href="">语言表达</a></li>
+                            <li class="part"><a href="">作文</a></li>
+                            <li class="part"><a href="">古诗默写</a></li> 
+                            <li class="part"><a href="">选择题</a></li>
+                            <li class="part"><a href="">语言表达</a></li>
+                            <li class="part"><a href="">作文</a></li>
+                            <li class="part"><a href="">古诗默写</a></li> 
                         </ul> 
                         </div> 
                         
                         <div onclick="downMove(this);return false" class="part_back1">></div>
-                        <div class="all_part"><a href="">ȫ�������ҵ��Ծ�</a></div>
+                        <div class="all_part"><a href="">全部加入我的试卷</a></div>
                     </div>
-                    </div>
+                </div>
                     
                     
           
@@ -134,40 +159,40 @@
              
                    <div class="ont_part"  id="op-1" >
                    
-                  <!-- ����Ŀ-->
+                  <!-- 大题目-->
               	
                    <div class="op_title" >
-                   <span>һ����ѡ��</span>
+                   <span>一、单选题</span>
                    </div>
-                   <div class="big-test" style="width:810px;height:auto;float:left;">
+                   <div class="big-test" style="width:1000px;height:auto;float:left;">
                     <a href="" class="error_check"></a>
-                   <div style="width:770px;height:auto;float:left;margin-left:20px">  
+                   <div style="width:960px;height:auto;float:left;margin-left:20px">  
                    <div class="content">
                    
                    </div>
-                    <!-- ����1-->
+                    <!-- 问题1-->
                    	<table style="margin-top:10px">
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex">1��</span><span class="tips"></span>
+						<span class="quesindex">1．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">���й���ԭ�����ݵı���������ȷ��һ���ǣ�</span><span style="font-family:����; font-size:10.5pt">��3�֣���&nbsp;&nbsp;&nbsp; ��</span>
+						<span class="quest_span">下列关于原文内容的表述，不正确的一项是：</span><span style="font-family:宋体; font-size:10.5pt">（3分）（&nbsp;&nbsp;&nbsp; ）</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">A . �δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��</span>
+						<span class="quest_span">A . 宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。</span>
 						</p>
 						<p class="quest_p">
 						<span class="quest_span">
-                        B . �δ����������������������Ե���ʽ����ҪĿ���ǰ����ϰ��նȹ��ѹأ������˽�˽����ȣ��������������Ҫ�͵öࡣ</span>
+                        B . 宋代的政府借贷是政府的赈济性的形式，主要目的是帮助老百姓度过难关，因此域私人借贷相比，政府借贷的利率要低得多。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">C . ����һ��ʦд�ġ�������ô������ȥ�������Ĵ�ְ���������������飬�̶�ʮ���ֱ����ѳ�Ϊ������黳��ְ���ɡ���������ǡ�Ӧ���أ�����硣</span>
+						<span class="quest_span">C . 河南一教师写的“世界那么大，我想去看看”的辞职信在网上引起热议，短短十个字被网友称为“最具情怀辞职理由”，但“裸辞”应慎重，勿跟风。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">D . ������������Ⱦ����������һ�����ͣ�����Ҫ�ι�����������Ȼ��������Ȼ��˳Ӧ��Ȼ�������ǿȫ�񻷱�����ʶ�������̬���������ⳡ����ս��</span>
+						<span class="quest_span">D . 环境保护和污染治理不可能一蹴而就，我们要牢固树立保护自然、尊重自然、顺应自然的理念，增强全民环保的意识，打好生态文明建设这场攻坚战。</span>
 						</p>
 					</td>
 					</tr>
@@ -178,29 +203,29 @@
                    
                   
                    </div>
-                     <!-- ������ť-->
-                  <div class="analys"><span>�������</span></div>
+                     <!-- 解析按钮-->
+                  <div class="analys"><span>本题解析</span></div>
                     <div class="hidde-div">
                     <div class="poptip">
-                    	<span class="poptip-arrow poptip-arrow-top"><em>��</em><i>��</i></span>
-                         ���Դ����¼����������棺�ٳ��ɲ��£��Ƴɳ��¡�Ҫ������������˼�룬���ƹ��е����ʽ������ԭ�е�����Ȧ�ӣ��߳������Լ��µ������·������һ������ء���Ҫ��и׷��û��Ҫ������״�������������״��ʱ��ֻ�ܼ��Ѷ��գ���������Ѱ����֮�أ�ȴ���������ܣ��ҵ����ʺ�����ĵط���
+                    	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+                         可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。
                     </div>
                     </div>
                           
-                    <!-- ����ʹ�����-->
+                    <!-- 点赞使用情况-->
                      <div class="oparate">
                     	<div class="zan"><span>3050</span></div>
-                        <div class="hot"><span>ʹ�ã�11100��</span></div>
-                        <div class="add_exam"><span>+�����Ծ�</span></div>
-                        <div class="sc1_btn"><span>�ղ�</span></div>
-                        <div class="down_btn"><span>����</span></div>   
+                        <div class="hot"><span>使用：11100次</span></div>
+                        <div class="add_exam"><span>+加入试卷</span></div>
+                        <div class="sc1_btn"><span>收藏</span></div>
+                        <div class="down_btn"><span>下载</span></div>   
                      </div>  
                 </div>
                 
- 				 <!-- ����2-->
-                <div class="big-test" style="width:810px;height:auto;float:left;">
+ 				 <!-- 问题2-->
+                <div class="big-test" style="width:1000px;height:auto;float:left;">
                  <a href="" class="error_check"></a>
-                   <div style="width:770px;height:auto;float:left;margin-left:20px">  
+                   <div style="width:960px;height:auto;float:left;margin-left:20px">  
                    <div class="content">
                    
                    </div>
@@ -209,46 +234,46 @@
 					<tbody>
 					<tr>
 					<td valign="top">
-						<span class="quesindex">2��</span><span class="tips"></span>
+						<span class="quesindex">2．</span><span class="tips"></span>
 					</td>
 					<td>
 					<p class="quest_p" >
-					<span class="quest_span">�����������и�����ߴ��ĳ����ǡ����һ���ǣ�3�֣���&nbsp;&nbsp;&nbsp; ��</span>
+					<span class="quest_span">依次填入下列各句横线处的成语，最恰当的一组是（3分）（&nbsp;&nbsp;&nbsp; ）</span>
 					</p>
 					<p class="quest_p">
-					<span class="quest_span">&nbsp; A.�η�����&nbsp; ��·����&nbsp; ������ʳ&nbsp;&nbsp;&nbsp;&nbsp; B.��·����&nbsp; ������ʳ&nbsp; �η�����</span>
+					<span class="quest_span">&nbsp; A.栉风沐雨&nbsp; 筚路蓝缕&nbsp; 褐衣蔬食&nbsp;&nbsp;&nbsp;&nbsp; B.筚路蓝缕&nbsp; 褐衣蔬食&nbsp; 栉风沐雨</span>
 					</p>
 					<p class="quest_p">
-					<span class="quest_span">&nbsp; C.�η�����&nbsp; ������ʳ&nbsp; ��·����&nbsp;&nbsp;&nbsp;&nbsp; D.��·����&nbsp; �η�����&nbsp; ������ʳ</span>
+					<span class="quest_span">&nbsp; C.栉风沐雨&nbsp; 褐衣蔬食&nbsp; 筚路蓝缕&nbsp;&nbsp;&nbsp;&nbsp; D.筚路蓝缕&nbsp; 栉风沐雨&nbsp; 褐衣蔬食</span>
 					</p>
 					</td>
 					</tr>
 					</tbody>
 					</table>
                    </div>
-                     <!-- ������ť-->
-                  <div class="analys"><span>�������</span></div>
+                     <!-- 解析按钮-->
+                  <div class="analys"><span>本题解析</span></div>
                     <div class="hidde-div">
                     <div class="poptip">
-                    	<span class="poptip-arrow poptip-arrow-top"><em>��</em><i>��</i></span>
-                         ���Դ����¼����������棺�ٳ��ɲ��£��Ƴɳ��¡�Ҫ������������˼�룬���ƹ��е����ʽ������ԭ�е�����Ȧ�ӣ��߳������Լ��µ������·������һ������ء���Ҫ��и׷��û��Ҫ������״�������������״��ʱ��ֻ�ܼ��Ѷ��գ���������Ѱ����֮�أ�ȴ���������ܣ��ҵ����ʺ�����ĵط���
+                    	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+                         可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。
                     </div>
                     </div>
                           
-                    <!-- ����ʹ�����-->
+                    <!-- 点赞使用情况-->
                      <div class="oparate">
                     	<div class="zan"><span>3050</span></div>
-                        <div class="hot"><span>ʹ�ã�11100��</span></div>
-                        <div class="add_exam"><span>+�����Ծ�</span></div>
-                        <div class="sc1_btn"><span>�ղ�</span></div>
-                        <div class="down_btn"><span>����</span></div>   
+                        <div class="hot"><span>使用：11100次</span></div>
+                        <div class="add_exam"><span>+加入试卷</span></div>
+                        <div class="sc1_btn"><span>收藏</span></div>
+                        <div class="down_btn"><span>下载</span></div>   
                      </div>  
                 </div>
                 
-                 <!-- ����3--> 
-                  <div class="big-test" style="width:810px;height:auto;float:left;">
+                 <!-- 问题3--> 
+                  <div class="big-test" style="width:1000px;height:auto;float:left;">
                    <a href="" class="error_check"></a>
-                   <div style="width:770px;height:auto;float:left;margin-left:20px">  
+                   <div style="width:960px;height:auto;float:left;margin-left:20px">  
                    <div class="content">
                    
                    </div>
@@ -257,164 +282,164 @@
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex">3��</span><span class="tips"></span>
+						<span class="quesindex">3．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">���й���ԭ�����ݵı���������ȷ��һ���ǣ�</span><span style="font-family:����; font-size:10.5pt">��3�֣���&nbsp;&nbsp;&nbsp; ��</span>
+						<span class="quest_span">下列关于原文内容的表述，不正确的一项是：</span><span style="font-family:宋体; font-size:10.5pt">（3分）（&nbsp;&nbsp;&nbsp; ）</span>
 						</p>
                        	<p class="quest_p">
-						<p><span class="quest_span">��վ����������</span></p>
-                        <p><span class="quest_span">��վ����������</span></p>
-                        <p><span class="quest_span">��վ����������</span></p>
-                        <p><span class="quest_span">��վ����������</span></p>
-						<p></p><span class="quest_span">��վ����������</span></p>
-                        <p><span class="quest_span">��վ����������</span></p>
+						<p><span class="quest_span">①站在昆明湖边</span></p>
+                        <p><span class="quest_span">②站在昆明湖边</span></p>
+                        <p><span class="quest_span">③站在昆明湖边</span></p>
+                        <p><span class="quest_span">④站在昆明湖边</span></p>
+						<p></p><span class="quest_span">②站在昆明湖边</span></p>
+                        <p><span class="quest_span">②站在昆明湖边</span></p>
 						<p class="quest_p">
-						<span class="quest_span">A .�٢ڢۢܢڢ� &nbsp; B .�٢ڢۢܢڢ� &nbsp; C . �٢ڢۢܢڢ� &nbsp; D . �٢ڢۢܢڢ�</span>
+						<span class="quest_span">A .①②③④②② &nbsp; B .①②③④②② &nbsp; C . ①②③④②② &nbsp; D . ①②③④②②</span>
 
 					</td>
 					</tr>
 					</tbody>
 					</table>
                    </div>
-                     <!-- ������ť-->
-                  <div class="analys"><span>�������</span></div>
+                     <!-- 解析按钮-->
+                  <div class="analys"><span>本题解析</span></div>
                     <div class="hidde-div">
                     <div class="poptip">
-                    	<span class="poptip-arrow poptip-arrow-top"><em>��</em><i>��</i></span>
-                         ���Դ����¼����������棺�ٳ��ɲ��£��Ƴɳ��¡�Ҫ������������˼�룬���ƹ��е����ʽ������ԭ�е�����Ȧ�ӣ��߳������Լ��µ������·������һ������ء���Ҫ��и׷��û��Ҫ������״�������������״��ʱ��ֻ�ܼ��Ѷ��գ���������Ѱ����֮�أ�ȴ���������ܣ��ҵ����ʺ�����ĵط���
+                    	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+                         可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。
                     </div>
                     </div>
                           
-                    <!-- ����ʹ�����-->
+                    <!-- 点赞使用情况-->
                      <div class="oparate">
                     	<div class="zan"><span>3050</span></div>
-                        <div class="hot"><span>ʹ�ã�11100��</span></div>
-                        <div class="add_exam"><span>+�����Ծ�</span></div>
-                        <div class="sc1_btn"><span>�ղ�</span></div>
-                        <div class="down_btn"><span>����</span></div>   
+                        <div class="hot"><span>使用：11100次</span></div>
+                        <div class="add_exam"><span>+加入试卷</span></div>
+                        <div class="sc1_btn"><span>收藏</span></div>
+                        <div class="down_btn"><span>下载</span></div>   
                      </div>  
                 </div>
                 </div>
      
-       <!--�ڶ�����-->
+       <!--第二部分-->
     
        
        <div class="ont_part" id="op-2">
                    
-                   <!-- ����Ŀ-->
+                   <!-- 大题目-->
                    <div class="op_title" >
-                   <span>�����ִ����Ķ�</span>	
+                   <span>二、现代文阅读</span>	
                    </div>
-                   <div class="big-test" style="width:810px;height:auto;float:left;">
+                   <div class="big-test" style="width:1000px;height:auto;float:left;">
                    <a href="" class="error_check"></a>
-                   <div style="width:770px;height:auto;float:left;margin-left:20px">
+                   <div style="width:960px;height:auto;float:left;margin-left:20px">
                    
                    <div class="que_title">
-                   <span>2���Ķ����������ģ����4-7��</span>
+                   <span>2、阅读下面文言文，完成4-7题</span>
                    </div>
                    
                    <div class="content">
-                   		<p><span>�ﲩ���ֲ�Ұ��<span style="border:1px solid #FFA037">�ǽ�ʿ��</span>��Ϊ��Ա���ɡ�<span style="color:#09F">��</span><span style="border-bottom:1px solid #CDDFEC">����ĩ�����빱ʹ��������������ɧȻ���Ѹ����������Է�ũ�������й���˿��֮������ν������ͬ�����ٱ⾣�ݰ��á�</span>�δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ���δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��</span></p>
-                        <p><span>�δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ���������£��Ѹ�<span style="border:1px solid #FFA037">̫��</span>���أ��˼��ٸ����δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��<span style="color:#09F">��</span><span style="border-bottom:1px solid #CDDFEC">��Ψ����ۿ��й������������ԣ��ᵱ��֮��</span>�δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��<span style="color:#09F">��</span><span style="border-bottom:1px solid #CDDFEC">�����䲻�������ᵱ��֮���У����������֮���޻����׿�֮��</span>�δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��</span></p>
+                   		<p><span>孙博，字博野，<span style="border:1px solid #FFA037">登进士第</span>，为礼部员外郎。<span style="color:#09F">④</span><span style="border-bottom:1px solid #CDDFEC">宣和末高丽入贡使者所过调夫治周骚然防费傅言所民力以防农工而于中国无丝毫之意宰相谓其所论同苏轼琴扁荆州安置。</span>宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。</span></p>
+                        <p><span>宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。二年正月，已傅<span style="border:1px solid #FFA037">太子</span>留守，乃兼少傅。宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。<span style="color:#09F">⑦</span><span style="border-bottom:1px solid #CDDFEC">吾唯军吾帝可中国而，苟利异性，吾当死之。</span>宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。<span style="color:#09F">⑦</span><span style="border-bottom:1px solid #CDDFEC">金人虽不吾所，吾当与之俱行，求见二面责之，宿或网易可之。</span>宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。</span></p>
                        
                    
                    </div>
-                    <!-- ����1-->
+                    <!-- 问题1-->
                    	<table style="margin-top:10px">
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex">4��</span><span class="tips"></span>
+						<span class="quesindex">4．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">���й���ԭ�����ݵı���������ȷ��һ���ǣ�</span><span style="font-family:����; font-size:10.5pt">��3�֣���&nbsp;&nbsp;&nbsp; ��</span>
+						<span class="quest_span">下列关于原文内容的表述，不正确的一项是：</span><span style="font-family:宋体; font-size:10.5pt">（3分）（&nbsp;&nbsp;&nbsp; ）</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">A .����ĩ / �����빱 / ʹ������ / �������� / ɧȻ���� / ���� / �������Է�ũ�� / �����й���˿��֮�� / ����ν������ͬ���� / �ٱ⾣�ݰ��á�</span>
+						<span class="quest_span">A .宣和末 / 高丽入贡 / 使者所过 / 调夫治周 / 骚然防费 / 傅言 / 所民力以防农工 / 而于中国无丝毫之意 / 宰相谓其所论同苏轼 / 琴扁荆州安置。</span>
 						</p>
 						<p class="quest_p">
 						<span class="quest_span">
-                        B .����ĩ / �����빱 / ʹ������ / �������� / ɧȻ����  / ���� / �������Է�ũ�� / �����й���˿��֮�� / ����ν������ͬ���� / �ٱ⾣�ݰ��á�</span>
+                        B .宣和末 / 高丽入贡 / 使者所过 / 调夫治周 / 骚然防费  / 傅言 / 所民力以防农工 / 而于中国无丝毫之意 / 宰相谓其所论同苏轼 / 琴扁荆州安置。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">C . ����ĩ / �����빱 / ʹ������ / �������� / ɧȻ���� / ���� / �������Է�ũ�� / �����й���˿��֮�� / ����ν������ͬ���� / �ٱ⾣�ݰ��á�</span>
+						<span class="quest_span">C . 宣和末 / 高丽入贡 / 使者所过 / 调夫治周 / 骚然防费 / 傅言 / 所民力以防农工 / 而于中国无丝毫之意 / 宰相谓其所论同苏轼 / 琴扁荆州安置。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">D . ����ĩ / �����빱 / ʹ������ / �������� / ɧȻ���� / ���� / �������Է�ũ�� / �����й���˿��֮�� / ����ν������ͬ���� / �ٱ⾣�ݰ��á�</span>
+						<span class="quest_span">D . 宣和末 / 高丽入贡 / 使者所过 / 调夫治周 / 骚然防费 / 傅言 / 所民力以防农工 / 而于中国无丝毫之意 / 宰相谓其所论同苏轼 / 琴扁荆州安置。</span>
 						</p>
 					</td>
 					</tr>
 					</tbody>
 					</table>
-                     <!-- ����2-->
+                     <!-- 问题2-->
                     <table style="margin-top:10px">
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex">5��</span><span class="tips"></span>
+						<span class="quesindex">5．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">���й���ԭ�����ݵı���������ȷ��һ���ǣ�</span><span style="font-family:����; font-size:10.5pt">��3�֣���&nbsp;&nbsp;&nbsp; ��</span>
+						<span class="quest_span">下列关于原文内容的表述，不正确的一项是：</span><span style="font-family:宋体; font-size:10.5pt">（3分）（&nbsp;&nbsp;&nbsp; ）</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">A . �δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��</span>
+						<span class="quest_span">A . 宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。</span>
 						</p>
 						<p class="quest_p">
 						<span class="quest_span">
-                        B . �δ����������������������Ե���ʽ����ҪĿ���ǰ����ϰ��նȹ��ѹأ������˽�˽����ȣ��������������Ҫ�͵öࡣ</span>
+                        B . 宋代的政府借贷是政府的赈济性的形式，主要目的是帮助老百姓度过难关，因此域私人借贷相比，政府借贷的利率要低得多。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">C . ����һ��ʦд�ġ�������ô������ȥ�������Ĵ�ְ���������������飬�̶�ʮ���ֱ����ѳ�Ϊ������黳��ְ���ɡ���������ǡ�Ӧ���أ�����硣</span>
+						<span class="quest_span">C . 河南一教师写的“世界那么大，我想去看看”的辞职信在网上引起热议，短短十个字被网友称为“最具情怀辞职理由”，但“裸辞”应慎重，勿跟风。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">D . ������������Ⱦ����������һ�����ͣ�����Ҫ�ι�����������Ȼ��������Ȼ��˳Ӧ��Ȼ�������ǿȫ�񻷱�����ʶ�������̬���������ⳡ����ս��</span>
+						<span class="quest_span">D . 环境保护和污染治理不可能一蹴而就，我们要牢固树立保护自然、尊重自然、顺应自然的理念，增强全民环保的意识，打好生态文明建设这场攻坚战。</span>
 						</p>
 					</td>
 					</tr>
 					</tbody>
 					</table>
-                    <!-- ����3--> 
+                    <!-- 问题3--> 
                    <table>
 					<tbody>
 					<tr>
 					<td valign="top">
-						<span class="quesindex">6��</span><span class="tips"></span>
+						<span class="quesindex">6．</span><span class="tips"></span>
 					</td>
 					<td>
 					<p class="quest_p" >
-					<span class="quest_span">�����������и�����ߴ��ĳ����ǡ����һ���ǣ�3�֣���&nbsp;&nbsp;&nbsp; ��</span>
+					<span class="quest_span">依次填入下列各句横线处的成语，最恰当的一组是（3分）（&nbsp;&nbsp;&nbsp; ）</span>
 					</p>
 					<p class="quest_p">
-					<span class="quest_span">&nbsp; A.�η�����&nbsp; ��·����&nbsp; ������ʳ&nbsp;&nbsp;&nbsp;&nbsp; B.��·����&nbsp; ������ʳ&nbsp; �η�����</span>
+					<span class="quest_span">&nbsp; A.栉风沐雨&nbsp; 筚路蓝缕&nbsp; 褐衣蔬食&nbsp;&nbsp;&nbsp;&nbsp; B.筚路蓝缕&nbsp; 褐衣蔬食&nbsp; 栉风沐雨</span>
 					</p>
 					<p class="quest_p">
-					<span class="quest_span">&nbsp; C.�η�����&nbsp; ������ʳ&nbsp; ��·����&nbsp;&nbsp;&nbsp;&nbsp; D.��·����&nbsp; �η�����&nbsp; ������ʳ</span>
+					<span class="quest_span">&nbsp; C.栉风沐雨&nbsp; 褐衣蔬食&nbsp; 筚路蓝缕&nbsp;&nbsp;&nbsp;&nbsp; D.筚路蓝缕&nbsp; 栉风沐雨&nbsp; 褐衣蔬食</span>
 					</p>
 					</td>
 					</tr>
 					</tbody>
 					</table>
-                    <!--����7-->
+                    <!--问题7-->
                     <table style="margin-top:10px">
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex">7��</span><span class="tips"></span>
+						<span class="quesindex">7．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">�����л����ߵľ��ӷ�����ִ��</span>
+						<span class="quest_span">把文中划横线的句子翻译成现代语。</span>
 						</p>
 						<p class="quest_p">
-						<span class="quest_span">��1����Ψ����ۿ��й������������ԣ��ᵱ��֮��</span>
+						<span class="quest_span">（1）吾唯军吾帝可中国而，苟利异性，吾当死之。</span>
 						</p>
 						<p class="quest_p">
 						<span class="quest_span">
-                        ��2�������䲻�������ᵱ��֮���У����������֮���޻����׿�֮��</span>
+                        （2）金人虽不吾所，吾当与之俱行，求见二面责之，宿或网易可之。</span>
 						</p>
 						<p class="quest_p">
 		
@@ -424,62 +449,62 @@
 					</table>
                     
                    </div>
-                     <!-- ������ť-->
-                  <div class="analys"><span>�������</span></div>
+                     <!-- 解析按钮-->
+                  <div class="analys"><span>本题解析</span></div>
                     <div class="hidde-div">
                     <div class="poptip">
-                    	<span class="poptip-arrow poptip-arrow-top"><em>��</em><i>��</i></span>
-                         ���Դ����¼����������棺�ٳ��ɲ��£��Ƴɳ��¡�Ҫ������������˼�룬���ƹ��е����ʽ������ԭ�е�����Ȧ�ӣ��߳������Լ��µ������·������һ������ء���Ҫ��и׷��û��Ҫ������״�������������״��ʱ��ֻ�ܼ��Ѷ��գ���������Ѱ����֮�أ�ȴ���������ܣ��ҵ����ʺ�����ĵط���
+                    	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+                         可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。
                     </div>
                     </div>
                           
-                    <!-- ����ʹ�����-->
+                    <!-- 点赞使用情况-->
                      <div class="oparate">
                     	<div class="zan"><span>3050</span></div>
-                        <div class="hot"><span>ʹ�ã�11100��</span></div>
-                        <div class="add_exam"><span>+�����Ծ�</span></div>
-                        <div class="sc1_btn"><span>�ղ�</span></div>
-                        <div class="down_btn"><span>����</span></div>   
+                        <div class="hot"><span>使用：11100次</span></div>
+                        <div class="add_exam"><span>+加入试卷</span></div>
+                        <div class="sc1_btn"><span>收藏</span></div>
+                        <div class="down_btn"><span>下载</span></div>   
                      </div>  
                 </div>
                 </div>
                    
-        <!-- ��������-->
+        <!-- 第三部分-->
   
        <div class="ont_part" id="op-3">
                    
-                   <!-- ����Ŀ-->
+                   <!-- 大题目-->
                    <div class="op_title">
-                   <span>����ʫ�����</span>	
+                   <span>三、诗歌鉴赏</span>	
                    </div>
-                   <div class="big-test" style="width:810px;height:auto;float:left;">
+                   <div class="big-test" style="width:1000px;height:auto;float:left;">
                     <a href="" class="error_check"></a>
-                   <div style="width:770px;height:auto;float:left;margin-left:20px">
+                   <div style="width:960px;height:auto;float:left;margin-left:20px">
                    
                    <div class="que_title">
-                   <span>3���Ķ�����������ʫ�����8~9��</span>
+                   <span>3、阅读下面这首唐诗，完成8~9题</span>
                    </div>
                    
                    
                    <div class="content">
-                   		<p><span>�����׽�����ͥ�����</span></p>
-                        <p><span>᯲�</span></p>
-                        <p><span>��˵��̥·�ڣ������ѩ�ɡ�</span></p>
-                        <p><span>��˵��̥·�������ѩ�ɡ�</span></p>
-                        <p><span>��˵��̥·�������ѩ�ɡ�</span></p>
-                        <p><span>��˵��̥·�������ѩ�ɡ�</span></p>
+                   		<p><span>发淋兆将赴北庭留别①</span></p>
+                        <p><span>岑参</span></p>
+                        <p><span>闻说轮胎路②，连年见雪飞。</span></p>
+                        <p><span>闻说轮胎路，连年见雪飞。</span></p>
+                        <p><span>闻说轮胎路，连年见雪飞。</span></p>
+                        <p><span>闻说轮胎路，连年见雪飞。</span></p>
                         <table style="margin-top:10px">
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex" style="margin-left:15px">��ע��</span>
+						<span class="quesindex" style="margin-left:15px">【注】</span>
 					   </td>
 					  <td>	
 						<p class="quest_p" style="margin-left:-20px">
-						<span style="font-size:10.5pt;line-height:150%;" >�� �ڽ������̴Ϫ����ͥ���ƻ�������֮һ������Ϊͥ�ܣ����½���ľɯ������</span>
+						<span style="font-size:10.5pt;line-height:150%;" >① 在今甘肃淋檀溪，北庭：唐护都六府之一，治所为庭周（今新疆吉木莎尔贝）</span>
 						</p>
 						<p class="quest_p" style="margin-left:-20px">
-						<span cstyle="font-size:10.5pt;line-height:150%;">�� ��̨��ͥ�� ���ء����½�����ľ��</span>
+						<span cstyle="font-size:10.5pt;line-height:150%;">② 轮台：庭州 属县。今新疆乌如木齐</span>
 						</p>
 						
 					</td>
@@ -489,26 +514,26 @@
 
                    </div>
 
-                    <!--����8-->
+                    <!--问题8-->
                     <table style="margin-top:10px">
 					<tbody>
 					 <tr>
 					   <td valign="top">
-						<span class="quesindex">8��</span><span class="tips"></span>
+						<span class="quesindex">8．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">�롶��ѩ�������й���ȡ�����ʫ��д����ľ�����ʲô��ͬ�����Ҫ������</span>
+						<span class="quest_span">与《白雪歌送武判官相比》，本诗描写寒外的景物有什么不同，请简要分析。</span>
 						</p>
 					</td>
 					</tr>
                     <tr>
 					   <td valign="top">
-						<span class="quesindex">9��</span><span class="tips"></span>
+						<span class="quesindex">9．</span><span class="tips"></span>
 					   </td>
 					  <td>
 						<p class="quest_p">
-						<span class="quest_span">ʫ��β������������ʲô����˼����飬��ȫʫ������㷢��ʲô�������á�</span>
+						<span class="quest_span">诗的尾联表达了作者什么样的思想感情，对全诗的情感抒发有什么样的作用。</span>
 						</p>
 					</td>
 					</tr>
@@ -516,23 +541,23 @@
 					</table>
                     </div>
                   
-                      <!-- ������ť-->
-                    <div class="analys"><span>�������</span></div>
+                      <!-- 解析按钮-->
+                    <div class="analys"><span>本题解析</span></div>
                     <div class="hidde-div">
                     <div class="poptip">
-                    	<span class="poptip-arrow poptip-arrow-top"><em>��</em><i>��</i></span>
-                         ���Դ����¼����������棺�ٳ��ɲ��£��Ƴɳ��¡�Ҫ������������˼�룬���ƹ��е����ʽ������ԭ�е�����Ȧ�ӣ��߳������Լ��µ������·������һ������ء���Ҫ��и׷��û��Ҫ������״�������������״��ʱ��ֻ�ܼ��Ѷ��գ���������Ѱ����֮�أ�ȴ���������ܣ��ҵ����ʺ�����ĵط������������������������������������������������������������������������� �������������� ����������
+                    	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+                         可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈啊哈哈还啊哈啊哈啊哈 啊哈啊哈哈啊啊 哈啊啊哈啊
                     </div>
                     </div>
                     
                           
-                    <!-- ����ʹ�����-->
+                    <!-- 点赞使用情况-->
                      <div class="oparate">
                     	<div class="zan"><span>3050</span></div>
-                        <div class="hot"><span>ʹ�ã�11100��</span></div>
-                         <div class="add_exam">+�����Ծ�</div>
-                        <div class="sc1_btn"><span>�ղ�</span></div>
-                        <div class="down_btn"><span>����</span></div>   
+                        <div class="hot"><span>使用：11100次</span></div>
+                         <div class="add_exam">+加入试卷</div>
+                        <div class="sc1_btn"><span>收藏</span></div>
+                        <div class="down_btn"><span>下载</span></div>   
                      </div>  
                 </div>
                  </div>
@@ -540,53 +565,72 @@
                 <div class="ont_part" id="op-4">
                 
          
-                   <!-- ����Ŀ-->
+                   <!-- 大题目-->
                    <div class="op_title">
-                   <span>�ġ�������</span>	
+                   <span>四、概括题</span>	
                    </div>
-                   <div class="big-test" style="width:810px;height:auto;float:left;">
+                   <div class="big-test" style="width:1000px;height:auto;float:left;">
                     <a href="" class="error_check"></a>
-                   <div style="width:770px;height:auto;float:left;margin-left:20px">
+                   <div style="width:960px;height:auto;float:left;margin-left:20px">
                    
                    <div class="que_title">
-                   <span>8������������ε���Ҫ��Ϣ��������40�֣��������ţ�</span>
+                   <span>8、概括下列语段的主要信息，不超过40字（含标点符号）</span>
                    </div>
                    
                    <div>
-                   		<p style="text-indent:20px;font-size:10.5pt;line-height:150%;"><span>�δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ���δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ���δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ���δ��������������뷢չʱ�ڣ��Ŵ����ʡ�Ѻ���䡢���������������ʽ�Ĳ������δ����ڵ�һ����ʽ��</span></p>               
+                   		<p style="text-indent:20px;font-size:10.5pt;line-height:150%;"><span>宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。宋代的信用叙述进入发展时期，信贷、质、押、典、舍埋设买等信用形式的产生是宋代金融的一种形式。</span></p>               
                    </div>
                    </div>
-                     <!-- ������ť-->
+                     <!-- 解析按钮-->
                     
-                    <div class="analys">�������</div>
+                    <div class="analys">本题解析</div>
                     <div id ="hidde-div" class="hidde-div">
                     <div class="poptip">
-                    	<span class="poptip-arrow poptip-arrow-top"><em>��</em><i>��</i></span>
-                         ���Դ����¼����������棺�ٳ��ɲ��£��Ƴɳ��¡�Ҫ������������˼�룬���ƹ��е����ʽ������ԭ�е�����Ȧ�ӣ��߳������Լ��µ������·������һ������ء���Ҫ��и׷��û��Ҫ������״�������������״��ʱ��ֻ�ܼ��Ѷ��գ���������Ѱ����֮�أ�ȴ���������ܣ��ҵ����ʺ�����ĵط���
+                    	<span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+                         可以从以下几个方面利益：①除旧布新，推成出新。要丢尽禁锢的老思想，打破固有的生活方式，冲破原有的生活圈子，走出属于自己新的生活道路。开创一遍新天地。②要不懈追求没不要安于现状，当鸟儿安于现状的时候，只能艰难度日，当他被迫寻求安生之地，却发现了绿周，找到更适合生活的地方。
                     </div>
                     </div>
                    
                           
-                    <!-- ����ʹ�����-->
+                    <!-- 点赞使用情况-->
                      <div class="oparate">
                     	<div class="zan">3050</div>
-                        <div class="hot">ʹ�ã�111988��</div>
-                        <!--<div id="ae" class="add_exam" onclick="myfunction()">+�����Ծ�</div>-->
-                        <div class="delete_exam">-�Ƴ��Ծ�</div>
-                        <div class="sc1_btn">�ղ�</div>
-                        <div class="down_btn">����</div>   
+                        <div class="hot">使用：111988次</div>
+                        <!--<div id="ae" class="add_exam" onclick="myfunction()">+加入试卷</div>-->
+                        <div class="delete_exam">-移出试卷</div>
+                        <div class="sc1_btn">收藏</div>
+                        <div class="down_btn">下载</div>   
                      </div>  
                 </div>
                 </div>         
                 <div class="space"></div>
         </div>   
     </div>
-    
+    <div class="xf_fanhuidb"><a href="#"></a></div>
+	<div class="xf_dqxuanzet">
+		<div class="xf_mysjleft">
+			<p>我</p>
+			<p>的</p>
+			<p><i>《</i></p>
+			<p>试</p>
+			<p>卷</p>
+			<span>10道</span>
+		</div>
+		<div class="xf_showsj">
+			<em><i>清空</i></em>
+			<p>一、综合题(<span>3</span>/5)</p>
+			<p>二、单选题(<span>3</span>/5)</p>
+			<p>三、多选题(<span>3</span>/5)</p>
+			<p>四、计算题(<span>3</span>/5)</p>
+			<p>五、基础知识题（<span>3</span>/5)</p>
+			<div class='xf_scsjbutton'><a href="JavaScript:;">生成试卷</a></div>
+		</div>
+	</div>
     <!--footer-->
 	<div id="footer">
 		<div class="footer">
-			<div><a href="">��������</a> ح <a href="">��˽��������</a>  ح  <a href="">��������</a> ح <a href="">��ϵ����</a> </div>  
-			<div><span style="font-size:12px;">COPYRIGHT 2015  ��ѧ��  ��Ȩ����   www.haxueku.com</span></div>
+			<div><a href="">关于我们</a> 丨 <a href="">隐私保护政策</a>  丨  <a href="">服务条款</a> 丨 <a href="">联系我们</a> </div>  
+			<div><span style="font-size:12px;">COPYRIGHT 2015  哈学库  版权所有   www.haxueku.com</span></div>
 		</div>
 	</div>
     
@@ -596,7 +640,7 @@
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/jquery-ui-1.11.2.custom/jquery-ui.js" type="text/javascript"></script>
 
-<!--�������չ������-->
+<!--本题解析展开收起-->
  <script type="text/javascript">
 	$(".analys").click(function(){
 		if($(this).hasClass('cur')){
@@ -607,14 +651,14 @@
 	});
 	
 </script>
-<!--���-->
+<!--清空-->
  <script type="text/javascript">
 
 function cleardata(){
 	document.getElementById("ul_list").innerHTML=""; 	
 }
 </script>
-<!--���ض���-->
+<!--返回顶部-->
 	<script type="text/javascript">
 	$(function(){
 		showScroll();
@@ -647,7 +691,7 @@ function cleardata(){
 		}
   }
 </script>-->
-<!--���������ڶ��� -->   
+<!--滑动悬浮在顶部 -->   
  <script type="text/javascript">
   window.onload=function(){
  function adsorption(){
@@ -680,7 +724,7 @@ function cleardata(){
  </script>  
 
 
-<!--����-->
+<!--点赞-->
 <script type="text/javascript">
 (function ($) {
 	$.extend({
@@ -749,7 +793,7 @@ function downMove(obj){
 	var dom = $(obj).prev();	
 	dom.animate({scrollLeft:-176+dom.scrollLeft()},500) ;
 }
-//�ж��Ƿ���Ҫ����
+//判断是否需要滚动
 $(function(){
   for(i=0; i<=$(".ul-list").size(); i++){
 	  if($(".ul-list").eq(i).find("li").size()>8){
@@ -757,7 +801,7 @@ $(function(){
 	  }
   }
 })
-</script><!--��ת��ָ��ҳ��--> 
+</script><!--跳转到指定页面--> 
 <script type="text/javascript">
 function test(name){
 window.location.href="#"+name;
