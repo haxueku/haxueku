@@ -121,7 +121,8 @@
 	</div>
 	<div class="h_logo">
 		<div class="h_bg"></div>
-		<div class="fr" style="padding:20px;width:280px;">
+		<!-- 未登录状态 -->
+		<div class="fr" style="padding:20px;width:280px;display:;">
 			<div>
 				<div class="fl"><input name="user" id="user" type="text" placeholder="输入账号" onfocus="this.placeholder=''" onblur="this.placeholder='输入账号'"/></div>
 				<div class="icon_user fl"></div>
@@ -134,13 +135,13 @@
 			</div>
 			<div>
 				<div class="fl"><a href="">忘记密码？</a></div>
-				<div class="fr" style="color:#4D4D4D;"><div></div>下次自动登录</div>
+				<div class="fr is_zd" style="color:#4D4D4D;"><a href="JavaScript:;">下次自动登录</a></div>
 				<div class="clear"></div>
 			</div>
 			<div class="login_in cp">
 				登录哈学库
 			</div>
-			<div style="margin:10px;font-size:18px;text-align:center;color:#FF9118;font-weight:bold;text-decoration:underline">
+			<div style="margin:10px;font-size:18px;text-align:center;color:#FF9118;font-weight:bold;text-decoration:underline;cursor:pointer;">
 				没有账号？快速登录
 			</div>
 			<div class="bai_san"></div>
@@ -150,58 +151,91 @@
 				<a href=""><div class="icon_qq"></div></a>
 			</div>
 		</div>
+		<!-- 登录状态 -->
+		<div class="fr" style="padding:20px;width:280px;display:none;">
+			<div style="width:82px;">
+				<img src="./images/head_pic.png" style="width:82px;border-radius:50px;">
+			</div>
+			<div style="width:280px;height:30px;line-height:30px;text-align:center;">
+				<div style="width:100px;">
+					<div class="icon_girl fl" style="font-size:18px;color:#1a1a1a;">valiant</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div style="width:280px;text-align:center;font-size:18px;color:#4c4c4c;">
+				欢迎您回到哈学库
+			</div>
+			<a href="">
+				<div class="login_btn_c cp">
+					进入题库
+				</div>
+			</a>
+			<a href="">
+				<div class="login_btn cp">
+					我的主页
+				</div>
+			</a>
+			<div class="h_line" style="">
+			</div>
+			<div style="line-height:48px;">
+				<a href=""><div class="fl h_help" style="color:#0190f2;">使用帮助</div></a>
+				<div class="fr"><a href="" style="color:#0190f2;">修改密码</a></div>
+			</div>
+		</div>
 	</div>
 	<div class="clear"></div>
 	<div style="width:1000px;margin:30px auto;">
 		<div class="fl" style="width:650px;height:320px;">
 			<div>
-				<div class="fl">最新试卷</div>
-				<div class="fl">
-					<div class="fl">高三</div>
-					<div class="fl">高二</div>
-					<div class="fl">高一</div>
+				<div class="fl" style="font-size:20px;font-weight:bold;margin:4px;">最新试卷</div>
+				<div class="fl" style="margin:0px 20px;">
+					<div class="fl h_tag_c"><span>高三</span></div>
+					<div class="fl h_tag"><span>高二</span></div>
+					<div class="fl h_tag"><span>高一</span></div>
 				</div>
-				<div class="fl">
-					<div class="fl">九年级</div>
-					<div class="fl">八年级</div>
-					<div class="fl">七年级</div>
+				<div class="fl" style="margin:0px 20px;">
+					<div class="fl h_tag"><span>九年级</span></div>
+					<div class="fl h_tag"><span>八年级</span></div>
+					<div class="fl h_tag"><span>七年级</span></div>
 				</div>
-				<div class="fl">
-					更多+
+				<div class="fl" style="margin-left:20px;">
+					<a href=""style="font-size:16px;color:#0190f2;line-height:30px;">更多+</a>
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div>
-				<div class="fl">语文</div>
-				<div class="fl">数学</div>
-				<div class="fl">英语</div>
-				<div class="fl">化学</div>
-				<div class="fl">物理</div>
-				<div class="fl">生物</div>
-				<div class="fl">历史</div>
-				<div class="fl">地理</div>
-				<div class="fl">政治</div>
-				<div class="clear"></div>
+			<div style="border:1px solid #CCCCCC;border-radius:50px;margin-top:-4px;">
+				<div style="width:480px;">
+					<div class="fl h_xk">语文</div>
+					<div class="fl h_xk">数学</div>
+					<div class="fl h_xk">英语</div>
+					<div class="fl h_xk">化学</div>
+					<div class="fl h_xk">物理</div>
+					<div class="fl h_xk">生物</div>
+					<div class="fl h_xk">历史</div>
+					<div class="fl h_xk">地理</div>
+					<div class="fl h_xk">政治</div>
+					<div class="clear"></div>
+				</div>
 			</div>
-			<div>
-				<div class="fl">
-					<div class="fl">· [期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
+			<div style="margin-top:20px;">
+				<div class="fl h_li">
+					<div class="fl">[期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
 					<div class="fr">2016-04-30</div>
 				</div>
-				<div class="fl">
-					<div class="fl">· [期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
+				<div class="fl h_li">
+					<div class="fl">[期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
 					<div class="fr">2016-04-30</div>
 				</div>
-				<div class="fl">
-					<div class="fl">· [期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
+				<div class="fl h_li">
+					<div class="fl">[期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
 					<div class="fr">2016-04-30</div>
 				</div>
-				<div class="fl">
-					<div class="fl">· [期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
+				<div class="fl h_li">
+					<div class="fl">[期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
 					<div class="fr">2016-04-30</div>
 				</div>
-				<div class="fl">
-					<div class="fl">· [期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
+				<div class="fl h_li">
+					<div class="fl">[期中] 北京市石景山区首都师范大学附属苹果园中学2015</div> 
 					<div class="fr">2016-04-30</div>
 				</div>
 			</div>
