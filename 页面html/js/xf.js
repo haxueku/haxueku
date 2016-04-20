@@ -71,7 +71,7 @@ $(function(){
 			$(".xf_xuanzekm").removeClass('active');
 			$(".xf_xuanzekmbox").hide();
 		});
-		$(".xf_shaixuansctm a,.down_btn").click(function(){
+		$(".xf_shaixuansctm a,.is_zd a,.down_btn").click(function(){
 			if($(this).hasClass('active')){
 				$(this).removeClass('active');
 			}else{
