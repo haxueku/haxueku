@@ -2,7 +2,7 @@
    $.fn.swBanner=function(options){
      var defaults={
 	     animateTime:300,
-		 delayTime:5000
+		 delayTime:3000
 	 }
    var setting=$.extend({},defaults,options);
    
