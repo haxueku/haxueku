@@ -11,7 +11,7 @@
 .h_logo input{border:1px solid #B3B3B3;height:18px;width:215px;padding:14px;padding-left:50px;font-size:16px;margin-bottom:10px;background:#fff;filter:alpha(opacity=100);-moz-opacity:1;  -khtml-opacity: 1; opacity: 1;}
 .h_logo .icon_user{background:url(../images/icon_user.png) no-repeat;width:32px;height:32px;margin-left:10px;margin-top:-50px;}
 .h_logo .icon_pass{background:url(../images/icon_pass.png) no-repeat;width:28px;height:31px;margin-left:10px;margin-top:-50px;}
-input:focus{border:1px solid #00a2ca;box-shadow:0 1px 3px #bebdbd;} 
+.h_logo input:focus{border:1px solid #00a2ca;box-shadow:0 1px 3px #bebdbd;} 
 .login_in{background:#0190F2;width:100%;color:#fff;height:50px;line-height:50px;text-align:center;font-size:18px;margin-top:20px;border-radius:5px}
 .bai_san{background:url(../images/bai_san.png) no-repeat;width:26px;height:13px;}
 .login_bottom{background:#fff;width:260px;height:74px;padding:0px 30px;margin-left:-20px;}
