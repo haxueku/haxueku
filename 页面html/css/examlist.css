@@ -113,7 +113,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	text-align:center;
 
 }
-.exam_list{border:1px solid #D9D9D9;width:100%;height:710px;font-size:12px}
+.exam_list{border:1px solid #D9D9D9;width:100%;font-size:12px;border-bottom: 0px;}
 .exam_list .exam_ul{padding:0;margin:0;list-style:none;}
 .exam_list .exam_ul li{line-height:70px;overflow:hidden;clear:both;border-bottom:1px solid #CCCCCC}
 .nav_3{
