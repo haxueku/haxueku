@@ -32,15 +32,20 @@
 						</div>
 						<form id="login_form" action="" method="post">
 						<div class="form_list" style="margin-top:25px;">
-                        <div class="busybox">
-									<span>系统繁忙,请稍候再试</span>
-									<div class="error_img"></div>
-								</div>
-							<div class="l_list1">	
-								<input name="username" id="username" type="text" placeholder="请输入用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入用户名'"/>				  
-						  </div>
-							<div class="l_list2">
-								<input name="password" id="password" type="password" placeholder="请输入密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入密码'"/>							
+							<div class="busybox">
+								<span>系统繁忙,请稍候再试</span>
+								<div class="error_img"></div>
+							</div>
+							
+							<div class="l_list1">
+								<div class="fl"><input name="user"  id="username"  type="text" placeholder="请输入用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入用户名'"/></div>
+								<div class="icon_user fl"></div>
+								<div class="clear"></div>
+							</div>
+							<div class="l_list1">
+								<div class="fl"><input name="password" id="password" type="password" placeholder="请输入密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入密码'"/></div>
+								<div class="icon_pass fl"></div>
+								<div class="clear"></div>
 							</div>
 							<div style="font-size:15px;display:inline;line-height:30px">
 								<div id="div1" style="margin-left:80px;float:left"><input type="checkbox" id="is_clause" name="clause[]" value="1" /> 下次自动登录</div>
