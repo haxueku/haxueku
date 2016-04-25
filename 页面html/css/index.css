@@ -26,6 +26,12 @@ a:hover{color:#058df0;}
 .top_r{margin-top:60px;}
 .top_r a{font-size:18px;}
 .top_r_line{border-left:1px solid #1a1a1a;margin:0px 15px;height:25px;}
+.error_bg{
+	background:#fff url(../images/404.png) no-repeat;
+	background-size:100% 100%;
+	width:393px;
+	height:611px;
+}
 
 #main{width:100%;min-height:700px;min-width:1420px;}
 .main_bg{width:1420px;height:626px;background:url('../images/bg_img.png') 38px no-repeat;margin:20px auto;padding-top:13px;}
