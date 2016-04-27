@@ -108,9 +108,100 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	line-height:30px;
 	padding-left:9px;
 }
-
-
-
+.jx_style1{
+	border-bottom:3px solid #0190F2;
+	width:88px;
+	text-align:center;
+	margin-bottom:-1px;
+	padding-bottom:4px;
+	color:#0190F2;
+	font-size:16px;
+}
+.jx_tag{
+	width:80px;
+	height:33px;
+	line-height:33px;
+	text-align:center;	
+	color:#fff;
+	border-radius:5px;
+	margin:5px;
+	float:left;
+}
+.jx_zq{
+	height:35px;
+	line-height:35px;
+	padding-left:30px;
+	background:url(../images/zhengque.png) 5px center no-repeat;
+}
+.jx_fs{	
+	line-height:35px;
+	margin-left:20px;
+}
+.jx_fs span{
+	color:#FF8100;
+}
+.jx_zzt{
+	border:1px solid #CCCCCC;
+	height:38px;
+	border-radius:5px;
+	margin-top:10px;	
+}
+.jx_zzt_l{
+	width:155px;
+	height:38px;
+	background:#EF4349;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	line-height:38px;
+	color:#fff;
+	font-size:16px;
+	float:left;
+}
+.jx_zzt_l:hover{
+	background:#2DB920;
+}
+.jx_zzt_c{
+	width:600px;
+	margin:12px 30px;
+	height:14px;
+	line-height:30px;
+	float:left;
+}
+.jx_zzt_bfb{
+	background:#FF8100;
+	border-radius:50px;
+	height:14px;
+}
+.jx_zzt_text{
+	float:right;
+	margin-right:-110px;
+	line-height:14px;
+}
+.jx_cw{
+	height:35px;
+	line-height:35px;
+	padding-left:30px;
+	background:url(../images/cuowu.png) 5px center no-repeat;
+}
+.nd_tag{
+	width:18px;
+	height:18px;
+	margin-left:20px;
+	margin-top:2px;
+}
+.bg_lv{
+	background:#2DB920;
+}
+.bg_lan{
+	background:#0190F2;
+}
+.bg_cheng{
+	background:#FF8100;
+}
+.bg_hong{
+	background:#EF4349;
+}
 
 
 
