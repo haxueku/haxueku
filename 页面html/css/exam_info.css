@@ -91,7 +91,23 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 
 .fixed{ position: fixed; width: 100%; top:-10px;z-index:200}
 .fixed .title_info{ display: none; }
-
+.b_test{
+	width:980px;
+	height:auto;
+	float:left;
+	margin-top:20px;
+	border:1px solid #CCCCCC;
+}
+.b_test:hover{
+	border:1px solid #FF941F;
+}
+.right_sj{
+	background:url(../images/right_sj.png) 1px 10px no-repeat;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	padding-left:9px;
+}
 
 
 
