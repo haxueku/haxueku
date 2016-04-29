@@ -25,7 +25,7 @@ dia_log.prototype.check = function(){
 	$("#paperdownload").click(function(){
 		$("#sj_div").dialog({
 			title:"生成试卷",
-			width:"760",
+			width:"560",
 			height:"auto",
 			modal:true,
 			create: function(){
