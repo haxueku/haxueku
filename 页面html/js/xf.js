@@ -161,6 +161,13 @@ $(function(){
 			$(this).addClass('cur').parents(".xf_teshuli").find(".xf_jiexida").slideDown(300);
 		}
 	});
+	$(".jx_stjx").click(function(){
+		if($(this).hasClass('cur')){
+			$(this).removeClass('cur').html("本题解析 ∨").parents(".xf_teshuli").find(".jx_xq").slideUp(300);
+		}else{
+			$(this).addClass('cur').html("隐藏解析 ∧").parents(".xf_teshuli").find(".jx_xq").slideDown(300);
+		}
+	});
 	$(".xf_xueshenglb ul li").click(function(){
 		if($(this).hasClass('active')){
 			$(".xf_quanbfs a").removeClass('active');
@@ -184,10 +191,13 @@ $(function(){
 	$(".xf_fasongbutton a,.xf_fasongxspop .xf_biaoti a").click(function(){
 		$(".xf_fasongxspop,.xf_popbg").hide();
 	});
+	
+	
+	
 	$(".xf_tybutton a,.xf_bianjipop .xf_biaoti a").click(function(){
 		$(".xf_bianjipop,.xf_popbg").hide();
 	});
-
+	
 	$(".xf_jiaojuana a").click(function(){
 		$(".xf_jiaojuanpop").show();
 	});
@@ -210,4 +220,7 @@ $(function(){
 	$(".editpart").click(function(){
 		$('.xf_bjpoplx1').show();
 	});
+	
+	$
+	
 })
