@@ -98,18 +98,18 @@
 .zfbtn:hover{color:#FFF;background:#FF9118;}
 .ddrleft{height:40px;line-height:40px;margin-left:-5px;float:left;font-size:12px;}
 
-.zyrleft{width:700px;height:40px;line-height:40px;margin-left:-5px;float:left;font-size:15px;}
+.zyrleft{width:785px;height:40px;line-height:40px;margin-left:-5px;float:left;font-size:15px;}
 .update{display:inherit;float:right;width:120px;height:30px;line-height:30px;border:1px solid #C7C7C7;background:#F5F5F5;border-radius:3px;text-align:center;cursor:pointer}
-.shang{width:700px;height:40px;background:#FFF}
-.xia{width:700px;height:40px;background:#F5F5F5}
-.biaoqian,.shuju{font-size: 12px;height: 40px;line-height: 40px;}
+.shang{width:785px;height:50px;background:#FFF}
+.xia{width:785px;height:50px;background:#F5F5F5}
+.biaoqian,.shuju{font-size: 14px;height: 50px;line-height: 50px;}
 .biaoqian span{margin-left:15px}
 .biaoqian{width:100px;}
-.shuju{width:598px}
-.zhuyee{width: 700px;border: 1px solid #DADADA;display: table;margin-top:-10px;}
+.shuju{width:684px}
+.zhuyee{width: 785px;border: 1px solid #DADADA;display: table;margin-top:-10px;}
 .zhuyee ul li{float: left;}
 .youcz{display:inherit;float:right;margin-right:20px;}
-.zytrleft{width:700px;height:160px;line-height:160px;margin-left:-5px;float:left;font-size:15px;margin-top:-15px;margin-bottom:15px}
+.zytrleft{width:700px;height:160px;margin-left:-5px;float:left;font-size:15px;margin-top:-15px;margin-bottom:15px}
 
 .radio_img  p{
 	padding-left: 20px;
