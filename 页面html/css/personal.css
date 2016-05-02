@@ -124,3 +124,125 @@
 	background: url(../images/ico_xztcur.png) no-repeat 0 10px;
 	background-size:14px 14px;
 }
+.icon_clear{
+	background:#fff url(../images/icon_clear.png) no-repeat 10px center; 
+	border:1px solid #cccccc;
+	border-radius:2px;
+	width:43px;
+	height:28px;
+	line-height:28px;
+	padding-left:30px;
+	float:left;
+}
+.icon_clear:hover{
+	background:#F5F5F5 url(../images/icon_clear.png) no-repeat 10px center;
+}
+.icon_sx{
+	background:#fff url(../images/icon_sx.png) no-repeat 10px center;
+	border:1px solid #cccccc;
+	border-radius:2px;
+	width:43px;
+	height:28px;
+	line-height:28px;
+	padding-left:30px;
+	float:left;
+	margin-left:15px;
+}
+.icon_sx:hover{
+	background:#F5F5F5 url(../images/icon_sx.png) no-repeat 10px center;
+}
+
+.icon_new{
+	background:url(../images/new.png) no-repeat 0px center;
+	width:42px;
+	height:80px;
+	margin:0px 10px;
+}
+.icon_new_c{
+	background:url(../images/new_c.png) no-repeat 0px center;
+	width:42px;
+	height:80px;
+	margin:0px 10px;
+}
+.icon_close{
+	background:url(../images/icon_close.png) no-repeat center center;
+	width:11px;
+	height:11px;
+	padding:10px;
+}
+.new_list{
+	height:80px;
+	border-bottom:1px dashed #CCCCCC;
+	margin-top:10px;
+}
+.new_list:hover{
+	background:#F5F5F5;
+}
+.ml50{
+	margin-left:50px;
+}
+.new_list:hover .new_title{
+	color:#0190f2;
+	text-decoration:underline;
+} 
+.about_list{
+	width:180px;
+	height:30px;
+	line-height:30px;
+	padding:10px;
+	border:1px solid #CCCCCC;
+	margin-bottom:-1px;
+	font-size:16px;
+	cursor:pointer;
+}
+.about_list:hover{
+	border:1px solid #0190f2;
+	background:#0190f2;
+	color:#fff;
+}
+.about_list_c{
+	width:180px;
+	height:30px;
+	line-height:30px;
+	padding:10px;
+	margin-bottom:-1px;
+	font-size:16px;
+	border:1px solid #0190f2;
+	background:#0190f2;
+	color:#fff;
+}
+.about_right{
+	float:left;
+	width:788px;
+	min-height:500px;
+	border:1px solid #D9D9D9;
+	margin-bottom:40px;
+	margin-left:10px;
+}
+.about_title{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-weight:500;
+	font-size:16px;
+	border-bottom:1px dashed #E8E8E8;
+}
+.about_nav_c{
+	border:1px solid #FF8100;
+	padding:5px 20px;
+	float:left;
+	margin-right:15px;
+	background:#FF8100;
+	color:#fff;
+}
+.about_nav{
+	border:1px solid #CCCCCC;
+	padding:5px 20px;
+	float:left;
+	margin-right:15px;
+}
+.about_nav:hover{
+	border:1px solid #FF8100;
+	background:#FF8100;
+	color:#fff;
+}
