@@ -268,8 +268,26 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	padding-left:10px;
 }
 
-
-
+.ja_style span{
+	color:#ff8100;
+	font-size:18px;
+}
+.ja_sty1{
+	padding:20px 10px;
+}
+.ja_sty1 span{
+	color:#ff8100;
+	font-size:18px;
+}
+.ja_teshuli{
+	border: 1px solid #fff;
+    border-radius: 3px;
+    position: relative;
+}
+.ja_teshuli:hover .xf_jiucuo{
+	color:#fff;
+	display: block;
+}
 
 
 
