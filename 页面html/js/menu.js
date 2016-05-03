@@ -8,7 +8,7 @@ $(function(){
 			$(this).addClass("xz").parents().siblings().find("a").removeClass("xz");
 		}
 		$(this).siblings(".er").toggle();
-	})
+	});
     $(".er > li > a").click(function(){
 		if($(this).is('.sen_x')){
             $(this).removeClass("sen_x").children('i').addClass('ce_jia').removeClass('ce_jian');
@@ -19,7 +19,7 @@ $(function(){
         
         $(this).parents().siblings().find(".thr").hide();	
 	    $(this).siblings(".thr").toggle();	
-	})
+	});
 
     $(".thr > li > a").click(function(){
 	     $(this).addClass("xuan").parents().siblings().find("a").removeClass("xuan");

@@ -133,6 +133,18 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	padding-left:30px;
 	background:url(../images/zhengque.png) 5px center no-repeat;
 }
+.jx_cw{
+	height:35px;
+	line-height:35px;
+	padding-left:30px;
+	background:url(../images/cuowu.png) 5px center no-repeat;
+}
+.js_wpg{
+	height:35px;
+	line-height:35px;
+	padding-left:30px;
+	background:url(../images/wcl.png) 5px center no-repeat;	
+}
 .jx_fs{	
 	line-height:35px;
 	margin-left:20px;
@@ -158,8 +170,17 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	font-size:16px;
 	float:left;
 }
-.jx_zzt_l:hover{
+.jx_zzt_l_c{
+	width:155px;
+	height:38px;
 	background:#2DB920;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	line-height:38px;
+	color:#fff;
+	font-size:16px;
+	float:left;
 }
 .jx_zzt_c{
 	width:600px;
@@ -208,12 +229,7 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	float:left;
 }
 
-.jx_cw{
-	height:35px;
-	line-height:35px;
-	padding-left:30px;
-	background:url(../images/cuowu.png) 5px center no-repeat;
-}
+
 .nd_tag{
 	width:18px;
 	height:18px;
@@ -231,6 +247,9 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 }
 .bg_hong{
 	background:#EF4349;
+}
+.bg_hui{
+	background:#999999;
 }
 
 .jx_stjx{
@@ -267,7 +286,18 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	color:#0190f2;
 	padding-left:10px;
 }
-
+.jx_n{
+	width:125px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#E3E3E3;
+	float:left;
+	margin:5px;
+}
+.jx_n span{
+	color:#EF464C;
+}
 .ja_style span{
 	color:#ff8100;
 	font-size:18px;

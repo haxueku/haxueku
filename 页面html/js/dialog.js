@@ -129,7 +129,7 @@ dia_log.prototype.check = function(){
 		});
 	});
 	$(".jx_fx").click(function(){
-		$(".jx_xslist").dialog({
+		$(".jx_xslist1").dialog({
 			title:"第1题--0-3分 学生名单(23人 占比35.3%)",
 			width:"580",
 			height:"auto",
@@ -137,7 +137,7 @@ dia_log.prototype.check = function(){
 			create: function(){
 			},
 			beforeClose: function() {
-				$('.jx_xslist').dialog("destroy");
+				$('.jx_xslist1').dialog("destroy");
 			}
 		});
 	});
