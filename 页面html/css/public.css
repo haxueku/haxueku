@@ -488,7 +488,7 @@ table {
 	padding:0px 6px;
 	cursor: pointer;
 	float:left;
-	border-radius:3px;
+	border-radius:2px;
 }
 .tags:hover{
 	background:#FF9118;
@@ -529,6 +529,8 @@ table {
 	float:left;
 	font-size:14px;
 	background:#F5F5F5;
+	min-width: 55px;
+	text-align:center;
 }
 .tag2 .tag2_ch{
 	width:13px;
