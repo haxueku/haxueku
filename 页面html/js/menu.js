@@ -8,7 +8,7 @@ $(function(){
 			$(this).addClass("xz").parents().siblings().find("a").removeClass("xz");
 		}
 		$(this).siblings(".er").toggle();
-	})
+	});
     $(".er > li > a").click(function(){
 		if($(this).is('.sen_x')){
             $(this).removeClass("sen_x").children('i').addClass('ce_jia').removeClass('ce_jian');
@@ -19,13 +19,13 @@ $(function(){
         
         $(this).parents().siblings().find(".thr").hide();	
 	    $(this).siblings(".thr").toggle();	
-	})
+	});
 
     $(".thr > li > a").click(function(){
 	     $(this).addClass("xuan").parents().siblings().find("a").removeClass("xuan");
 		 $(this).parents().siblings().find(".thr_nr").hide();	
 	     $(this).siblings(".thr_nr").toggle();
-	})
+	});
 	$(".j_c").click(function(){
 		$('.j_c').addClass("na_n_check").removeClass("na_n");
 		$('.zsd').addClass("na_n").removeClass("na_n_check");
@@ -37,6 +37,9 @@ $(function(){
 		$('.j_c').addClass("na_n").removeClass("na_n_check");
 		$('.j_c_list').hide();
 		$('.zsd_list').show();
+    });
+    $(".na1 > .na_n,.na1 > .na_n_check").click(function(){
+    	$(this).removeClass("na_n").addClass("na_n_check").siblings(".na_n_check").removeClass("na_n_check").addClass("na_n");
     });
     $("div[id^='kd_']").click(function(){
 		var id = (this.id.toString().match(/\d+/ig)||[])[0];
