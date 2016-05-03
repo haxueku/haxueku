@@ -220,7 +220,7 @@ table {
 }
 .na{
 	border-bottom:1px solid #CCCCCC;
-	height:45px;
+	height:44px;
 	width:1000px;
 	margin-top:15px;
 }
@@ -231,6 +231,7 @@ table {
 	margin-top:15px;
 	margin-left:15px;
 }
+
 .na_n{
 	border:1px solid #D2D2D2;
 	margin-left:10px;
