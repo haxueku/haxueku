@@ -111,6 +111,19 @@
 .youcz{display:inherit;float:right;margin-right:20px;}
 .zytrleft{width:700px;height:160px;margin-left:-5px;float:left;font-size:15px;margin-top:-15px;margin-bottom:15px}
 
+#head_photo, #head_photo .img, #head_photo .upload {width: 590px;float: left;}
+#head_photo .img span {width: 60px;text-align: center;display: block;float: left;line-height: 106px;}
+#head_photo .img ul {width: 530px;float: left;}
+#head_photo .img li {width: 86px;height: 86px;margin: 10px;float: left;}
+#head_photo .img li a {width: 80px;height: 80px;display: block;float: left;overflow: hidden;border: 3px solid #fff;}
+#head_photo .img li a:hover {border: 3px solid #e0e0e0;}
+#head_photo .img .this a, #head_photo .img .this a:hover {border: 3px solid #f43c5e;}
+#head_photo .upload .myPhoto {margin-left: 70px;line-height: 20px;display: block;float: left;margin-bottom: 15px;}
+#head_photo .upload u {display: block;float: left;line-height: 24px;text-decoration: none;color: #999;}
+#head_photo .upload .replace {display: block;float: right;color: #333;margin-right: 10px;}
+#head_photo .upload .replace:hover {color: #f43c5e;}
+#head_photo .btn2 {margin-right: 10px;float: right;margin-top: 10px;}
+
 .radio_img  p{
 	padding-left: 20px;
 	padding-right: 30px;

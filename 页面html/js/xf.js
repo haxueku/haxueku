@@ -221,6 +221,34 @@ $(function(){
 		$('.xf_bjpoplx1').show();
 	});
 	
-	$
+	$(".ed1").click(function(){
+		$('.xf_bjpoplx1').show();
+	});
+	$(".ed2").click(function(){
+		$('.xf_bjpoplx2').show();
+	});
 	
+	$(".pg_th").click(function(){
+		if($(this).hasClass('active')){
+			$(".th_list").hide();
+			$(this).removeClass('active');
+		}else{
+			$(".th_list").show();
+			$(this).addClass('active');
+		}
+	});
+	$(".ti_tag").click(function(){
+		var th=$(this).html();
+		$(".pg_th").html(th).removeClass('active');
+		$(".th_list").hide();
+	});
+	$(".icon_zqda").click(function(){
+		if($(this).hasClass('active')){
+			$(".zqda_div").hide();
+			$(this).removeClass('active');
+		}else{
+			$(".zqda_div").show();
+			$(this).addClass('active');
+		}
+	});
 })
