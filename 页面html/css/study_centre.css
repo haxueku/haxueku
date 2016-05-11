@@ -420,4 +420,41 @@
 	border:1px solid #CCCCCC;
 	float:left;
 	margin:5px;
+	cursor: pointer;
+}
+.ti_tag:hover{
+	border:1px solid #ff9118;
+	background:#ff9118;
+	color:#fff;
+}
+.pg_th{
+	background:url(../images/ti_sel.png) no-repeat 80px center;
+	border-right:1px solid #CCCCCC;
+	width:100px;
+	text-align:center;
+	cursor:pointer;
+}
+.th_list{
+	position:absolute;
+	width:360px;
+	border:1px solid #CCCCCC;
+	top:40px;
+	left:-1px;
+	background:#fff;
+	padding:5px;
+}
+.zqda_div{
+	position:absolute;
+	width:393px;
+	border:1px solid #CCCCCC;
+	top:40px;
+	right:-1px;
+	background:#fff;		
+}
+.pg_content{
+	border:1px solid #CCCCCC;
+	margin-top:10px;
+	height:450px;
+	padding:10px;
+	overflow-y:scroll;
 }

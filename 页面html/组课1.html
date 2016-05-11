@@ -8,8 +8,11 @@
 	<link href="css/style_content.css" rel="stylesheet" type="text/css" />
 	<link href="css/preview.css" rel="stylesheet" type="text/css" />
 	<link href="css/exam_info.css" rel="stylesheet" type="text/css" />
+	<link href="js/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/xf.js"></script>
+	<script src="js/jquery-ui-1.11.2.custom/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/dialog.js" type="text/javascript"></script>
 </head>
 <body style="background:#efefef">
 	<!--header-->
@@ -104,27 +107,30 @@
 				<div class="topcy" id="ecTools">
 					<ul>
 						<li><a class="goon_1" href="javascript:;">保存</a></li>
-						<li><a class="goon_1" href="javascript:;">下载</a></li>
+						<li><a id="down_sj" class="goon_1" href="javascript:;">下载</a></li>
 						<li><a class="goon_1 xf_xffsxs" href="javascript:;" id="filterReturn">发送学生</a></li>
 					</ul>
 				</div>
 			</div>
 			<div style="width:980px;background:#fff;padding:10px;padding-bottom:50px;color:#1a1a1a;">
-				
 				<div id="pui_head">
 					<div class="partm">
-						<div class="editpart"></div>
+						<div class="editpart ed1"></div>
 					</div>
 					<div id="pui_title" style="line-height:30px;border:0px;">
 						<div id="pui_maintitle" style="font-size:24px;" title="教案正标题">
 							教案正标题
 						</div>
-					</div>
-					
+					</div>				
 				</div>
 				<div class="ja_con">
-					<div class="ja_style" style="margin-top:10px;">
-						<span>一、</span>考纲要求（模块描述的文字）
+					<div id="pui_head">
+						<div class="partm">
+							<div class="editpart ed2"></div>
+						</div>
+						<div class="ja_style" style="margin-top:10px;">
+							<span>一、</span>考纲要求（模块描述的文字）
+						</div>
 					</div>
 					<div class="b_test ja_teshuli quesbox" style="width:980px;padding:0px;margin-top:10px;">
 						<div class="quesopmenu">
@@ -236,13 +242,17 @@
 							</div>
 						</div>	
 					</div>	
-					
-					
+					<div class="clear"></div>
 				</div>
 				<div>
-					<div class="ja_style">
-						<span>二、</span>知识点汇总讲解（模块描述的文字）
-					</div>
+					<div id="pui_head">
+						<div class="partm">
+							<div class="editpart ed2"></div>
+						</div>
+						<div class="ja_style">
+							<span>二、</span>知识点汇总讲解（模块描述的文字）
+						</div>
+					</div>	
 					<div class="b_test ja_teshuli quesbox" style="width:980px;padding:0px;margin-top:10px;">
 						<div class="quesopmenu">
 							<a class="ico_zjgn3">上移</a>
@@ -309,8 +319,13 @@
 				</div>
 				
 				<div>
-					<div class="ja_style">
-						<span>三、</span>知识点汇总（模块描述的文字）
+					<div id="pui_head">
+						<div class="partm">
+							<div class="editpart ed2"></div>
+						</div>
+						<div class="ja_style">
+							<span>三、</span>知识点汇总（模块描述的文字）
+						</div>
 					</div>
 					<div class="b_test ja_teshuli quesbox" style="width:980px;padding:0px;margin-top:10px;">
 						<div class="quesopmenu">
@@ -377,8 +392,13 @@
 					<div class="clear"></div>
 				</div>
 				<div>
-					<div class="ja_style">
-						<span>三、</span>知识点汇总（模块描述的文字）
+					<div id="pui_head">
+						<div class="partm">
+							<div class="editpart ed2"></div>
+						</div>
+						<div class="ja_style">
+							<span>三、</span>知识点汇总（模块描述的文字）
+						</div>
 					</div>
 					<div class="b_test ja_teshuli quesbox" style="width:980px;padding:0px;margin-top:10px;">
 						<div class="quesopmenu">
@@ -463,8 +483,130 @@
 			
 		</div>
 		<!-- 试题解析end -->
-	
-	
+	<!--下载-->	
+	<div style="padding:10;display:none;" class="" id="sz_div">
+		<form id="postform2_Lti7a" method="post" target="ajaxframeid" action="">
+			<table style="padding: 15px;" border="0" cellpadding="0" cellspacing="0" width="520px">
+			<tbody>
+			<tr>
+				<td >
+					<b>Word版本</b>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<input name="docversion" value="docx" style="vertical-align:middle;" id="docx" type="radio"><label for="docx">&nbsp;Word 2007/2010，文件扩展名为<span class="red">docx</span></label><br>
+					<input name="docversion" checked="checked" value="doc" style="vertical-align:middle;" id="doc" type="radio"><label for="doc">&nbsp;Word 2000/2003，文件扩展名为<span class="red">doc</span></label><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<div style="border:1px dashed #D9D9D9;margin:5px 0px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<b>纸张大小</b>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<table border="0" cellpadding="0" cellspacing="0" width="395px">
+					<tbody>
+					<div>
+						<div valign="bottom" style="margin-right:50px;float:Left;">
+							&nbsp;<a id="p_A4"></a>
+						</div>
+						<div valign="bottom" style="margin-right:50px;float:Left;">
+							&nbsp;&nbsp;<a id="p_A4H"></a>
+						</div>
+						<div valign="bottom" style="margin-right:50px;float:Left;">
+							&nbsp;<a id="p_A3"></a>
+						</div>
+						<div valign="bottom" style="float:Left;">
+							&nbsp;<a id="p_A3H"></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div> 
+						<div style="float:left;margin-right:35px">
+							<input name="papersize" checked="checked" value="A4" id="A4" type="radio"><label for="16K">A4纸竖版</label>
+						</div>
+						<div style="float:left;margin-right:40px">
+							<input name="papersize" value="A4H" id="A4H" type="radio"><label for="A4H">A3纸横版</label>
+						</div>
+						<div style="float:left;margin-right:60px">
+							<input name="papersize" value="A3" id="A3" type="radio"><label for="A5">B5纸竖版</label>
+						</div>
+						<div style="float:left;">
+							<input name="papersize" value="A3H" id="A3H" type="radio"><label for="A3H">A4纸横版</label>
+						</div>
+					</div>
+					</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<div style="border:1px dashed #D9D9D9;margin:5px 0px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<b>其他属性</b>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<input name="showsoure" value="normal" style="vertical-align:middle;" id="showsoure" type="checkbox"><label for="showsoure">&nbsp;是否对内部成员共享该教案。</label><br>
+					<input name="showsoure" value="normal" style="vertical-align:middle;" id="showsoure" type="checkbox"><label for="showsoure">&nbsp;是否标记每道试题来源。</label><br>
+				</td>
+			</tr>
+			
+			</tbody>
+			</table>
+		</form>
+	</div>	
+	<!-- 发生给学生 -->
+	<div class="xf_fasongxspop">
+		<div class="xf_biaoti">选择学生<a href="JavaScript:;"></a></div>
+		<div class="xf_tianjiaxs"><input type="text"  placeholder="请输入正确的账号" /><a href="JavaScript:;">添加新学生</a></div>
+		<div class="xf_xueshenglb">
+			<ul>
+				<li>张三（账号：152786935）</li>
+				<li>张三（账号：152786935）</li>
+				<li>张三（账号：152786935）</li>
+				<li>张三（账号：152786935）</li>
+			</ul>
+		</div>
+		<div class="xf_quanbfs"><a href="JavaScript:;">全部选择</a></div>
+		<div class="xf_fasongbutton"><a href="JavaScript:;">发送</a></div>
+	</div>
+	<div class="xf_popbg"></div>
+	<!-- 发生给学生end -->
+	<div class="xf_bianjipop xf_bjpoplx1">
+		<div class="xf_biaoti">头部编辑<a href="JavaScript:;"></a></div>
+		<div class="xf_bianjinner" style="padding:20px 10px;">
+			教案标题：<textarea style="width:300px;height:100px;"></textarea>
+		</div>
+		<div class="xf_tybutton">
+			<a href="JavaScript:;">取消</a>
+			<a href="JavaScript:;" class='cur'>确定</a>
+		</div>
+	</div>
+	<div class="xf_bianjipop xf_bjpoplx2">
+		<div class="xf_biaoti">题型编辑<a href="JavaScript:;"></a></div>
+		<div class="xf_bianjinner">
+			<ul>
+				<li><span>题型名称：</span><input type="text" /></li>
+				<li><span>题型注释：</span><textarea style="width:295px;height:100px;"></textarea></li>
+			</ul>
+		</div>
+		<div class="xf_tybutton">
+			<a href="JavaScript:;">取消</a>
+			<a href="JavaScript:;" class='cur'>确定</a>
+		</div>
+	</div>
 	<!-- footer -->
 	<div id="footer">
 		<div class="footer">

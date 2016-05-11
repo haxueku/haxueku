@@ -10,6 +10,9 @@
 	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript" src="js/xf.js" ></script>
 	<script src="js/person.js" type="text/javascript"></script>
+	<link href="js/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-ui-1.11.2.custom/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/dialog.js" type="text/javascript"></script>
 </head>
 <body>
 	<!--header-->
@@ -187,7 +190,7 @@
 						 </div>
 						 <div class="rright"> 
 							<img src="./images/headimg.jpg" width="120px" height="120px">
-							<div class="cp" style="width:120px;height:25px;line-height:25px;text-align:center;margin-top:-25px;background:#fff;filter:alpha(opacity=80);-moz-opacity:0.80;opacity:0.80;color:#E51010;">	
+							<div class="cp" id="check_photo" style="width:120px;height:25px;line-height:25px;text-align:center;margin-top:-25px;background:#fff;filter:alpha(opacity=80);-moz-opacity:0.80;opacity:0.80;color:#E51010;">	
 								更改头像
 							</div>
 						 </div>
@@ -394,7 +397,44 @@
 				</div>
             </div>                 
 		</div>					
-	</div>		
+	</div>	
+</div>
+	<!--头像-->	
+	<div id="head_photo" style="display:none;">
+		<div class="windown-choosePhotoContent" style="width:600px;height:240px" id="windown-content">
+			<div class="choosePhoto">
+				<div class="changearea">
+					<div class="img">
+						<span>男</span>
+						<ul>
+							<li id="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li id="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li id="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li id="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li id="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+						</ul>
+					</div>
+					<div class="img">
+						<span>女</span>
+						<ul>
+							<li class="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li class="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li class="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li class="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+							<li class="wp_li"><a href="javascript:;"><img src="./images/icon_001.jpg" alt="" id="wp_img" height="80" width="80"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="upload">
+					<span class="myPhoto"></span>
+					<a href="javascript:;"  class="" style="color:#1194F3;">上传头像</a>
+					<a href="javascript:;" class="replace" >换一批</a>
+					<div id="fsUploadProgress" style="height:0;display:none">
+					</div>
+				</div>
+				
+			</div>
+		</div>
 	</div>
     <!--footer-->
 	<div id="footer">
@@ -407,74 +447,5 @@
 </script>
  <script type="text/javascript" src="js/showNowDate.js"></script>
  <script language="javascript" src="js/form.js" type="text/javascript"></script>
-
-<script language="JavaScript">
-
-  function startDate()
-  {
-	var yearValue="" , monthValue="" ,dayValue;
-	monHead = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-	var y = new Date().getFullYear();
-	for (var i=y-100; i<=y; i++) 
-	  document.memberform.byear.options.add(new Option(" "+ i , i));
-	for (var i = 1; i < 13; i++)
-	  document.memberform.bmonth.options.add(new Option(" " + i , i));
-	document.memberform.byear.value = y;
-	document.memberform.bmonth.value = new Date().getMonth() + 1;
-	var n = monHead[new Date().getMonth()];
-	if (new Date().getMonth() ==1 && isPinYear(yearValue)) n++;
-	writeDay(n); 
-	document.memberform.bday.value = new Date().getDate();
-  }
-   //初始化
-  if(document.attachEvent)
-	window.attachEvent("onload", startDate);
-  else
-	window.addEventListener('load', startDate, false);
-  
-  function changeMonth(str) //年发生变化时日期发生变化(主要是判断闰平年)
-  {
-	monthValue = document.memberform.bmonth.options[document.memberform.bmonth.selectedIndex].value;
-	if (monthValue == ""){ 
-		var dayValue = document.memberform.bday; 
-		optionsClear(dayValue); 
-		return;
-	 }
-	var n = monHead[monthValue - 1];
-	if (monthValue ==2 && isPinYear(str)) n++;
-	writeDay(n)
-  }
-  
-  function changeDay(str) //月发生变化时日期联动
-  {
-	yearValue = document.memberform.byear.options[document.memberform.byear.selectedIndex].value;
-	if (yearValue == ""){
-		 var dayValue = document.memberform.bday; 
-		 optionsClear(dayValue); 
-		 return;
-	  }
-	var n = monHead[str - 1];
-	if (str ==2 && isPinYear(yearValue)) n++;
-	writeDay(n)
-  }
-  
-  function writeDay(n) //据条件写日期的下拉框
-  {
-	dayValue = document.memberform.bday; 
-	optionsClear(dayValue);
-	for (var i=1; i<(n+1); i++)
-	  dayValue.options.add(new Option(" "+ i , i));
-  }
-  
-  function isPinYear(year)//判断是否为闰年
-  { return(0 == year%4 && (year%100 !=0 || year%400 == 0));}
-  
-  function optionsClear(day)
-  {
-	day.options.length = 1;
-  }
-
-</script>
-
 </body>
 </html>
