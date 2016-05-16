@@ -49,12 +49,13 @@ $(function(){
 	});	
 	//下拉菜单
 	$(".sel_down").click(function(){
-		$(this).siblings(".sel_list").show();
+		$(this).siblings(".sel_list").show().addClass("active");
 	});
 	$(".sel_list > div").click(function(){
-		$(this).parent().hide().siblings(".sel_list").removeClass('chc');
+		$(this).parent().hide().siblings(".sel_list").removeClass('active');
 		$(".select_div").html($(this).html());
 	});
+	
 });
 
   
