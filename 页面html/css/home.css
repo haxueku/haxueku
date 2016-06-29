@@ -4,8 +4,8 @@
 .banList li.active{opacity:1;transform:scale(1);z-index:2;}
 .fomW{position:absolute;bottom:20px;left:50%;height:20px;z-index:9;width:1000px;margin-left:-500px}
 .jsNav{text-align:center;}
-.jsNav a{display:inline-block;background:#fff;width:12px;height:12px;border-radius:50%;margin:0 5px;}
-.jsNav a.current{background:url('../images/bann_1.png') no-repeat;cursor:pointer}
+.jsNav a{display:inline-block;background:#fff;width:15px;height:15px;border-radius:50%;margin:0 5px;}
+.jsNav a.current{background:#fc8f0f;cursor:pointer}
 .h_logo{width:1000px;height:390px;margin-top:-390px;position: relative;z-index:100;}
 .h_logo .h_bg{width:280px;height:318px;padding:20px;background:#fff;position:absolute;left:680px;z-index:-1;filter:alpha(opacity=90);-moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;}
 .h_logo input{border:1px solid #B3B3B3;height:18px;width:215px;padding:14px;padding-left:50px;font-size:16px;margin-bottom:10px;background:#fff;filter:alpha(opacity=100);-moz-opacity:1;  -khtml-opacity: 1; opacity: 1;}
@@ -27,10 +27,11 @@
 .h_tag{margin:5px 5px 0px 5px;padding-bottom:20px;}
 .h_tag span{font-size:18px;background:#F0F0F0;border-radius:5px;color:#4c4c4c;height:20px;line-height:20px;padding:0px 5px;cursor: pointer;}
 .h_tag:hover span{background:#0190F2;color:#fff;}
-.h_tag_c{margin:5px 5px 0px 5px;padding-bottom:20px;background:url(../images/h_tag_sj.png) center 30px no-repeat;}
-.h_tag_c span{font-size:18px;background:#0190F2;padding:0px 5px;border-radius:5px;height:20px;line-height:20px;color:#fff;}
+.menu_1 .active{margin:5px 5px 0px 5px;padding-bottom:20px;background:url(../images/h_tag_sj.png) center 30px no-repeat;}
+.menu_1 .active span{font-size:18px;background:#0190F2;padding:0px 5px;border-radius:5px;height:20px;line-height:20px;color:#fff;}
 .h_xk{font-size:16px;margin:0px 10px;line-height:34px;cursor: pointer;}
 .h_xk:hover{color:#0190F2;}
+.menu_2 .active{color:#0190F2;}
 .h_li{font-size:16px;line-height:46px;height:46px;width:620px;padding-left:20px;cursor: pointer;background:url(../images/dian_h.png) no-repeat 10px 23px; }
 .h_li:hover{color:#0190F2;background:url(../images/icon_li.png) no-repeat 6px 20px;}
 .is_zd a {

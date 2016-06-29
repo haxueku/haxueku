@@ -228,7 +228,18 @@ body,form,input,textarea{margin:0;padding:0;font-size:14px;font-family:Microsoft
 	margin-left:20px;
 	float:left;
 }
-
+.jx_left_numu{
+	width:80px;
+	position:absolute;
+	top:50px;
+	left:-100px;
+}
+.jx_cur{
+	float: left;
+	margin: 0 auto 0 -100px;
+	position: fixed;
+	top: 50px;
+}
 
 .nd_tag{
 	width:18px;

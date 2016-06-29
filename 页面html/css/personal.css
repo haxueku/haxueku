@@ -117,6 +117,7 @@
 #head_photo .img li {width: 86px;height: 86px;margin: 10px;float: left;}
 #head_photo .img li a {width: 80px;height: 80px;display: block;float: left;overflow: hidden;border: 3px solid #fff;}
 #head_photo .img li a:hover {border: 3px solid #e0e0e0;}
+#head_photo .img li a.active{border: 3px solid red;}
 #head_photo .img .this a, #head_photo .img .this a:hover {border: 3px solid #f43c5e;}
 #head_photo .upload .myPhoto {margin-left: 70px;line-height: 20px;display: block;float: left;margin-bottom: 15px;}
 #head_photo .upload u {display: block;float: left;line-height: 24px;text-decoration: none;color: #999;}
