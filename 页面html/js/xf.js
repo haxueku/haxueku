@@ -92,6 +92,13 @@ $(function(){
 				$(this).addClass('active').text("已收藏")
 			}
 		});
+ 		$(".play_btn").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active').text("播放");
+			}else{
+				$(this).addClass('active').text("暂停");
+			}
+		}); 
 
 	// 选择搜索类型
 	$(".sea_left em").click(function(){
