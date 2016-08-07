@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript" src="js/audioplayer.js"></script>
 	<script type="text/javascript" src="js/xf.js" ></script>
+	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
 </head>
 <body>
 	<!--header-->
@@ -332,12 +333,12 @@
 							<div class="hot">15040次</div>
 						</div>
 						<div class="fr">
-							<div class="audio" style="display:;margin-top:-43px;width:300px;margin-left:-40px;">
+							<div class="audio" style="display:none;margin-top:-50px;width:300px;margin-left:-40px;">
 								<div class="htmleaf-content bgcolor-3">
-									<audio src="audio/seeyouagain.mp3" preload="auto" controls></audio>
+									<audio class="music" src="audio/seeyouagain.mp3" preload="auto" controls></audio>
 								</div>
 							</div>
-							<a href="JavaScript:;" class="play_btn" onclick="autoPlay()">播放</a>
+							<a href="JavaScript:;" class="play_btn">播放</a>
 							<a href="JavaScript:;" class="sc_btn">收藏</a>
 							<a href="JavaScript:;" class="jr_btn">+加入试卷</a>
 						</div>
@@ -380,12 +381,12 @@
 							<div class="hot">15040次</div>
 						</div>
 						<div class="fr">
-							<div class="audio" style="display:;margin-top:-43px;width:300px;margin-left:-40px;">
+							<div class="audio" style="display:none;margin-top:-50px;width:300px;margin-left:-40px;">
 								<div class="htmleaf-content bgcolor-3">
-									<audio src="audio/seeyouagain.mp3" preload="auto" controls></audio>
+									<audio class="music" src="audio/seeyouagain.mp3" preload="auto" controls></audio>
 								</div>
 							</div>
-							<a href="JavaScript:;" class="play_btn" onclick="autoPlay()">播放</a>
+							<a href="JavaScript:;" class="play_btn">播放</a>
 							<a href="JavaScript:;" class="sc_btn">已收藏</a>
 							<a href="JavaScript:;" class="jr_btn">-移出考卷</a>
 						</div>
@@ -568,6 +569,6 @@
 			}
 		});
 	</script>
-	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+	
 </body>
 </html>

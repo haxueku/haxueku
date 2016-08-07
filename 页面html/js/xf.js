@@ -93,10 +93,15 @@ $(function(){
 			}
 		});
  		$(".play_btn").click(function(){
+			var audio = $(this).prev(".audio").find(".music")[0];
 			if($(this).hasClass('active')){
+				$(this).prev(".audio").hide();
 				$(this).removeClass('active').text("播放");
+				audio.pause(); 
 			}else{
+				$(this).prev(".audio").show();
 				$(this).addClass('active').text("暂停");
+				audio.play();
 			}
 		}); 
 
