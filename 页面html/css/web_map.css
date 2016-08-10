@@ -1,0 +1,114 @@
+/*È«²¿µ¼º½*/
+.zhzt li {
+    width: 184px;
+    height: 36px;
+}
+.allNav {
+	width: 1000px;
+	float: left;
+	margin: 30px 0px 20px 0px;
+}
+.allNav div {
+	float: left;
+	padding-right: 25px;
+	line-height: 36px;
+	color: #f43c5e;
+	font-size: 14px;
+	background-position: 62px -1329px;
+}
+.allNav ul, .allNav li {
+	float: left;
+}
+.allNav li a {
+	height: 34px;
+	line-height: 34px;
+	display: block;
+	padding: 0px 15px;
+	color: #fff;
+	font-size: 14px;
+	margin-right: 20px;
+	border: 1px solid #157cd1;
+	background-color: #1887e3;
+}
+.allNavTxt {
+	width: 998px;
+	float: left;
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+	border-top: 2px solid #f43c5e;
+}
+.allNavTxt .title {
+	width: 978px;
+	background-color: #ddf1fe;
+	padding-left: 20px;
+	float: left;
+	height: 38px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.allNavTxt .title span, .allNavTxt .title a {
+	display: block;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+}
+.allNavTxt .txt, .allNavTxt ul, .allNavTxt li {
+	float: left;
+}
+.allNavTxt .txt {
+	width: 998px;
+	float: left;
+}
+.allNavTxt ul {
+	width: 984px;
+	padding: 15px 0px 15px 14px;
+}
+.allNavTxt li a {
+	height: 34px;
+	line-height: 34px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	border: 1px solid #e8e8e8;
+}
+.allNavTxt1 li a {
+	width: 180px;
+}
+.allNavTxt2 li a {
+	width: 148px;
+}
+.allNav li a:hover, .allNavTxt li a:hover {
+	background-color: #f43c5e;
+	border: 1px solid #f43c5e;
+	color: #fff;
+}
+.allNavTxt1 li {
+	padding: 5px 6px;
+}
+.allNavTxt2 li {
+	width: 984px;
+}
+.allNavTxt2 li strong, .allNavTxt2 li a {
+	margin: 5px 6px;
+	display: block;
+	float: left;
+}
+.allNavTxt2 li strong a {
+	width: 158px;
+	height: 36px;
+	line-height: 36px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	margin: 0px;
+	font-weight: normal;
+	background-color: #1887e3;
+	border: 0px;
+}
+.allNavTxt2 li strong a:hover {
+	background-color: #f43c5e;
+	border: 0px;
+}
