@@ -112,3 +112,102 @@
 	background-color: #f43c5e;
 	border: 0px;
 }
+/*知识点导航*/
+.knowledgeNav {
+	width: 1000px;
+	float: left;
+	padding: 30px 0px 20px 0px;
+	overflow: hidden;
+}
+.knowledgeNav ul {
+	width: 1017px;
+	float: left;
+}
+.knowledgeNav li {
+	width: 96px;
+	height: 36px;
+	float: left;
+	padding-right: 17px;
+}
+.knowledgeNav li a {
+	width: 94px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 14px;
+	display: block;
+	color: #fff;
+	border: 1px solid #157cd1;
+	background-color: #1887e3;
+}
+.knowledgeNav li a:hover, .knowledgeNav .this a {
+	border: 1px solid #da2c4d;
+	background-color: #f43c5e;
+}
+.knowledgeTxt {
+	width: 1000px;
+	float: left;
+	padding-bottom: 30px;
+}
+.knowledgeTxt .title {
+	width: 978px;
+	line-height: 40px;
+	font-size: 14px;
+	background-color: #ddf1fe;
+	border-top: 2px solid #f43c5e;
+	border-left: 1px solid #e5e5e5;
+	padding-left: 20px;
+}
+.knowledgeTxt table {
+	width: 999px;
+	border-left: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+}
+.knowledgeTxt table td {
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.knowledge1 {
+	text-align: center;
+}
+.knowledge1, .knowledge2 {
+	width: 148px;
+	vertical-align: middle;
+	padding: 0px 10px;
+}
+.knowledge2, .knowledge2Box, .knowledge3 {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.knowledge1 a {
+	color: #1887e3;
+	font-size: 14px;
+}
+.knowledge2 a, .knowledge2Box a {
+	color: #333;
+	line-height: 24px;
+}
+.knowledge2Box {
+	padding-left: 10px;
+}
+.knowledge2Box a {
+	margin-right: 10px;
+}
+.knowledge3 {
+	color: #666;
+}
+.knowledge3 a {
+	color: #666;
+	display: block;
+	float: left;
+	line-height: 24px;
+	margin: 0px 10px;
+}
+.knowledge3 span {
+	display: block;
+	float: left;
+	line-height: 24px;
+}
+.knowledge1 a:hover, .knowledge2 a:hover, .knowledge3 a:hover, .knowledge2Box a:hover {
+	color: #f43c5e;
+}
